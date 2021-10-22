@@ -25,6 +25,7 @@
     border: 1px solid black;
     background: none;
     color: black;
+    padding: 6px 18px 7px;
   } 
 
   button.btn-primary:hover{
