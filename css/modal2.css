@@ -19,6 +19,7 @@
     text-decoration: none;
     letter-spacing: 0.04em;
     border: none;
+    height: 38px;
   }
 
   button.btn_login{
@@ -26,6 +27,7 @@
     background: none;
     color: black;
     padding: 6px 18px 7px;
+    height: 38px;
   } 
 
   button.btn-primary:hover{
