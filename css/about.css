@@ -1,0 +1,290 @@
+@import "./header.css";
+@import "./footer.css";
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+
+div.first_banner{
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 110px auto 0;
+  width: 1080px;
+  height: 505px;
+  position: relative;
+}
+
+div.first_banner_title{
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0 0;
+}
+
+div.first_banner_subtitle{
+  padding: 10px 0;
+}
+
+img.dreamer{
+  width: 900px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -9.7%);
+}
+
+div.mission_block{
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.our_mission{
+  /* width: 1080px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 60px; */
+  min-width: 1200px;
+  background-image: linear-gradient(180deg, #F7CCC5 0%, rgba(247, 204, 197, 0) 100%);
+}
+
+div.mission_title, div.team_title{
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  width: 450px;
+  padding: 20px 0 25px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+div.mission_intro, div.team_intro{
+  /* border: 1px solid red; */
+  line-height: 250%;
+  padding: 20px 0 0;
+}
+
+div.brand_feature_block{
+  margin: 0 auto 40px;
+  /* border: 1px solid blue; */
+  width: 1080px;
+  padding-bottom: 30px;
+}
+
+div.feature_row{
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid green; */
+  height: 600px;
+}
+
+div.row_card{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img.feature_img{
+  width: 500px;
+}
+
+div.card_title{
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px 0;
+  position: relative;
+  top: -100px;
+}
+
+div.card_text{
+  line-height: 200%;
+  width: 436px;
+  position: relative;
+  top: -80px;
+}
+
+a.tool_link{
+  color: #2869D1;
+  text-decoration: none;
+  border-bottom: 1px solid #2869D1;
+}
+
+div.go_signup{
+  border-top: 1px solid black;
+  width: 400px;
+  margin: 30px auto 40px;
+  padding: 40px 0;
+  line-height: 3;
+  text-align: center;
+}
+
+a.btn_action{
+  background-color: #2869D1;
+  padding: 6px 18px 8px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+}
+
+a.btn_action:hover{
+  box-shadow: 1px 2px 2px 0px #00000040;
+}
+
+
+div.our_team{
+  /* width: 1080px; */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 60px; */
+  min-width: 1200px;
+  background-image: linear-gradient(180deg, #B3D0FF 0%, rgba(179, 208, 255, 0) 100%);
+}
+
+div.team_feature_block{
+  margin: 40px auto 40px;
+  /* border: 1px solid blue; */
+  width: 1080px;
+  padding-bottom: 30px;
+}
+
+div.team_row{
+  width: 1080px;
+  margin: -30px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+div.team_row_card{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  background-color: rgba(238, 238, 238, .7);
+  width: 500px;
+  height: 450px
+;
+  margin-top: 60px;
+}
+
+img.team_img{
+  width: 450px;
+}
+
+div.team_card_title{
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  top: 80px;
+}
+
+div.team_card_text{
+  width: 436px;
+  position: relative;
+  bottom: 80px;
+}
+
+div.learn_more{
+  width: 400px;
+  margin: 30px auto 40px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+a.hr_src{
+  text-decoration: none;
+  text-align: center;
+  color: #2869D1;
+  border-bottom: 1px solid #2869D1;
+}
+
+div.subscribe_block{
+  margin: 0 auto 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 60px; */
+  min-width: 1200px;
+  height: 400px;
+  background-image: linear-gradient(90deg, rgba(242, 77, 46, 0.5) 1.49%, rgba(60, 100, 177, 0.5) 91.49%);
+}
+
+div.subscribe_title{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div.subscribe_text{
+  font-family: 'Lato', sans-serif;
+  padding: 20px 0 ;
+}
+
+form.sub_form{
+  margin-top: 10px;
+}
+
+input[type="email"]{
+  width: 520px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+}
+
+input[type="email"]::placeholder{
+  padding-left: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+input[type="email"]:focus, input[type="email"]:active{
+  padding-left: 20px;
+  background-color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+  border: none;
+  outline: none;
+}
+
+button.sub_btn{
+  cursor: pointer;
+  border: none;
+  background-color: #2869D1;
+  color: white;
+  padding: 6px 18px 8px;
+  border-radius: 8px;
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+button.sub_btn:hover{
+  box-shadow: 1px 2px 2px 0px #00000040;
+}
