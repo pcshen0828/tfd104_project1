@@ -1,9 +1,11 @@
+@import "./modal2.css";
+
 footer.footer{
   border-top: 1px solid black;
   margin: 0 auto;
   width: 1080px;
 }
-
+ 
 div.footer_container{
   width: 100%;
   display: inline-flex;
@@ -97,14 +99,52 @@ a.footer_page_link, a.footer_page_link_child{
 
 a.footer_page_link{
   padding: 0 4px 3px 4px;
+  font-weight: 700;
 }
 
 a.footer_page_link_child{
   padding-bottom: 3px;
   /* border: 1px solid red; */
   margin-bottom: 3px;
+  margin-left: 6px;
 }
 
 a.footer_page_link:hover, a.footer_page_link_child:hover{
+  border-bottom: 1px solid black;
+}
+
+div.footer_login_signup_block{
+  width: 200px;
+  height: 60px;
+  /* margin-right: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin-left: 10px;
+}
+
+div.container{
+  margin-top: -16px;
+  height: 100%;
+}
+
+div.footer-modal{
+  /* border: 1px solid red; */
+  width: 70px;
+  padding: 0;
+  margin: 0 16px 0 0;
+  text-align: right;
+}
+
+
+button.btn-footer-modal{
+  margin-top: -22px;
+  padding: 0 4px 2px;
+  border-radius: 0;
+  font-weight: 700;
+}
+
+button.btn-footer-modal:hover{
   border-bottom: 1px solid black;
 }
