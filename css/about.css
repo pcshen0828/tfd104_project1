@@ -251,20 +251,20 @@ form.sub_form{
   margin-top: 10px;
 }
 
-input[type="email"]{
+input.follow{
   width: 520px;
   height: 40px;
   border-radius: 30px;
   border: none;
 }
 
-input[type="email"]::placeholder{
+input.follow::placeholder{
   padding-left: 20px;
   font-family: 'Noto Sans TC', sans-serif;
   letter-spacing: 0.04em;
 }
 
-input[type="email"]:focus, input[type="email"]:active{
+input.follow:focus, input[type="email"]:active{
   padding-left: 20px;
   background-color: white;
   font-family: 'Noto Sans TC', sans-serif;

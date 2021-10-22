@@ -1,3 +1,6 @@
+@import "./modal2.css";
+
+
 *{
   box-sizing: border-box;
 }
@@ -6,7 +9,7 @@
   width: 50px;
   padding: 10px;
   background: none;
-  position: fixed;
+  position: fixed; 
   right: 20px;
   bottom: 40px;
   cursor: pointer;
@@ -19,16 +22,13 @@ span.now_page{
   border-bottom: 1px solid black;
   padding: 5px 0;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 
 header.header{
-  margin: 0 auto;
-  width: 1200px;
-  padding-top: 10px;
+  /* margin: 0 auto; */
   width: 100%;
-  /* position: fixed; */
+  padding-top: 10px;
   background-color: rgba(255, 255, 255, 1);
   /* border-bottom: 1.5px solid #eeeeee; */
   z-index: 10;
@@ -37,17 +37,28 @@ header.header{
 .navFixed{
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 66px;
   opacity: .91;
   padding-top: 0;
   transition: all 0.3s;
+  width: 100%;
+  margin: 0 auto; 
 }
 
 img.logo_img{
   width: 120px;
 }
 
+div.nav_parent{
+  width: 1200px; 
+  display: block;
+  margin: 0 auto;
+}
+
 div.nav_block{
+  /* border: 1px solid red; */
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -139,47 +150,18 @@ nav.nav > ul.nav_list > li > div.solution_block > ul.solution_list > li > a:hove
   text-decoration: underline;
 }
 
+
 div.login_signup_block{
-  width: 160px;
+  width: 240px;
   height: 60px;
   margin-right: 40px;
-}
-
-div.login_signup_block ul.login_signup{
-  list-style: none;
-  width: 100%;
+  display: flex;
+  align-items: center;
   padding: 0;
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin: 14px 0;
+  /* border: 1px solid blue; */
 }
 
-
-div.login_signup_block ul.login_signup > li > a.login{
-  border: 1px solid black;
-  padding: 5px 16px 6px;
-  border-radius: 8px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  font-size: 15px;
-}
-
-div.login_signup_block ul.login_signup > li > a.login:hover{
-  box-shadow: 1px 2px 2px 0px #00000040;
-}
-
-
-div.login_signup_block ul.login_signup > li > a.signup{
-  background-color: #2869D1;
-  padding: 6px 20px 7px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-
-div.login_signup_block ul.login_signup > li > a.signup:hover{
-  box-shadow: 1px 2px 2px 0px #00000040;
+div.container{
+  margin-top: -16px;
+  height: 100%;
 }
