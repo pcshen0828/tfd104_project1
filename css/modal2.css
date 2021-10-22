@@ -20,14 +20,16 @@
     letter-spacing: 0.04em;
     border: none;
     height: 38px;
+    width: 78px;
   }
 
   button.btn_login{
     border: 1px solid black;
     background: none;
     color: black;
-    padding: 6px 18px 7px;
+    padding: 6px 15px 7px;
     height: 38px;
+    width: 75px;
   } 
 
   button.btn-primary:hover{
