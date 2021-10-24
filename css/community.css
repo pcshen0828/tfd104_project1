@@ -9,4 +9,621 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.04em;
 }
+
+div.left_dialog_container{
+  width: 1080px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+
+div.left_dialog_container::after{
+  content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top-color: #2869D1;
+	border-bottom: 0;
+	border-left: 0;
+	margin-bottom: -30px;
+}
+
+div.right_dialog_container{
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  z-index: 0;
+}
+
+div.right_dialog_container::after{
+  content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top-color: #F24D2E;
+  transform: rotate(90deg);
+	border-bottom: 0;
+	border-left: 0;
+	margin-bottom: -30px;
+}
+
+div.left_dialog{
+  background-color: #2869D1;
+  width: 530px;
+  height: 200px;
+  border-radius: 20px 20px 20px 0;
+  padding: 30px;
+}
+
+
+div.dialog_title{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div.dialog_text{
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+div.right_dialog{
+  background-color: #F24D2E;
+  width: 530px;
+  height: 200px;
+  border-radius: 20px 20px 0 20px;
+  padding: 30px;
+}
+
+div.bridge_banner{
+  width: 1080px;
+  margin: -16px auto 10px;
+  position: relative;
+  left: 10%;
+}
+
+div.bridge_title{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div.bridge_text{
+  padding: 16px 0;
+}
+
+img.bike{
+  width: 350px;
+  position: relative;
+  top: -50px;
+}
+
+div.bike_run{
+  /* border: 1px solid red; */
+  height: 220px;
+}
+
+div.line{
+  border-bottom: 1px solid black;
+  min-width: 1200px;
+  /* height: 400px; */
+  padding: 0;
+  position: relative;
+  top: -174.5px;
+}
+
+div.intro_banner{
+  width: 1080px;
+  margin: 20px auto 130px;
+}
+
+div.intro_content{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img.scroll_down{
+  width: 120px;
+}
+
+div.intro_title{
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+div.intro_text{
+  line-height: 200%;;
+}
+
+div.process_container{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+div.process_banner{
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+div.banner_text{
+  padding: 10px;
+}
+
+div.process_title{
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+div.process_text{
+  line-height: 180%;
+  margin-bottom: 16px;
+}
+
+embed.commu{
+  width: 700px;
+}
+
+
+div.dreamers_block{
+  width: 1080px;
+  margin: 100px auto 30px;
+  text-align: center;
+}
+
+div.block_title{
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0; 
+}
+
+div.block_text{
+  line-height: 200%;
+}
+
+div.dreamers_circle{
+  width: 1080px;
+  margin: 0 auto 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+div.circle_block{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a.commu_link{
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid red; */
+}
+
+div.title_wh{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+div.title_bl{
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+div.hover_text{
+  font-size: 14px;
+  width: 85%;
+  text-align: center;
+  padding: 10px;
+  line-height: 180%;
+}
+
+div.mtn{
+  width: 180px;
+  height: 180px;
+  background-color: #2869D1;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+div.mtn_hover{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.edu{
+  width: 267px;
+  height: 267px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.edu{
+  margin-top: 40px;
+}
+
+div.edu_hover{
+  position: absolute;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.code{
+  width: 145px;
+  height: 145px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.code{
+  transform: translateX(80%);
+}
+
+div.code_hover{
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.music{
+  width: 160px;
+  height: 160px;
+  background-color: #F24D2E;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.music{
+  margin-top: 40px;
+}
+
+div.music_hover{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.lan{
+  width: 267px;
+  height: 267px;
+  background-color: #2869D1;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.lan{
+  margin-top: 80px;
+  transform: translateX(10%);
+}
+
+div.lan_hover{
+  position: absolute;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.shop{
+  width: 267px;
+  height: 267px;
+  background-color: #2869D1;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.shop{
+  margin-top: 80px;
+  transform: translateX(20%);
+}
+
+div.shop_hover{
+  position: absolute;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.build{
+  width: 160px;
+  height: 160px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.build{
+  margin-top: 80px;
+  transform: translateX(30%);
+}
+
+div.build_hover{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.soc{
+  width: 160px;
+  height: 160px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.soc{
+  margin-top: 40px;
+  transform: translateX(30%);
+}
+
+div.soc_hover{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+div.travel{
+  width: 160px;
+  height: 160px;
+  background-color: #F24D2E;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+a.travel{
+  margin-top: 40px;
+}
+
+div.travel_hover{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  transform: translateY(-100%);
+  background: linear-gradient(180.1deg, rgba(167, 201, 255, 0.3) 0.09%, rgba(254, 166, 149, 0.3) 99.91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+
+a.mtn:hover div.mtn_hover{
+  opacity: 1;
+}
+
+a.mtn:hover div.mtn{
+  opacity: 0;
+}
+
+a.edu:hover div.edu_hover{
+  opacity: 1;
+}
+
+a.edu:hover div.edu{
+  opacity: 0;
+}
+
+a.code:hover div.code_hover{
+  opacity: 1;
+}
+
+a.code:hover div.code{
+  opacity: 0;
+}
+
+a.music:hover div.music_hover{
+  opacity: 1;
+}
+
+a.music:hover div.music{
+  opacity: 0;
+}
+
+a.lan:hover div.lan_hover{
+  opacity: 1;
+}
+
+a.lan:hover div.lan{
+  opacity: 0;
+}
+
+a.shop:hover div.shop_hover{
+  opacity: 1;
+}
+
+a.shop:hover div.shop{
+  opacity: 0;
+}
+
+a.build:hover div.build_hover{
+  opacity: 1;
+}
+
+a.build:hover div.build{
+  opacity: 0;
+}
+
+a.soc:hover div.soc_hover{
+  opacity: 1;
+}
+
+a.soc:hover div.soc{
+  opacity: 0;
+}
+
+a.travel:hover div.travel_hover{
+  opacity: 1;
+}
+
+a.travel:hover div.travel{
+  opacity: 0;
+}
+
+div.more_info_block{
+  margin: 0 auto 60px;
+  width: 100px;
+}
+
+a.more_info{
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 5px 6px;
+}
+
+div.last_banner{
+  width: 1080px;
+  margin: 90px auto;
+}
+
+div.last_slogan{
+  padding-left: 15px;
+}
+
+button.btn_act{
+  width: 110px;
+}
+
+
+
+
+

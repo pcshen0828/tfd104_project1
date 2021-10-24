@@ -257,7 +257,7 @@ div.layer1.-on, div.layer2.-on{
   position: static;
   opacity: 1;
   z-index: 0;
-}
+} 
 
 button.btn_left, button.btn_right{
   cursor: pointer;
