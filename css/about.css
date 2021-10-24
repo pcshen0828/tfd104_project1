@@ -133,7 +133,7 @@ div.go_signup{
   text-align: center;
 }
 
-a.btn_action{
+button.btn_act{
   background-color: #2869D1;
   padding: 6px 18px 8px;
   border-radius: 8px;
@@ -142,9 +142,10 @@ a.btn_action{
   text-align:center;
   letter-spacing: 0.1em;
   font-size: 15px;
+  width: 115px;
 }
 
-a.btn_action:hover{
+button.btn_act:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
 }
 
@@ -273,7 +274,7 @@ input.follow:focus, input[type="email"]:active{
 }
 
 button.sub_btn{
-  cursor: pointer;
+  cursor: pointer; 
   border: none;
   background-color: #2869D1;
   color: white;

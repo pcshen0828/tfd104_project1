@@ -2,22 +2,20 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>set up | 一分鐘目標健檢 - 1</title>
 
-    <title>set up | 關於</title>
-
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/check1.css">
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
     </style>
-
- 
   </head>
- 
+
   <body>
 
     <header class="header dropdowns">
@@ -30,13 +28,11 @@
           <nav class="nav">
             <ul class="nav_list">
               <li>
-                <a href="./about.html">
-                  <span class="now_page">關於</span>
-                </a>
+                <a href="./about.html">關於</a>
               </li>
               <li>
                 <div class="solution_block">
-                  方案
+                  <span class="now_page">方案</span>
                   <ul class="solution_list">
                     <li>
                       <a href="./solutions_personal.html">個人</a>
@@ -190,192 +186,32 @@
 
           </div>
         </div>
-       </div> 
+      </div> 
     </header>
 
 
-    <div class="first_banner">
-      <div class="first_banner_title">Hi! 夢想家</div>
-      <div class="first_banner_subtitle">一起認識 set up</div>
-      <img src="./images/about/girl_dreamer.png" class="dreamer" loading="lazy">
+    <div class="question_block">
+      <div class="question_container">
+        <div class="leftside">
+          <div class="question_title">Hi! 如何稱呼你呢？</div>
+          <div class="question_text">
+            與我們分享你的姓名、暱稱，或任何希望我們稱呼你的名字
+          </div>
+          <form action="./check2.html" method="get">
+            <input type="name" class="test_name" placeholder="如何稱呼你？" name="user_name"><br>
+            <a href="./check2.html" class="next_page">
+              <button type="submit" class="btn_next">
+              繼續
+              </button>
+            </a> 
+          </form>  
+        </div>
+
+        <div class="rightside">
+          <img src="./images/test/question.png" loading="lazy" class="question">
+        </div>
+      </div>  
     </div>
-
-    <div class="mission_block">
-      <div class="our_mission">
-        <div class="mission_title">我們的使命</div>
-        <div class="mission_intro">
-          set up 是一款生產力工具，<br>致力於透過視覺化的方式，結合科技與人類心智的圖景，<br>協助使用者針對不同的目標，逐步建構自己的夢想實現藍圖，<br>分享並連結線上的使用者，形成支持性的社群系統。
-        </div>
-      </div>
-
-      <div class="brand_feature_block">
-        <div class="feature_row">
-          <div class="row_card">
-            <img src="./images/about/visualize.png" class="feature_img" loading="lazy">
-            <div class="card_title">視覺化你的想法</div>
-            <div class="card_text">
-              set up 相信每個人都是天生的夢想家，我們的大腦每天都有千千萬萬個新點子生成，無論是透過文字或圖像，展開你的第一步，首先用視覺化的方式記錄下這些想法。
-            </div>
-          </div>
-
-          <div class="row_card">
-            <img src="./images/about/map.png" class="feature_img" loading="lazy">
-            <div class="card_title">建立專屬於你的地圖</div>
-            <div class="card_text">
-              將無形的想法轉換成可視的物件之後，第二步，思考如何透過適合的圖表（<a href="#" class="tool_link">我該如何找到適合自己的圖表工具？</a>）幫助我們梳理這些思緒，並開始建立執行步驟。
-            </div>
-          </div>
-        </div>
-
-        <div class="feature_row">
-          <div class="row_card">
-            <img src="./images/about/help.png" class="feature_img" loading="lazy">
-            <div class="card_title">善用線上社群資源</div>
-            <div class="card_text">
-              一加一的力量無限大！在 set up community 隨時交流彼此的想法，你也可以主動撰寫訊息、尋求建議，隨時修正你的地圖。別忘了給予他人鼓勵與回饋！
-            </div>
-          </div>
-
-          <div class="row_card">
-            <img src="./images/about/table.png" class="feature_img" loading="lazy">
-            <div class="card_title">圖表追蹤，隨時修正</div>
-            <div class="card_text">
-              夢想計畫的實現，是一連串修正與決策的動態過程。通過建立圖表的不同版本，檢視你的地圖可以如何修正？又有哪些不在計畫之內的美好風景？記錄下來。
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="go_signup">
-        還沒加入嗎？<br>
-        <!-- 立即開始 -->
-        <div class="container mt-3">
-          <button type="button" class="btn btn-primary btn_act" data-toggle="modal" data-target="#myModal2">
-            立即開始
-          </button> 
-        
-          <!-- The Modal -->
-          <div class="modal fade" id="myModal2">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <img src="./images/logo/logo.svg" class="logo_modal">
-                  <h4 class="modal-title">註冊帳號</h4>
-                  <button type="button" class="close" data-dismiss="modal">×</button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <form>
-                    <input type="email" placeholder="輸入電子郵件" class="modal_email">
-                    <div class="private_policies">
-                      註冊即表示您已確認閱讀並接受我們的服務條款和隱私政策。
-                    </div>
-                    <button type="submit" class="btn_signup">註冊</button>
-                  </form>
-                  <div class="other_login">
-                    <div class="or">或是</div>
-                    <button type="button" class="btn_other">
-                      <img src="./images/logo/google.svg" class="other_logo">
-                      <a href="#" class="other_link">使用 Google 繼續登入</a>
-                    </button>
-        
-                    <button type="button" class="btn_other">
-                      <img src="./images/logo/apple.svg" class="other_logo">
-                      <a href="#" class="other_link">使用 Apple 繼續登入</a>
-                    </button>
-        
-                    <button type="button" class="btn_other">
-                      <img src="./images/logo/facebook-square.svg" class="other_logo">
-                      <a href="#" class="other_link">使用 Facebook 繼續登入</a>
-                    </button>
-                  </div>
-        
-                </div>
-        
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <div>已經有 set up 帳戶了？</div>
-                  <button type="button" class="btn_modal_close" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">
-                    登入
-                  </button>
-                </div>
-                <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-        
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="team_block">
-
-      <div class="our_team">
-        <div class="team_title">我們的團隊</div>
-        <div class="team_intro">
-          set up 團隊結合各領域專業人才，以人本的思考結合科技的創新，<br>致力於設計符合使用者需求，並且能夠簡易上手的操作介面。
-        </div>
-        <div class="team_intro">
-          我們相信 A user experience a universe. <br>創造讓每個人的創意思考都能自由流動與分享的體驗，<br>是團隊共同努力的目標。我們共享的特質：
-        </div> 
-      </div>
-
-      <div class="team_feature_block">
-        <div class="team_row">
-          <div class="team_row_card">
-            <div class="team_card_title">目標導向</div>
-            <img src="./images/about/goal.png" class="team_img" loading="lazy">
-            <div class="team_card_text">
-              設定明確的目標，隨時檢視方向，樂於從錯誤中學習
-            </div>
-          </div>
-
-          <div class="team_row_card">
-            <div class="team_card_title">求知若渴</div>
-            <img src="./images/about/learn.png" class="team_img" loading="lazy">
-            <div class="team_card_text">
-              對於知識永遠保持熱忱，自主學習並與夥伴們討論交流
-            </div>
-          </div>
-        </div>
-
-        <div class="team_row">
-          <div class="team_row_card">
-            <div class="team_card_title">大膽想像</div>
-            <img src="./images/about/imagination.png" class="team_img" loading="lazy">
-            <div class="team_card_text">
-              想像力帶領我們更貼近使用者的感受和需求
-            </div>
-          </div>
-
-          <div class="team_row_card">
-            <div class="team_card_title">工藝精神</div>
-            <img src="./images/about/iteration.png" class="team_img" loading="lazy">
-            <div class="team_card_text">
-              沒有最好的版本，只有更好的版本
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="learn_more">
-        <a href="./sign_up.html" class="hr_src">深入了解 set up 人才招募政策</a>
-      </div>
-    </div>
-
-    <div class="subscribe_block">
-      <div class="subscribe_title">訂閱 set up，隨時取得最新消息</div>
-      <div class="subscribe_text">Let’s keep in touch!</div>
-      <form action="./index.html" method="get" class="sub_form" name="email">
-        <input type="email" class="follow" placeholder="輸入您的 email" onfocus="this.placeholder=''" onblur="this.placeholder='輸入您的 email'"><br>
-        <button type="submit" class="sub_btn">我要訂閱</button>
-      </form>
-    </div>
-
 
 
 
@@ -435,7 +271,7 @@
               
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal1">
-                  <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-dialog">
                     <div class="modal-content">
               
                       <!-- Modal Header -->
@@ -485,7 +321,7 @@
                   </div>
                 </div>
               </div>
-  
+   
               <!-- footer 註冊 -->
               <div class="container mt-3 footer-modal">
                 <button type="button" class="btn btn-footer-modal" data-toggle="modal" data-target="#myModal2">
@@ -555,6 +391,8 @@
 
 
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     //回到頂部
@@ -571,7 +409,7 @@
     <script>
       $(function() {
         $(window).scroll(function() {
-          if ($(this).scrollTop() > 450)  {          /* 要滑動到選單的距離 */
+          if ($(this).scrollTop() > 720)  {          /* 要滑動到選單的距離 */
              $('.dropdowns').addClass('navFixed');   /* 幫選單加上固定效果 */
           } else {
             $('.dropdowns').removeClass('navFixed'); /* 移除選單固定效果 */
@@ -579,7 +417,6 @@
         });
       });
     </script>
-
 
   </body>
 </html>

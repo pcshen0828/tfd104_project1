@@ -299,7 +299,7 @@ div.hover_block{
   width: 360px;
   height: 308px;
   position: absolute;
-  transform: translateY(-101%);
+  transform: translateY(-100%);
   border-radius: 20px;
   /* border: 1px solid red; */
   background-color: rgba(255, 255, 255, 0.5);

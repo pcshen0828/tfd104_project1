@@ -1,0 +1,39 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./check.css";
+
+div.leftside{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  /* border: 1px solid red; */
+}
+
+form{
+  align-items: flex-start;
+} 
+
+input.test_email{
+  width: 80%;
+  height: 30px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 5px 0 5px 5px;
+}
+
+input.test_email:focus{
+  border: none;
+  outline: none;
+  border: 2px solid #2869D1;
+}
+
+input.test_email::placeholder{
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: gray;
+}
+

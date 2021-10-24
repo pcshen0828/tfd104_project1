@@ -1,0 +1,28 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./check.css";
+
+form{
+  align-items: flex-start;
+}
+
+input.test_name{
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  padding: 5px 0 5px 5px;
+}
+
+input.test_name:focus{
+  border: none;
+  outline: none;
+  border: 2px solid #2869D1;
+}
+
+input.test_name::placeholder{
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: gray;
+}
