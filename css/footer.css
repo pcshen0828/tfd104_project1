@@ -63,6 +63,15 @@ a.tibame_link:hover{
   text-decoration: underline;
 }
 
+a.reference{
+  color: #2869D1;
+  text-decoration: none;
+}
+
+a.reference:hover{
+  text-decoration: underline;
+}
+
 div.footer_rightside{
   width: 72%;
 }
@@ -123,7 +132,7 @@ div.footer_login_signup_block{
   padding: 0;
   margin-left: 10px;
 }
-
+ 
 div.container{
   margin-top: -16px;
   height: 100%;
