@@ -12,11 +12,12 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 div.parent_container{
   width: 1080px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   margin: 90px auto;
@@ -24,13 +25,13 @@ div.parent_container{
 }
 
 div.aside_left{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 60%;
 }
 
-div.title_area{
+/* div.title_area{
   border: 1px solid black;
-}
+} */
 
 div.article_title{
   font-size: 28px;
@@ -52,21 +53,90 @@ a.author_link{
   border-bottom: 1px solid black;
 }
 
-img.article_img{
+img.article_img, embed.article_img{
   width: 100%;
+  padding-top: 5px;
 }
 
 div.img_description{
   font-size: 14px;
   letter-spacing: 0.04em;
-  line-height: 160%;
+  line-height: 180%;
   padding: 10px 0;
+  color: #363B3F;
+}
+
+div.inner_title{
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+div.text_content{
+  font-size: 15px;
+  padding: 16px 0;
+  line-height: 200%;
+}
+
+div.inner_title{
+  padding: 40px 0 10px;
+}
+
+div.tags_container{
+  margin: 60px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+a.article_tag{
+  text-decoration: none;
+  color: black;
+  padding: 3px 18px 4px;
+  margin: 0 12px 12px 0;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+a.article_tag:hover{
+  background-color: #2869D1;
+  color: white;
+}
+
+div.test_slogan{
+  line-height: 180%;
+  margin-bottom: 25px;
+}
+
+a.test{
+  background-color: #2869D1;
+  padding: 6px 18px 8px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  text-align:center;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  width: 115px;
+}
+
+a.test:hover{
+  box-shadow: 1px 2px 2px 0px #00000040;
 }
 
 
+
 div.aside_right{
-  border: 1px solid blue;
-  width: 35%;
+  /* border: 1px solid blue; */
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 div.search_bar{
@@ -119,7 +189,7 @@ input[type="search"]:focus, input[type="search"]:active{
   background-color: #ECEDEF;
   border: none;
   color: #363B3F;
-}
+} 
 
 button.search_btn{
   border: none;
@@ -135,7 +205,7 @@ img.search{
 }
 
 div.tags_area{
-  border: 1px solid red;
+  /* border: 1px solid #363B3F; */
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -158,3 +228,266 @@ a.tag:hover{
   background-color: #2869D1;
   color: white;
 }
+
+a.all_cate{
+  text-decoration: none;
+  color: white;
+  width: 88%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+  padding: 0;
+  height: 30px;
+  margin-top: 10px;
+}
+
+div.all_cate{
+  background-color:#2869D1;
+  border-radius: 20px;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  padding: 3px 0;
+  letter-spacing: 0.1em;
+}
+
+
+div.block_title{
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  margin-top: 30px;
+}
+
+div.ad1, div.ad2, div.ad3{
+  margin-top: 30px;
+  /* border: 1px solid red; */
+  height: 270px;
+  width: 100%;
+}
+
+div.ad1{
+  background-image: url("../images/dream_story/shop.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.ad2{
+  background-image: url("../images/dream_story/sky.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.ad3{
+  background-image: url("../images/dream_story/overseas.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.bottom{
+  /* border: 1px solid red; */
+  height: 120px;
+  border-radius: 0 0 20px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 0 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.ttl{
+  color: #363B3F;
+  font-size: 24px;
+  letter-spacing: 0.3em;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #363B3F;
+  width: 63px;
+  font-weight: 700;
+}
+
+div.num{
+  margin-top: 10px;
+}
+
+a.enter{
+  color: #363B3F;
+  text-decoration: none;
+  width: 110px;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform: translate(185%, -90%); 
+}
+
+a.enter:hover{
+  background-color: #2869D1;
+  color: white;
+}
+
+div.more{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+a.more{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: 90px;
+  padding-bottom: 2px;
+}
+
+a.more:hover{
+  color: #2869D1;
+  border-bottom: 1px solid #2869D1;
+}
+
+div.stories{
+  width: 1080px;
+  margin: 60px auto 20px;
+  text-align: center;
+}
+
+div.youmay{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div.explore{
+  padding: 10px 0;
+}
+
+
+div.carousel{
+  width: 1080px;
+  /* border: 1px solid red; */
+  margin: 0 auto 60px;
+  display: flex;
+  overflow: hidden;
+}
+
+div.slide1, div.slide2, div.slide3, div.slide4, div.slide5, div.slide6{
+  margin: 30px 20px;
+  /* border: 1px solid red; */
+  height: 280px;
+  width: 320px;
+}
+
+a.story{
+  text-decoration: none;
+  color: black;
+}
+
+a.story:hover{
+  text-decoration: underline;
+}
+
+div.ttlpad{
+  /* border: 1px solid red; */
+  height: 120px;
+  border-radius: 0 0 20px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+
+div.slide1{
+  background-image: url("../images/dream_story/bookstore.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.slide2{
+  background-image: url("../images/dream_story/cafe.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.slide3{
+  background-image: url("../images/dream_story/road.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.slide4{
+  background-image: url("../images/dream_story/study.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.slide5{
+  background-image: url("../images/dream_story/team.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div.slide6{
+  background-image: url("../images/dream_story/table.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  vertical-align: bottom;
+  /* opacity: 0.5; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+
