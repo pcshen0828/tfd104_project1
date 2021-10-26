@@ -205,6 +205,10 @@ button.btn_dream_story:hover{
   border-bottom: 1px solid #2869D1;
 }
 
+button.btn_dream_story:focus{
+  outline: none;
+}
+
 
 div.cards_banner{
   background-image: linear-gradient(180deg, #F7CCC5 0%, rgba(60, 100, 177, 0.4) 100%);
@@ -293,7 +297,7 @@ img.article_img{
 
 a.act:hover div.hover_block{
   opacity: 1;
-}
+} 
 
 div.hover_block{
   width: 360px;

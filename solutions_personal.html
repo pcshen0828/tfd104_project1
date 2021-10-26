@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>set up | 方案 - 個人</title>
 
@@ -33,7 +30,7 @@
               </li>
               <li>
                 <div class="solution_block">
-                  <span class="now_page">方案</span>
+                  <span class="now_page triangle">方案</span>
                   <ul class="solution_list">
                     <li>
                       <a href="./solutions_personal.html">個人</a>
@@ -268,9 +265,9 @@
           <div class="feature_highlight">
             在 set up 個人介面，你可以自行選定介面配色，我們也為你準備了豐富的調色盤，依照你的心情與計畫性質，彈性運用。
           </div>
-          <button type="button" class="back_to_feature" id="go_back1">
+          <!-- <button type="button" class="back_to_feature" id="go_back1">
             <img src="./images/personal/angle-up.png" class="angle_up">
-          </button>
+          </button> -->
         </div>
         <div class="feature_img">
           <embed src="./images/personal/color.svg" class="personal_feature">
@@ -300,9 +297,9 @@
           <div class="feature_highlight2">
             第二步，依照計畫的項目需求，在 set up 內建的資料庫找到最適合你的圖表工具，開始一步步建構你的夢想計畫。
           </div> 
-          <button type="button" class="back_to_feature" id="go_back2">
+          <!-- <button type="button" class="back_to_feature" id="go_back2">
             <img src="./images/personal/angle-up.png" class="angle_up">
-          </button>
+          </button> -->
         </div>
       </div>
 
@@ -315,9 +312,9 @@
           <div class="feature_highlight">
             透過記錄並檢視你的目標實現過程，將有助於更加貼近了解自己，並為他人的前進道路點亮一座燈塔。
           </div>
-          <button type="button" class="back_to_feature" id="go_back3">
+          <!-- <button type="button" class="back_to_feature" id="go_back3">
             <img src="./images/personal/angle-up.png" class="angle_up">
-          </button>
+          </button> -->
         </div>
         <div class="feature_img">
           <embed src="./images/personal/record.svg" class="personal_feature">
@@ -582,6 +579,11 @@
     </footer>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <!-- 載入 jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -617,10 +619,8 @@
         });
 
       });
-    </script>
-
-    <script>
-    //分類點擊圓點更換圖片及文字
+    
+      //分類點擊圓點更換圖片及文字
       $(function(){
         $("button.btn_left").on("click", function(){
           $("div.layer1, div.layer2").removeClass("-on");
@@ -656,9 +656,7 @@
           }, 750);
         });
       });
-    </script>
-
-    <script>
+    
       $(function() {
         $(window).scroll(function() {
           if ($(this).scrollTop() > 720)  {          /* 要滑動到選單的距離 */
@@ -668,10 +666,7 @@
           }
         });
       });
-    </script>
-
-
-    <script>
+    
     //回到feature banner上方
       $(function(){
         $("#go_back1").on("click", function(e){
@@ -695,10 +690,7 @@
           }, 750);
         });
       });
-    </script>
-
-
-    <script>
+    
       //點擊了解更多按鈕，頁面直接跳到 feature highlight banner
       $(function(){
         $("#feature1").click(function(e){

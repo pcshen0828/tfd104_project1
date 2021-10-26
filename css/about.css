@@ -20,6 +20,7 @@ div.first_banner{
   width: 1080px;
   height: 505px;
   position: relative;
+  z-index: -1;
 }
 
 div.first_banner_title{
@@ -38,6 +39,7 @@ img.dreamer{
   left: 50%;
   top: 0;
   transform: translate(-50%, -9.7%);
+  z-index: -2;
 }
 
 div.mission_block{
@@ -125,14 +127,23 @@ a.tool_link{
 }
 
 div.go_signup{
-  border-top: 1px solid black;
-  width: 400px;
+  width: 1080px;
   margin: 30px auto 40px;
   padding: 40px 0;
   line-height: 3;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+div.go{
+  width: 400px;
+  border-top: 1px solid black;
+  padding-top: 30px;
+}
+ 
 button.btn_act{
   background-color: #2869D1;
   padding: 6px 18px 8px;
@@ -212,7 +223,7 @@ div.team_card_text{
 }
 
 div.learn_more{
-  width: 400px;
+  width: 1080px;
   margin: 30px auto 40px;
   padding: 40px 0;
   text-align: center;

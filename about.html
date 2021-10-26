@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>set up | 關於</title>
 
@@ -36,7 +33,7 @@
               </li>
               <li>
                 <div class="solution_block">
-                  方案
+                  <span class="triangle">方案</span>
                   <ul class="solution_list">
                     <li>
                       <a href="./solutions_personal.html">個人</a>
@@ -247,7 +244,7 @@
       </div>
 
       <div class="go_signup">
-        還沒加入嗎？<br>
+        <div class="go">還沒加入嗎？</div>
         <!-- 立即開始 -->
         <div class="container mt-3">
           <button type="button" class="btn btn-primary btn_act" data-toggle="modal" data-target="#myModal2">
@@ -402,7 +399,7 @@
               <a href="https://www.youtube.com/" class="social_media_link">
                 <embed src="./images/footer/youtube.png" class="social_media_logo">
               </a>
-            </div>
+            </div> 
 
             <div class="copyrights_statement">
               本網站為緯育TibaMe前端設計工程師班第72期學員專題作品，本平台僅供學習、展示之用。<br>
@@ -561,6 +558,9 @@
     </footer>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -573,9 +573,7 @@
           }, 750);
         });
       });
-    </script>
-
-    <script>
+    
       $(function() {
         $(window).scroll(function() {
           if ($(this).scrollTop() > 450)  {          /* 要滑動到選單的距離 */

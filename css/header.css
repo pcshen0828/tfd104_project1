@@ -27,7 +27,7 @@ span.now_page{
 
 header.header{
   /* margin: 0 auto; */
-  width: 100%;
+  min-width: 1200px;
   padding-top: 10px;
   background-color: rgba(255, 255, 255, 1);
   /* border-bottom: 1.5px solid #eeeeee; */
@@ -35,7 +35,7 @@ header.header{
 } 
 
 .navFixed{
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -45,6 +45,7 @@ header.header{
   transition: all 0.3s;
   width: 100%;
   margin: 0 auto; 
+  z-index: 10;
 }
 
 img.logo_img{
@@ -115,6 +116,10 @@ nav.nav > ul.nav_list > li > div.solution_block{
   padding: 5px 40px;
   position: relative;
   /* border: 1px solid red; */
+}
+
+span.triangle::after{
+  content: "▾";
 }
 
 nav.nav > ul.nav_list > li > div.solution_block:hover ul.solution_list{

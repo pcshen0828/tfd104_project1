@@ -5,9 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <title>set up | 社群 Community</title>
 
@@ -34,7 +31,7 @@
             </li>
             <li>
               <div class="solution_block">
-                方案
+                <span class="triangle">方案</span>
                 <ul class="solution_list">
                   <li>
                     <a href="./solutions_personal.html">個人</a>
@@ -427,7 +424,7 @@
   <div class="last_banner">
     <div class="last_slogan">找不到你想要的？自行打造理想中的夢想聚落</div>
     <!-- 立即加入 -->
-    <div class="container mt-3">
+    <div class="container mt-3 last">
       <button type="button" class="btn btn-primary btn_act" data-toggle="modal" data-target="#myModal2">
         立即加入
       </button>
@@ -516,7 +513,7 @@
                 <embed src="./images/footer/youtube.png" class="social_media_logo">
               </a>
             </div>
-
+ 
             <div class="copyrights_statement">
               本網站為緯育TibaMe前端設計工程師班第72期學員專題作品，本平台僅供學習、展示之用。<br>
               參考資源：<a href="https://tw.alphacamp.co/" class="reference">ALPHA Camp</a> | 
@@ -673,6 +670,11 @@
       </div>
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     //回到頂部
@@ -684,9 +686,7 @@
           }, 750);
         });
       });
-    </script>
-
-    <script>
+    
       $(function() {
         $(window).scroll(function() {
           if ($(this).scrollTop() > 720)  {          /* 要滑動到選單的距離 */
