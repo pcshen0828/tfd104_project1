@@ -9,7 +9,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
-}
+} 
 
 
 div.index_first_banner{
@@ -260,60 +260,25 @@ div.community_info_content{
   line-height: 200%;
 }
 
-div.community_carousel_container{
-  text-align: center;
+embed.img_slide{
+  width: 320px;
+}
+.carousel{
+  width: 100%;
   margin: 0 auto;
-  width: 1080px;
 }
-
-div.community_carousel{
-  /* border: 1px solid black; */
-  margin: 0 auto;
-  margin-bottom: 60px;
-  width: 1080px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-div.present_carousel{
-  overflow: hidden;
-  margin: 0 auto;
-  width: 1080px;
-}
-
-div.left_arrow, div.right_arrow{
-  width: 25px;
-  height: 25px;
-}
-
-div.left_arrow{
-  border-left: 10px solid #616870;
-  border-bottom: 10px solid #616870;
-  border-radius: 0 3px;
-  transform: rotate(45deg);
-}
-
-div.right_arrow{
-  border-right: 10px solid #616870;
-  border-bottom: 10px solid #616870;
-  border-radius: 0 3px;
-  transform: rotate(-45deg);
-}
-
-ul.carousel_slides{
-  list-style: none;
-  display: inline-flex;
-  justify-content: center;
+.carousel_box{
+  width: 360px;
+  margin: 0 20px;
   padding: 0;
 }
-
-li.slide{
-  margin: 0 10px;
+.carousel_container{
+  width: 1080px;
+  margin: 20px auto 60px;
 }
 
-embed.slide_item{
-  width: 320px;
+.slick-prev:before, .slick-next:before{
+color:#616870;
 }
 
 div.comments_banner{
