@@ -278,8 +278,10 @@ embed.img_slide{
 }
 
 .slick-prev:before, .slick-next:before{
-color:#616870;
-}
+  color: #616870;
+  display: block;
+  } 
+
 
 div.comments_banner{
   min-width: 1200px;
@@ -375,3 +377,4 @@ img.standing_bird{
   position: absolute;
   transform: translate(-270%, -15px);
 }
+
