@@ -13,7 +13,7 @@ body{
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
   letter-spacing: 0.04em;
-}
+} 
 
 div.parent_container{
   width: 1080px;
@@ -378,13 +378,39 @@ div.explore{
   padding: 10px 0;
 }
 
+div.carousel_container{
+  margin-bottom: 90px;
+}
+
+div.slick-list.draggable{
+  height: 400px;
+  /* border: 1px solid blue; */
+}
+
+ul.slick-dots{
+  display: block;
+  /* border: 1px solid red; */
+  height: 90px;
+  bottom: -30px;
+}
+
+.slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
+  color: #616870;
+  display: block;
+} 
+
+
+
 
 div.carousel{
   width: 1080px;
   /* border: 1px solid red; */
-  margin: 0 auto 60px;
+  margin: 0 auto;
   display: flex;
-  overflow: hidden;
+}
+
+div.slick-dotted.slick-initialized.slick-slider{
+  margin-bottom: 0;
 }
 
 div.slide1, div.slide2, div.slide3, div.slide4, div.slide5, div.slide6{
@@ -488,6 +514,7 @@ div.slide6{
   flex-direction: column;
   justify-content: flex-end;
 }
+
 
 
 
