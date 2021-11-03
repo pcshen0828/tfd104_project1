@@ -9,12 +9,13 @@
   <title>set up | 社群 Community</title>
 
   <link rel="stylesheet" href="./css/community.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
     </style>
 </head>
-
+ 
 <body>
 
   <header class="header dropdowns">
@@ -191,7 +192,7 @@
   </header>
 
 
-  <div class="left_dialog_container">
+  <div class="left_dialog_container" data-aos="fade-up-right" data-aos-duration="1000">
     <div class="left_dialog">
       <div class="dialog_title">
         噢，你也在這裡嗎？
@@ -202,7 +203,7 @@
     </div>
   </div>
   
-  <div class="right_dialog_container">
+  <div class="right_dialog_container" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500">
     <div class="right_dialog">
       <div class="dialog_title">
         加入 set up community，<br>創造更多夢想的可能！</div>
@@ -674,8 +675,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--載入aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script>
     //回到頂部
       $(function(){
@@ -696,6 +699,9 @@
           }
         });
       });
+
+      //載入aos
+      AOS.init();
     </script>
   
 </body>

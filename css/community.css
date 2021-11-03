@@ -11,15 +11,15 @@ body{
   font-family: 'Noto Sans TC', sans-serif;
   letter-spacing: 0.04em;
 }
-
+ 
 div.left_dialog_container{
   width: 1080px;
-  margin: 80px auto 0;
+  margin: 120px auto 0;
   display: flex;
   justify-content: flex-start;
   color: white;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 
@@ -45,7 +45,7 @@ div.right_dialog_container{
   display: flex;
   justify-content: flex-end;
   color: white;
-  z-index: -2;
+  z-index: 0;
 }
 
 div.right_dialog_container::after{
@@ -93,8 +93,8 @@ div.right_dialog{
 div.bridge_banner{
   width: 1080px;
   margin: -16px auto 10px;
-  position: relative;
-  left: 10%;
+  /* position: relative; */
+  /* left: 10%; */
 }
 
 div.bridge_title{
@@ -115,12 +115,14 @@ img.bike{
 div.bike_run{
   /* border: 1px solid red; */
   height: 220px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 div.line{
   border-bottom: 1px solid black;
-  min-width: 1200px;
   /* height: 400px; */
+  width: 100%;
   padding: 0;
   position: relative;
   top: -174.5px;
