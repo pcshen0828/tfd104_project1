@@ -277,7 +277,7 @@ embed.img_slide{
   margin: 20px auto 60px;
 }
 
-.slick-prev:before, .slick-next:before{
+.slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
   color: #616870;
   display: block;
   } 
