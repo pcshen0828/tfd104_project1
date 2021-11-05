@@ -28,6 +28,7 @@ div.social_media_block{
   padding: 20px 0 5px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 a.social_media_link{
@@ -73,7 +74,7 @@ a.reference:hover{
 }
 
 div.footer_rightside{
-  width: 72%;
+  width: 90%;
 }
 
 div.sitemap{
@@ -85,8 +86,8 @@ div.sitemap{
 div.sitemap_parent{
   font-weight: 700;
   text-align: center;
-  width: 140px;
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 25px;
 }
 
 div.sitemap_child{
@@ -123,7 +124,7 @@ a.footer_page_link:hover, a.footer_page_link_child:hover{
 }
 
 div.footer_login_signup_block{
-  width: 200px;
+  width: 40%;
   height: 60px;
   /* margin-right: 40px; */
   display: flex;
@@ -157,3 +158,71 @@ button.btn-footer-modal{
 button.btn-footer-modal:hover{
   border-bottom: 1px solid black;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  footer.footer, div.footer_container{
+    width: 100%;
+  }
+  div.footer_container{
+    flex-direction: column;
+    position: relative;
+    height: auto;
+  }
+
+  div.footer_leftside{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div.social_media_block{
+    padding: 0;
+  }
+
+  div.copyrights{
+    /* width: 100%; */
+    position: absolute;
+    top: 60px;
+  }
+
+  div.copyrights_statement{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+  }
+
+  div.footer_rightside{
+    width: 90%;
+    margin: 80px auto;
+    height: auto;
+  }
+  div.sitemap{
+    justify-content: flex-start;
+
+  }
+  div.sitemap_parent{
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+
+  }
+
+  div.sitemap_child{
+    display: flex;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+
+  }
+
+  div.footer_login_signup_block div.mt-3{
+    margin-right: 0;
+
+  }
+
+  div.footer_login_signup_block div.mt-3 button{
+    font-size: 14px;
+  }
+} 

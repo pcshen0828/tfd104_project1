@@ -186,6 +186,15 @@
         </div><!--nav_block結束-->
       </div><!--nav_container結束--> 
 
+      <!--漢堡按鈕-->
+      <div class="hamburger">
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
     </header>
 
     <div class="index_first_banner">
@@ -454,8 +463,12 @@
           </div>
         </div>
       </div>
-      <img src="./images/index/bird_stand.png" class="standing_bird">
+      <div class="bird_stand">
+        <img src="./images/index/bird_stand.png" class="standing_bird">
+      </div>
     </div>
+    
+    
 
     <img src="./images/top.png" id="go_top">
 
@@ -681,12 +694,32 @@
           dots: true,
           autoplay: true,
           autoplaySpeed: 2000,
-          // centerMode: true,
-          centerPadding: "0px",
           respondTo: "slider",
-          mobileFirst: true
+          // centerMode: true,
+          // centerPadding: '60px',
+          responsive:[
+            {breakpoint:1440, settings:{
+              slidesToShow:3,
+            }},
+            {breakpoint:768.98, settings:{
+              slidesToShow:2,
+            }},
+            {breakpoint:720, settings:{
+              slidesToShow:1,
+            }},
+          ],
         });
       });
+
+      // hamburger icon 的切換
+      
+      $(function(){
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+     
      
     </script>
 

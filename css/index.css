@@ -11,6 +11,11 @@ body{
   font-family: 'Noto Sans TC', sans-serif;
 } 
 
+img, embed{
+  max-width: 100%;
+}
+
+/*====== 首頁進場 banner ======*/
 
 div.index_first_banner{
   min-width: 1200px;
@@ -24,19 +29,19 @@ div.index_first_banner{
   justify-content: center;
   align-items: center;
 }
- 
-
 
 div.index_first_banner_content{
   /* border: 1px solid black; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 1080px;
+  width: 1200px;
 }
 
+
+
 div.index_first_banner_slogan, div.index_first_banner_introduction{
-  width: 480px;
+  width: 100%;
   padding: 10px 0;
   letter-spacing: 0.02em;
   /* border: 1px solid black; */
@@ -81,7 +86,7 @@ div.index_scroll_block{
   transform: translateY(-55%);
   display: flex;
   justify-content: center;
-  min-width: 1200px;
+  width: 100%;
 }
 
 img.scroll_down{
@@ -89,6 +94,30 @@ img.scroll_down{
 } 
 
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+  div.index_first_banner_content{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 60px;
+    text-align: center;
+  }
+  div.index_first_banner{
+    min-width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  div.index_scroll_block{
+    margin-top: 90px;
+  }
+
+  img.start{
+    display: none;
+  }
+
+}
+
+/*========= 步驟說明 =========*/
 
 div.steps_container{
   /* display: block; */
@@ -98,6 +127,7 @@ div.steps_container{
   width: 1080px;
   /* border: 1px solid red; */
 }
+
 
 div.steps_guide{
   /* text-align: left; */
@@ -139,8 +169,9 @@ div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_bloc
   margin-bottom: 60px;
   display:  inline-flex;
   justify-content: space-between;
-  width: 1080px;
+  width: 100%;
 }
+
 
 embed.step_img{
   width: 660px;
@@ -150,7 +181,7 @@ embed.step_img{
 div.each_step_intro{
   /* border: 1px solid blue; */
   text-align: left;
-  width: calc(100% - 660px);
+  width: 40%;
   padding: 0 25px;
 }
 
@@ -214,6 +245,110 @@ a.step_one_btn:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+  
+  div.steps_container{
+    width: 100%;
+  }
+
+  div.steps_guide{
+    width: 100%;
+    margin-top: 30px;
+  }
+  /*步驟一*/
+  div.step_one_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.step_one_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_one_block embed{
+    order: 2;
+  }
+  div.step_one_block div.mt-3{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*步驟二*/
+  div.step_two_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.step_two_block div.each_step_intro{
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    
+  }
+
+  /*步驟三*/
+  div.step_three_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.step_three_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_three_block embed{
+    order: 2;
+  }
+
+  /*步驟四*/
+  div.step_four_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.step_four_block div.each_step_intro{
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    
+  }
+
+  /*步驟五*/
+  div.step_five_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.step_five_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_five_block embed{
+    order: 2;
+  }
+
+  div.each_step_intro{
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  
+}
+
+
+/*====== 探索更多 ======*/
+
 div.steps_explore_block{
   /* border: 1px solid black; */
   padding-bottom: 8px;
@@ -229,6 +364,16 @@ div.steps_explore_block > div.steps_explore_info{
   letter-spacing: 0.04em;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+  div.steps_explore_block{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/*====== 加入社群 ======*/
+
 div.index_community{
   margin: 0 auto;
   width: 1080px;
@@ -238,7 +383,7 @@ div.index_community{
 div.community_info{
   text-align: center;
   display: block;
-  width: 1080px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -262,19 +407,32 @@ div.community_info_content{
 
 embed.img_slide{
   width: 320px;
+  min-width: 300px;
 }
 .carousel{
   width: 100%;
   margin: 0 auto;
 }
 .carousel_box{
-  width: 360px;
-  margin: 0 20px;
-  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 .carousel_container{
   width: 1080px;
   margin: 20px auto 60px;
+}
+
+.slcik-list.draggable{
+  width: 100%;
+  margin: 0 auto;
+}
+
+button.slick-prev.slick-arrow{
+  left: 0;
+}
+
+button.slick-next.slick-arrow{
+  right: 0;
 }
 
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
@@ -282,6 +440,32 @@ embed.img_slide{
   display: block;
   } 
 
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  div.index_community{
+    width: 100%;
+  }
+  div.community_info{
+    width: 100%;
+  }
+  div.community_info_title, div.community_info_content{
+    width: 80%;
+  }
+  div.carousel_container{
+    max-width: 100vw;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel_box{
+    margin: 0 auto;
+  }
+  /* embed.img_slide{
+    min-width: 320px;
+  } */
+
+}
+
+/*====== 夢想地圖 ======*/
 
 div.comments_banner{
   min-width: 1200px;
@@ -296,12 +480,10 @@ div.comments_banner{
 }
 
 div.index_comments{
-  /* border: 1px solid black; */
   width: 1080px;
 }
 
 div.index_comments_title, div.hear_their_comments{
-  /* border: 1px solid blue; */
   text-align: left;
   padding: 10px 0;
 }
@@ -310,6 +492,7 @@ div.index_comments_title{
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.1em;
+  width: 100%;
 }
 
 div.hear_their_comments{
@@ -341,11 +524,47 @@ a.comment_link:hover{
   background-color: #2869D1;
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  div.comments_banner{
+    min-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  div.index_comments{
+    width: 90%;
+    margin-top: 60px;
+  }
+  div.index_comments_title{
+    font-size: 24px;
+  }
+  div.comments_container_top{
+    margin-top: 40px;
+  }
+  div.comments_container_bottom{
+    margin-bottom: 40px;
+  }
+  div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  a.comment_link{
+    /* width: 80%; */
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+}
+
+/*====== 加入行列 ======*/
+
 div.index_bottom_block{
   /* border: 1px solid black; */
   width: 1080px;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 div.join_us_slogan{
@@ -372,9 +591,28 @@ button.btn-last:hover{
   color: white;
 }
 
-img.standing_bird{
-  width: 130px;
-  position: absolute;
-  transform: translate(-270%, -15px);
+div.bird_stand{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  transform: translateY(27%);
 }
 
+img.standing_bird{
+  width: 130px;
+  /* position: absolute; */
+  /* transform: translate(-270%, -15px); */
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  div.index_bottom_block{
+    width: 100%;
+  }
+  div.join_us_slogan{
+    font-size: 16px;
+  }
+  img.standing_bird{
+    width: 100px;
+  }
+}
