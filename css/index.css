@@ -116,7 +116,7 @@ div.steps_guide img.bird_guide, div.steps_intro{
 
 div.steps_guide img.bird_guide{
   height: 80px;
-  z-index: 5;
+  z-index: 2;
   position: relative;
 }
 
