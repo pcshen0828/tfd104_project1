@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body { 
+  padding: 0 !important 
+}
+
 #go_top{
   width: 50px;
   padding: 10px;
@@ -44,6 +48,7 @@ header.header{
   padding-top: 0;
   transition: all 0.3s;
   width: 100%;
+  min-width: 1200px;
   margin: 0 auto; 
   z-index: 10;
 }
