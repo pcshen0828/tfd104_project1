@@ -6,6 +6,9 @@
     font-weight: 400;
   }
   
+  .container{
+    opacity: 1;
+  }
   .modal-backdrop{
     z-index:2;
     width: 100%;
@@ -22,6 +25,7 @@
     border: none;
     height: 38px;
     width: 78px;
+    /* z-index: 1; */
   }
 
   button.btn-primary:active, button.btn-primary:focus{
@@ -66,7 +70,8 @@
   div.modal{
     box-shadow: 0 0 10px #ddd;
     border-radius: 20px;
-    padding: 0;
+    padding: 0 !important;
+    width: 100%;
   }
 
   
@@ -257,4 +262,35 @@
 
   #myModal1{
     padding: 0;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .modal-backdrop{
+      width: 100%;
+      height: 100%;
+      }
+    .modal.header.show{
+      height: 900%;
+      transform: translateY(-60%);
+    }
+    .modal-open{
+      width: 100%;
+      height: 100%;
+    }
+    img.logo_modal{
+      width: 100px;
+    }
+    .modal-content{
+      z-index: 10;
+      width: 100%;
+    }
+    div.modal-body form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+    }
+    input.modal_email, input.password, button.btn_signup, div.private_policies{
+      width: 100%;
+    }
   }

@@ -209,21 +209,21 @@ button.btn-footer-modal:hover{
   div.sitemap_parent{
     padding: 0;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
 
   }
 
   div.sitemap_child{
     display: flex;
     margin: 20px 0 0 0;
-    font-size: 12px;
+    font-size: 13px;
 
   }
 
   div.footer_solution_list{
     width: 80px;
   }
-
+ 
   div.footer_login_signup_block{
     margin: 0;
     flex-direction: column;
@@ -238,6 +238,6 @@ button.btn-footer-modal:hover{
   }
 
   div.footer_login_signup_block div.mt-3 button{
-    font-size: 12px;
+    font-size: 13px;
   }
 } 
