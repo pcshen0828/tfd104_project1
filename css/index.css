@@ -678,9 +678,9 @@ img.standing_bird{
   div.join_us_slogan{
     font-size: 16px;
   }
-  
 
   img.standing_bird{
     width: 100px;
+    transform: translateY(4px);
   }
 }
