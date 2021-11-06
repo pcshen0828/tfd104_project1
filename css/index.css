@@ -413,6 +413,10 @@ div.steps_explore_block > div.steps_explore_info{
     width: 100%;
     text-align: center;
     margin: 0 auto 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
