@@ -180,23 +180,26 @@ button.btn-footer-modal:hover{
 
   div.social_media_block{
     padding: 0;
+    position: absolute;
+    bottom: 30px;
   }
 
   div.copyrights{
-    /* width: 100%; */
+    width: 90%;
     position: absolute;
-    top: 60px;
+    bottom: 0px;
   }
 
   div.copyrights_statement{
     position: absolute;
-    bottom: 0;
+    bottom: -150px;
     width: 90%;
+    border-top: 1px solid black;
   }
-
+ 
   div.footer_rightside{
     width: 90%;
-    margin: 80px auto;
+    margin: 40px auto 80px;
     height: auto;
   }
   div.sitemap{
@@ -206,23 +209,35 @@ button.btn-footer-modal:hover{
   div.sitemap_parent{
     padding: 0;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
 
   }
 
   div.sitemap_child{
     display: flex;
     margin: 20px 0 0 0;
-    font-size: 14px;
+    font-size: 12px;
 
+  }
+
+  div.footer_solution_list{
+    width: 80px;
+  }
+
+  div.footer_login_signup_block{
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(-9.2px);
   }
 
   div.footer_login_signup_block div.mt-3{
     margin-right: 0;
-
+    text-align: center;
+    width: 60px;
   }
 
   div.footer_login_signup_block div.mt-3 button{
-    font-size: 14px;
+    font-size: 12px;
   }
 } 

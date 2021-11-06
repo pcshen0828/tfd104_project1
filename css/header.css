@@ -187,7 +187,17 @@ div.container{
   header.header{
     min-width: 100%;
     justify-content: space-between;
+    position: relative;
   }
+
+  a.logo_top{
+    margin-left: 5%;
+    width: 80%;
+  }
+  nav.nav, div.login_signup_block{
+    margin-right: 0;
+  }
+
   nav.nav, div.login_signup_block div.mt-3{
     display: none;
   }
@@ -199,5 +209,6 @@ div.container{
   }
   div.nav_parent{
     width: 100%;
+    /* border: 1px solid blue; */
   }
 } 
