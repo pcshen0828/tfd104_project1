@@ -210,32 +210,37 @@ div.step_direction{
   padding-bottom: 30px;
 }
 
-button.btn-secondary{
+button.step1{
   background-color: #2869D1;
   padding: 6px 20px 7px;
   border-radius: 8px;
   color: white;
   text-decoration: none;
-  letter-spacing: 0.04em;
   border: none;
-  margin-left: -15px;
   margin-top: -30px;
+  width: 120px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 
-button.btn-secondary:hover{
+button.step1:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
   background-color: #2869D1;
 }
 
-button.btn-secondary:active{
+button.step1:active{
   box-shadow: 1px 2px 2px 0px #00000040;
   background-color: #2869D1;
 }
 
 a.step_one_btn{
+  display: block;
+  width: 120px;
+  height: 40px;
   background-color: #2869D1;
-  padding: 6px 18px 8px;
+  padding: 7px 20px 7px;
   border-radius: 8px;
   color: white;
   text-decoration: none;
@@ -248,6 +253,7 @@ a.step_one_btn:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
 }
 
+/*====== 步驟 RWD ======*/
 @media screen and (min-width: 320px) and (max-width: 768px){
    
   div.steps_container{
@@ -256,7 +262,7 @@ a.step_one_btn:hover{
  
   div.steps_guide{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 5%;
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
@@ -282,7 +288,7 @@ a.step_one_btn:hover{
     height: auto;
   }
   div.step_one_block div.step_direction{
-    padding-bottom: 20px;
+    padding-bottom: 5%;
   }
   div.step_one_block embed{
     order: 2;
@@ -304,11 +310,11 @@ a.step_one_btn:hover{
   div.step_two_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     
   }
   div.step_two_block div.step_direction{
-    padding-bottom: 20px;
+    padding-bottom: 5%;
   }
 
   /*步驟三*/
@@ -327,7 +333,7 @@ a.step_one_btn:hover{
     order: 2;
   }
   div.step_three_block div.step_direction{
-    padding-bottom: 5px;
+    padding-bottom: 1%;
   }
 
   /*步驟四*/
@@ -341,11 +347,11 @@ a.step_one_btn:hover{
   div.step_four_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     
   }
   div.step_four_block div.step_direction{
-    padding-bottom: 5px;
+    padding-bottom: 1%;
   }
 
   /*步驟五*/
@@ -364,23 +370,22 @@ a.step_one_btn:hover{
     order: 2;
   }
   div.step_five_block div.step_direction{
-    padding-bottom: 5px;
+    padding-bottom: 1%;
   }
 
   div.each_step_intro{
-    margin-bottom: 16px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 30px;
+    margin-bottom: 8%;
   }
   div.step_title_eng{
-    padding-bottom: 10px;
+    padding-bottom: 3%;
   }  
   div.step_title_zh{
-    padding-bottom: 10px;
+    padding-bottom: 3%;
   }  
   
 }
@@ -407,6 +412,7 @@ div.steps_explore_block > div.steps_explore_info{
   div.steps_explore_block{
     width: 100%;
     text-align: center;
+    margin: 0 auto 15%;
   }
 }
 
@@ -627,7 +633,7 @@ div.join_us_slogan{
   letter-spacing: 0.1em;
 }
 
-button.btn-last{
+button.join{
   background-color: #2869D1;
   padding: 6px 18px 8px;
   border-radius: 8px;
@@ -637,9 +643,11 @@ button.btn-last{
   letter-spacing: 0.1em;
   font-size: 15px;
   margin-top: -20px;
+  width: 120px;
+
 }
 
-button.btn-last:hover{
+button.join:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
   color: white;
 }
@@ -658,6 +666,7 @@ img.standing_bird{
   /* transform: translate(-270%, -15px); */
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 768px){
   div.index_bottom_block{
     width: 100%;
@@ -665,6 +674,8 @@ img.standing_bird{
   div.join_us_slogan{
     font-size: 16px;
   }
+  
+
   img.standing_bird{
     width: 100px;
   }

@@ -5,97 +5,58 @@
     letter-spacing: 0.04em;
     font-weight: 400;
   }
+
+  button{
+    cursor: pointer;
+  }
   
-  .container{
-    opacity: 1;
-  }
-  .modal-backdrop{
-    z-index:2;
+  /*====== 登入介面彈窗 ======*/
+  /*暗掉滿版背景*/
+  div.login_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    }
- 
-  button.btn-primary{
-    background-color: #2869D1;
-    padding: 6px 20px 7px;
-    border-radius: 8px;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    border: none;
-    height: 38px;
-    width: 78px;
-    /* z-index: 1; */
-  }
-
-  button.btn-primary:active, button.btn-primary:focus{
-    border: none;
-    outline: none;
-  }
-
-  button.btn_login{
-    border: 1px solid black;
-    background: none;
-    color: black;
-    padding: 6px 15px 7px;
-    height: 38px;
-    width: 75px;
-  } 
-
-  button.btn_login:focus{
-    border: 1px solid black;
-    background: none;
-    color: black;
-    padding: 6px 15px 7px;
-    height: 38px;
-    width: 75px;
-    outline: none;
-  } 
-
-  button.btn-primary:hover{
-    box-shadow: 1px 2px 2px 0px #00000040;
-  }
-
-  button.btn-primary:focus, button.btn-primary:active{
-    outline: none;
-  }
-
-  button.btn_login:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-  }
-
-
-  div.modal{
-    box-shadow: 0 0 10px #ddd;
-    border-radius: 20px;
-    padding: 0 !important;
-    width: 100%;
-  }
-
-  
-
-  div.modal-dialog{
-    z-index: 30;
-  }
-
-  div.modal-content{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .7);
+    display: none;
+    z-index: 100;
     margin: 0 auto;
-    max-width: 100%;
   }
 
-  div.modal-header{
+  /*顯示區塊*/
+  div.modal-article{
+    background-color: white;
+    width: 60%;
+    height: 90vh;
+    /* min-height: 500px; */
+    max-width: 900px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
+  }
+
+  /*=== 內容部分 ===*/
+  div.modal-header, div.modal-body, div.modal-footer{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+  }
+
+  /*上層 header*/
+  div.modal-header{
     padding-top: 36px;
     height: 120px;
+    
   }
 
   img.logo_modal{
@@ -104,54 +65,30 @@
   }
 
   h4.modal-title{
-    font-size: 20px;
-    padding-top: 6px;
+    font-size: 18px;
   }
 
-  button.close{
+  button.btn_modal_login_close, .close{
     position: absolute;
     top: 10px;
     right: 10px;
-  }
-
-  button.close:focus{
-    border: none;
     outline: none;
+    border: none;
+    background: none;
+    font-size: 28px;
   }
 
-  div.other_login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  div.modal-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  div.private_policies{
-    text-align: left;
-    font-size: 12px;
-    color: gray;
-    letter-spacing: 0.04em;
-    padding: 12px 0;
-    position: relative;
-    left: -25px;
-  }
-
+  /*中層 body*/
   form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
   }
-
+  
   input.modal_email, input.password{
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
     padding-left: 10px;
     font-size: 14px;
@@ -163,40 +100,43 @@
   input.password{
     margin-bottom: 16px;
   }
-
+  
   input.modal_email:focus, input.password:focus{
     outline: none;
     border: 2px solid #2869D1;
   }
 
   button.btn_signup{
-    width: 400px;
+    width: 100%;
     outline: none;
     border: none;
     border-radius: 10px;
     background-color: #2869D1;
     color: white;
     padding: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
   }
 
   button.btn_signup:hover{
     box-shadow: 1px 2px 2px 0px #00000040;
   }
- 
+
   div.other_login{
     height: 180px;
-    width: 73%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   div.or{
-    font-size: 12px;
+    font-size: 14px;
     color: gray;
     letter-spacing: 0.04em;
     /* border: 1px solid blue; */
     padding-top: 10px;
+    text-align: center;
   }
 
   button.btn_other{
@@ -209,8 +149,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
-
+  
   button.btn_other:hover{
     background-color: #F7CCC5;
   }
@@ -220,77 +161,91 @@
     font-size: 14px;
     text-decoration: none;
   }
-
+  
   img.other_logo{
-    width: 16px;
+    width: 15px;
     position: absolute;
-    left: 19%;
+    left: 3%;
   }
 
+  /*底層 footer*/
   div.modal-footer{
     border-top: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
-    width: 333px;
-    margin: 0 auto;
-    padding-bottom: 20px;
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-direction: row;
+    align-items: center;
   }
 
   a.login_help{
     color: #2869D1;
   }
- 
-  button.btn_modal_close{
+
+  button.btn_open_signup, .inter_modal{
     outline: none;
     border: none;
     background: none;
     color: #2869D1;
     padding: 0;
     font-weight: 700;
+    font-size: 14px;
+    margin-left: 1%;
   }
 
-  button.btn-danger{
-    outline: none;
-    border: none;
-    background: none;
-    color: #2869D1;
-    padding: 0;
-    font-weight: 700;
+
+
+  /*====== 註冊介面彈窗 ======*/
+  /*暗掉滿版背景*/
+  div.signup_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .7);
+    display: none;
+    z-index: 100;
   }
 
-  #myModal1{
-    padding: 0;
+  /*顯示區塊*/
+  div.modal-article{
+    background-color: white;
+    width: 90%;
+    height: 90vh;
+    min-height: 500px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
   }
 
+  /*內容部分*/
+  div.modal-header, div.modal-body, div.modal-footer{
+    width: 100%;
+  }
+
+  div.private_policies{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+    padding: 12px 0;
+    padding-left: 10px;
+  }
+
+
+
+
+
+  /*====== RWD 行動版 ======*/
   @media screen and (min-width: 320px) and (max-width: 768px){
-    .modal-backdrop{
-      width: 100%;
-      height: 100%;
-      }
-    .modal.header.show{
-      height: 900%;
-      transform: translateY(-60%);
-    }
-    .modal-open{
-      width: 100%;
-      height: 100%;
-    }
-    img.logo_modal{
-      width: 100px;
-    }
-    .modal-content{
-      z-index: 10;
-      width: 100%;
-    }
-    div.modal-body form{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    form, div.other_login{
       width: 80%;
-    }
-    input.modal_email, input.password, button.btn_signup, div.private_policies{
-      width: 100%;
     }
   }
