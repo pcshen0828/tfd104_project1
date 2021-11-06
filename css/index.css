@@ -281,6 +281,9 @@ a.step_one_btn:hover{
     width: 90%;
     height: auto;
   }
+  div.step_one_block div.step_direction{
+    padding-bottom: 20px;
+  }
   div.step_one_block embed{
     order: 2;
   }
@@ -304,6 +307,9 @@ a.step_one_btn:hover{
     margin-bottom: 20px;
     
   }
+  div.step_two_block div.step_direction{
+    padding-bottom: 20px;
+  }
 
   /*步驟三*/
   div.step_three_block{
@@ -320,6 +326,9 @@ a.step_one_btn:hover{
   div.step_three_block embed{
     order: 2;
   }
+  div.step_three_block div.step_direction{
+    padding-bottom: 5px;
+  }
 
   /*步驟四*/
   div.step_four_block{
@@ -334,6 +343,9 @@ a.step_one_btn:hover{
     height: auto;
     margin-bottom: 20px;
     
+  }
+  div.step_four_block div.step_direction{
+    padding-bottom: 5px;
   }
 
   /*步驟五*/
@@ -351,12 +363,25 @@ a.step_one_btn:hover{
   div.step_five_block embed{
     order: 2;
   }
+  div.step_five_block div.step_direction{
+    padding-bottom: 5px;
+  }
 
   div.each_step_intro{
     margin-bottom: 16px;
     text-align: center;
+    margin-bottom: 10px;
   }
 
+  div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
+    margin-bottom: 30px;
+  }
+  div.step_title_eng{
+    padding-bottom: 10px;
+  }  
+  div.step_title_zh{
+    padding-bottom: 10px;
+  }  
   
 }
 
