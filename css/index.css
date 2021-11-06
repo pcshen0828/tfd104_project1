@@ -375,11 +375,11 @@ a.step_one_btn:hover{
 
   div.each_step_intro{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 8%;
+    margin-bottom: 5%;
   }
   div.step_title_eng{
     padding-bottom: 3%;
