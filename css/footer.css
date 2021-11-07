@@ -212,11 +212,12 @@ button.btn_footer:hover{
 
   div.copyrights_statement{
     position: absolute;
-    bottom: -160px;
+    bottom: -210px;
     left: 0;
     right: 0;
     width: 100%;
     border-top: 1px solid black;
+    font-size: 11px;
   }
  
   div.footer_rightside{
@@ -225,13 +226,13 @@ button.btn_footer:hover{
     height: auto;
   }
   div.sitemap{
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
   }
   div.sitemap_parent{
-    width: 20%;
     padding: 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 
   }
 
@@ -239,7 +240,7 @@ button.btn_footer:hover{
     display: flex;
     justify-content: center;
     margin: 20px 0 0 0;
-    font-size: 14px;
+    font-size: 12px;
 
   }
 
@@ -263,7 +264,7 @@ button.btn_footer:hover{
 
  
   button.btn_footer{
-    font-size: 14px;
+    font-size: 12px;
     border: none;
     background: none;
     color: black;
