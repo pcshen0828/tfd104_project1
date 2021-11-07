@@ -9,13 +9,17 @@ footer.footer{
 div.footer_container{
   width: 100%;
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 img.logo_footer{
   width: 80px; 
+}
+
+div.footer_leftside{
+  padding-left: 12px;
 }
 
 div.footer_leftside > div.copyrights{
@@ -80,22 +84,25 @@ div.footer_rightside{
 div.sitemap{
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 div.sitemap_parent{
   font-weight: 700;
   text-align: center;
-  width: 40%;
-  padding-left: 25px;
+  width: 18%;
 }
 
 div.sitemap_child{
   font-weight: 400;
   display: flex;
-  margin: 20px 0 0 34px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
   font-size: 15px;
 }
+
+
 
 div.footer_solutions_list{
   list-style: none;
@@ -124,99 +131,115 @@ a.footer_page_link:hover, a.footer_page_link_child:hover{
 }
 
 div.footer_login_signup_block{
-  width: 40%;
-  height: 60px;
-  /* margin-right: 40px; */
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0;
-  margin-left: 10px;
-}
- 
-div.container{
-  margin-top: -16px;
-  height: 100%;
-}
-
-div.footer-modal{
-  /* border: 1px solid red; */
-  width: 70px;
-  padding: 0;
-  margin: 0 16px 0 0;
-  text-align: right;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: -6.28px;
 }
 
 
-button.btn-footer-modal{
-  margin-top: -22px;
-  padding: 0 4px 2px;
-  border-radius: 0;
+button.btn_footer{
+  font-size: 16px;
+  border: none;
+  background: none;
+  color: black;
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
+  margin-bottom: 18px;
+  padding: 0 3px;
+  width: 46px;
+  height: 35px;
 }
 
-button.btn-footer-modal:hover{
+button.btn_footer:hover{
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
   border-bottom: 1px solid black;
+
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
-  footer.footer, div.footer_container{
-    width: 100%;
+
+ 
+
+
+
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+  footer.footer{
+    width: 90%;
   }
   div.footer_container{
     flex-direction: column;
     position: relative;
     height: auto;
+    width: 100%;
   }
 
   div.footer_leftside{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  img.logo_footer{
+    transform: translateX(-12px);
   }
 
   div.social_media_block{
     padding: 0;
     position: absolute;
-    bottom: 30px;
+    bottom: -15px;
+    left: 0;
+    right: 0;
   }
 
   div.copyrights{
-    width: 90%;
+    width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
+    left: 0;
+    right: 0;
   }
 
   div.copyrights_statement{
     position: absolute;
-    bottom: -45%;
-    width: 90%;
+    bottom: -40%;
+    left: 0;
+    right: 0;
+    width: 100%;
     border-top: 1px solid black;
   }
  
   div.footer_rightside{
-    width: 90%;
-    margin: 40px auto 80px;
+    width: 100%;
+    margin: 40px auto 60px;
     height: auto;
   }
   div.sitemap{
-    justify-content: flex-start;
-
+    justify-content: center;
   }
   div.sitemap_parent{
+    width: 20%;
     padding: 0;
-    text-align: left;
-    font-size: 13px;
+    text-align: center;
+    font-size: 14px;
 
   }
 
   div.sitemap_child{
     display: flex;
+    justify-content: center;
     margin: 20px 0 0 0;
-    font-size: 13px;
+    font-size: 14px;
 
   }
 
@@ -224,20 +247,81 @@ button.btn-footer-modal:hover{
     width: 80px;
   }
  
+  div.sitemap_child a.footer_page_link_child{
+    margin-left: 0;
+  }
+
   div.footer_login_signup_block{
+    width: 20%;
     margin: 0;
     flex-direction: column;
     justify-content: flex-start;
-    transform: translateY(-9.2px);
-  }
-
-  div.footer_login_signup_block div.mt-3{
-    margin-right: 0;
+    align-items: center;
     text-align: center;
-    width: 60px;
+    margin-top: -5.3px;
   }
 
-  div.footer_login_signup_block div.mt-3 button{
-    font-size: 13px;
+ 
+  button.btn_footer{
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
+  button.btn_footer:hover{
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+
   }
 } 
+
+
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+  footer.footer, div.footer_container{
+    width: 100%;
+  }
+
+  footer.footer{
+    padding: 0 20px;
+  }
+  
+
+  div.footer_login_signup_block{
+    width: 20%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: -5.3px;
+  }
+
+ 
+  button.btn_footer{
+    border: none;
+    background: none;
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
+  button.btn_footer:hover{
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+
+  }
+
+
+}
