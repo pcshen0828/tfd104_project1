@@ -212,7 +212,7 @@ button.btn_footer:hover{
 
   div.copyrights_statement{
     position: absolute;
-    bottom: -40%;
+    bottom: -160px;
     left: 0;
     right: 0;
     width: 100%;
@@ -258,7 +258,7 @@ button.btn_footer:hover{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin-top: -5.3px;
+    margin-top: -7.8px;
   }
 
  
