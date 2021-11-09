@@ -208,33 +208,45 @@
 
       <div class="feature_container" id="features">
         <div class="feature_leftside">
-          <div class="feature_title">生產力Up</div>
-          <img src="./images/personal/feature1.png" class="feature_img" loading="lazy">
-          <div class="feature_subtitle">愉悅、簡易、隨時隨地</div>
-          <div class="feature_content">
-            簡潔有力、直覺的操作介面設計，<br>創意流動不受限，打造愉悅的體驗，<br>讓你的生產力Up Up Up!
+          <div class="feature_align1">
+            <div class="feature_title">生產力Up</div>
+            <img src="./images/personal/feature1.png" class="feature_img" loading="lazy">  
           </div>
-          <button class="feature_btn1" id="feature1">了解更多</button>
+          <div class="feature_align2">
+            <div class="feature_subtitle">愉悅、簡易、隨時隨地</div>
+            <div class="feature_content">
+              簡潔有力、直覺的操作介面設計，<br class="-break">創意流動不受限，打造愉悅的體驗，<br class="-break">讓你的生產力Up Up Up!
+            </div>
+            <button class="feature_btn1" id="feature1">了解更多</button>
+          </div>  
         </div>
 
         <div class="feature_center">
-          <div class="feature_title">收藏更便利</div>
-          <img src="./images/personal/feature2.png" class="feature_img" loading="lazy">
-          <div class="feature_subtitle">最了解你的人永遠是自己</div>
-          <div class="feature_content">
-            沒有最好的方法，只有最適合自己的！<br>用你熟悉的分類方式收藏你的所有點子，<br>查找資料更便利快速。
+          <div class="feature_align1">
+            <div class="feature_title">收藏更便利</div>
+            <img src="./images/personal/feature2.png" class="feature_img" loading="lazy">  
           </div>
-          <button class="feature_btn2" id="feature2">了解更多</button>
+          <div class="feature_align2">
+            <div class="feature_subtitle">最了解你的人永遠是自己</div>
+            <div class="feature_content">
+              沒有最好的方法，只有最適合自己的！<br class="-break">用你熟悉的分類方式收藏你的所有點子，<br class="-break">查找資料更便利快速。
+            </div>
+            <button class="feature_btn2" id="feature2">了解更多</button>
+          </div>  
         </div>
 
         <div class="feature_rightside">
-          <div class="feature_title">社群分享</div>
-          <img src="./images/personal/feature3.png" class="feature_img" loading="lazy">
-          <div class="feature_subtitle">分享的快樂勝過獨自擁有</div>
-          <div class="feature_content">
-            將你達成個人目標的成就，<br>發布到 set up community 與大家分享，<br>你的快樂將成為他人前進的動力！
+          <div class="feature_align1">
+            <div class="feature_title">社群分享</div>
+            <img src="./images/personal/feature3.png" class="feature_img" loading="lazy">  
           </div>
-          <button class="feature_btn3" id="feature3">了解更多</button>
+          <div class="feature_align2">
+            <div class="feature_subtitle">分享的快樂勝過獨自擁有</div>
+            <div class="feature_content">
+              將你達成個人目標的成就，<br class="-break">發布到 set up community 與大家分享，<br class="-break">你的快樂將成為他人前進的動力！
+            </div>
+            <button class="feature_btn3" id="feature3">了解更多</button>
+          </div>  
         </div>
       </div>
     </div>
@@ -250,9 +262,6 @@
           <div class="feature_highlight">
             在 set up 個人介面，你可以自行選定介面配色，我們也為你準備了豐富的調色盤，依照你的心情與計畫性質，彈性運用。
           </div>
-          <!-- <button type="button" class="back_to_feature" id="go_back1">
-            <img src="./images/personal/angle-up.png" class="angle_up">
-          </button> -->
         </div>
         <div class="feature_img">
           <embed src="./images/personal/color.svg" class="personal_feature">
@@ -282,9 +291,6 @@
           <div class="feature_highlight2">
             第二步，依照計畫的項目需求，在 set up 內建的資料庫找到最適合你的圖表工具，開始一步步建構你的夢想計畫。
           </div> 
-          <!-- <button type="button" class="back_to_feature" id="go_back2">
-            <img src="./images/personal/angle-up.png" class="angle_up">
-          </button> -->
         </div>
       </div>
 
@@ -297,9 +303,6 @@
           <div class="feature_highlight">
             透過記錄並檢視你的目標實現過程，將有助於更加貼近了解自己，並為他人的前進道路點亮一座燈塔。
           </div>
-          <!-- <button type="button" class="back_to_feature" id="go_back3">
-            <img src="./images/personal/angle-up.png" class="angle_up">
-          </button> -->
         </div>
         <div class="feature_img">
           <embed src="./images/personal/record.svg" class="personal_feature">
@@ -328,7 +331,6 @@
           </div>
         </div>
 
-        <div class="right_container"></div>
       </div>
 
     </div>
@@ -485,29 +487,7 @@
         });
       });
     
-    //回到feature banner上方
-      $(function(){
-        $("#go_back1").on("click", function(e){
-          e.preventDefault();
-          $('html, body').animate({
-            scrollTop:$("#features").offset().top
-          }, 750);
-        });
-
-        $("#go_back2").on("click", function(e){
-          e.preventDefault();
-          $('html, body').animate({
-            scrollTop:$("#features").offset().top
-          }, 750);
-        });
-
-        $("#go_back3").on("click", function(e){
-          e.preventDefault();
-          $('html, body').animate({
-            scrollTop:$("#features").offset().top
-          }, 750);
-        });
-      });
+    
     
       //點擊了解更多按鈕，頁面直接跳到 feature highlight banner
       $(function(){

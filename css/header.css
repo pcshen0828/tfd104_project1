@@ -169,7 +169,7 @@ nav.nav > ul.nav_list > li > div.solution_block > ul.solution_list > li > a:hove
   border-radius: 5px;
   text-decoration: underline;
 }
- 
+  
 
 
 /*====== 登入註冊區塊 ======*/
@@ -243,13 +243,14 @@ button.btn_modal_login{
   nav.nav{
     margin: 0;
     width: 100%;
-    height: 450px;
+    height: 100vh;
     /* border: 1px solid red; */
     top: 0;
     display: flex;
     flex-direction: column;
     text-align: right;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(40, 105, 209, 0.5) 348.45%);
+    background: rgba(255, 255, 255, 0.9);;
+    /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(40, 105, 209, 0.5) 348.45%); */
     position: absolute;
   }
 

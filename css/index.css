@@ -21,7 +21,8 @@ img, embed{
 
 div.index_first_banner{
   min-width: 1200px;
-  height: 570px;
+  height: 90vh;
+  min-height: 540px;
   margin: 0 auto;
   padding-top: 16px;
   background-image: linear-gradient(180deg, rgba(238, 238, 238, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
@@ -50,8 +51,8 @@ div.index_first_banner_slogan, div.index_first_banner_introduction{
 }
 
 img.start{
-  width: 600px;
-  height: 450px;
+  width: 560px;
+  height: 420px;
 }
 
 div.index_first_banner_slogan{
@@ -64,6 +65,10 @@ div.index_first_banner_introduction{
   font-size: 14px;
   padding-top: 20px;
   padding-bottom: 36px;
+}
+
+br.-break{
+  display: none;
 }
 
 a.btn_action{
@@ -96,21 +101,75 @@ img.scroll_down{
 } 
 
 
-/*====== 行動版 RWD | 320px ~ 768px ======*/
-@media screen and (min-width: 320px) and (max-width: 767.98px){
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
   div.index_first_banner_content{
     width: 100%;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 0px;
     text-align: center;
   }
   div.index_first_banner{
     min-width: 100%;
     flex-direction: column;
-    height: auto;
+    /* height: auto; */
+    height: 70vh;
   }
   div.index_first_banner_slogan{
-    font-size: 32px;
+    font-size: 26px;
+  }
+  div.index_first_banner_introduction{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 12px 36px;
+    font-size: 14px;
+  }
+
+  br.-break{
+    display: block;
+  }
+
+  div.index_scroll_block{
+    margin-top: 0px;
+  }
+
+  img.scroll_down{
+    width: 60px;
+  }
+
+  img.start{
+    display: none;
+  }
+  
+
+}  
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+  div.index_first_banner_content{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+  }
+  div.index_first_banner{
+    min-width: 100%;
+    flex-direction: column;
+    /* height: auto; */
+    height: 70vh;
+  }
+  div.index_first_banner_slogan{
+    font-size: 28px;
+  }
+  div.index_first_banner_introduction{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  br.-break{
+    display: none;
   }
 
   div.index_scroll_block{
@@ -123,13 +182,15 @@ img.scroll_down{
 
 } 
 
+
 /*====== 行動版 RWD | 768px ~ 1200px ======*/
 @media screen and (min-width: 768px) and (max-width: 1199.98px){
 
   div.index_first_banner{
     min-width: 100%;
-    height: 500px;
+    height: 90vh;
     margin: 0;
+    
   }
 
   div.index_first_banner_content{
@@ -137,10 +198,14 @@ img.scroll_down{
   }
 
   div.banner_leftside{
-    width: 50%;
+    width: 60%;
   }
   div.index_first_banner_slogan{
     font-size: 34px;
+  }
+
+  br.-break{
+    display: none;
   }
 
   img.start{
@@ -290,9 +355,9 @@ a.step_one_btn:hover{
 }
 
 /*====== 步驟 RWD ======*/
-/*====== 行動版 RWD | 320px ~ 768px ======*/
-@media screen and (min-width: 320px) and (max-width: 768px){
-   
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
   div.steps_container{
     width: 100%;
   }
@@ -303,14 +368,12 @@ a.step_one_btn:hover{
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
-    min-width: 320px;
-    transform: translateX(-10%);
+    /* min-width: 320px; */
+    /* transform: translateX(-10%); */
   }
-  img.bird_guide{
-    height: 60px; 
-  }
+  
 
   /*步驟一*/
   div.step_one_block div.each_step_intro{
@@ -328,6 +391,10 @@ a.step_one_btn:hover{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+  }
+  button.step1{
+
+    margin-top: 0;
   }
 
   /*步驟二*/
@@ -381,6 +448,9 @@ a.step_one_btn:hover{
   div.each_step_intro{
     text-align: center;
     margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
@@ -390,12 +460,144 @@ a.step_one_btn:hover{
     justify-content: center;
     align-items: center;
   }
-  div.step_title_eng{
+  div.step_title_eng, div.step_title_zh{
     padding-bottom: 3%;
+    font-size: 24px;
   }  
-  div.step_title_zh{
+
+  div.step_direction{
+    font-size: 14px;
+  }
+
+  div.steps_guide div.steps_intro{
+    font-size: 14px;
+    width: 100%;
+  }
+  img.bird_guide{
+    width: 50px; 
+    height: 50px !important;
+    flex-shrink: 0;
+  }
+
+}  
+
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+   
+  div.steps_container{
+    width: 100%;
+  }
+ 
+  div.steps_guide{
+    width: 100%;
+    margin-top: 5%;
+    justify-content: space-between;
+  }
+  div.steps_guide div.steps_intro{
+    font-size: 15px;
+    width: 100%;
+    /* min-width: 320px; */
+    /* transform: translateX(-10%); */
+  }
+ 
+
+  
+
+  /*步驟一*/
+  div.step_one_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_one_block div.step_direction{
+    padding-bottom: 5%;
+  }
+  div.step_one_block embed{
+    order: 2;
+  }
+  div.step_one_block div.mt-3{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  button.step1{
+
+    margin-top: 0;
+  }
+
+  /*步驟二*/
+  div.step_two_block div.each_step_intro{
+    width: 90%;
+    height: auto;
+    margin-bottom: 5%;
+    
+  }
+  div.step_two_block div.step_direction{
+    padding-bottom: 5%;
+  }
+
+  /*步驟三*/
+  div.step_three_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_three_block embed{
+    order: 2;
+  }
+  div.step_three_block div.step_direction{
+    padding-bottom: 1%;
+  }
+
+  /*步驟四*/
+  div.step_four_block div.each_step_intro{
+    width: 90%;
+    height: auto;
+    margin-bottom: 5%;
+    
+  }
+  div.step_four_block div.step_direction{
+    padding-bottom: 1%;
+  }
+
+  /*步驟五*/
+  div.step_five_block div.each_step_intro{
+    order: 1;
+    width: 90%;
+    height: auto;
+  }
+  div.step_five_block embed{
+    order: 2;
+  }
+  div.step_five_block div.step_direction{
+    padding-bottom: 1%;
+  }
+
+  div.each_step_intro{
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.step_title_eng, div.step_title_zh{
     padding-bottom: 3%;
+    font-size: 24px;
   }  
+
+  div.step_direction{
+    font-size: 14px;
+  }
+  
   
 }
 
@@ -523,6 +725,10 @@ div.community_info_content{
   line-height: 200%;
 }
 
+br.-break1{
+  display: none;
+}
+
 embed.img_slide{
   width: 320px;
   min-width: 300px;
@@ -563,8 +769,9 @@ button.slick-next.slick-arrow{
   } 
 
 
-  /*====== 行動版 RWD | 320px ~ 768px ======*/  
-  @media screen and (min-width: 320px) and (max-width: 768px){
+  /*====== 行動版 RWD | 320px ~ 414px ======*/
+  @media screen and (min-width: 320px) and (max-width: 413.98px){
+
     div.index_community{
       width: 100%;
     }
@@ -574,6 +781,91 @@ button.slick-next.slick-arrow{
     div.community_info_title, div.community_info_content{
       width: 80%;
     }
+
+    div.community_info_title{
+      font-size: 24px;
+    }
+
+    div.community_info_content{
+      font-size: 14px;
+    }
+
+    br.-break1{
+      display: block;
+    }
+
+    div.carousel_container{
+      max-width: 100vw;
+      width: 100%;
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+    .carousel_box{
+      margin: 0 auto;
+    }
+
+    embed.img_slide{
+      max-width: 360px;
+    }
+  }  
+
+  /*====== 行動版 RWD | 414px ~ 570px ======*/  
+  @media screen and (min-width: 414px) and (max-width: 569.98px){
+
+    div.index_community{
+      width: 100%;
+    }
+    div.community_info{
+      width: 100%;
+    }
+    div.community_info_title, div.community_info_content{
+      width: 80%;
+    }
+
+    div.community_info_title{
+      font-size: 26px;
+    }
+
+    br.-break1{
+      display: block;
+    }
+
+    div.carousel_container{
+      max-width: 100vw;
+      width: 100%;
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+    .carousel_box{
+      margin: 0 auto;
+    }
+
+    embed.img_slide{
+      max-width: 360px;
+    }
+
+  }
+
+  /*====== 行動版 RWD | 570px ~ 768px ======*/  
+  @media screen and (min-width: 570px) and (max-width: 767.98px){
+    div.index_community{
+      width: 100%;
+    }
+    div.community_info{
+      width: 100%;
+    }
+    div.community_info_title, div.community_info_content{
+      width: 80%;
+    }
+
+    div.community_info_title{
+      font-size: 26px;
+    }
+
+    br.-break1{
+      display: none;
+    }
+
     div.carousel_container{
       max-width: 100vw;
       width: 100%;
@@ -616,7 +908,9 @@ button.slick-next.slick-arrow{
     }
   }
   
-  /*====== 夢想地圖 ======*/
+
+
+  /*====== 夢想地圖 回饋與評價 ======*/
   
   div.comments_banner{
     min-width: 1200px;
@@ -675,9 +969,51 @@ button.slick-next.slick-arrow{
     background-color: #2869D1;
   }
   
+
+
+  /*====== 行動版 RWD | 320px ~ 414px ======*/
+  @media screen and (min-width: 320px) and (max-width: 413.98px){
+
+    div.comments_banner{
+      min-width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    div.index_comments{
+      width: 90%;
+      margin-top: 60px;
+    }
+    div.index_comments_title{
+      font-size: 24px;
+    }
+
+    div.hear_their_comments{
+      font-size: 14px;
+    }
+
+    div.comments_container_top{
+      margin-top: 40px;
+    }
+    div.comments_container_bottom{
+      margin-bottom: 40px;
+    }
+    div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+    a.comment_link{
+      /* width: 80%; */
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+  }  
   
-  /*====== 行動版 RWD | 320px ~ 768px ======*/  
-  @media screen and (min-width: 320px) and (max-width: 767.98px){
+  /*====== 行動版 RWD | 414px ~ 768px ======*/  
+  @media screen and (min-width: 414px) and (max-width: 767.98px){
     div.comments_banner{
       min-width: 100%;
       height: auto;
@@ -810,6 +1146,8 @@ button.slick-next.slick-arrow{
     }
     div.join_us_slogan{
       font-size: 16px;
+      width: 90%;
+      margin: 0 auto;
     }
     
     img.standing_bird{
