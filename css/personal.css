@@ -9,8 +9,8 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
+  overflow: hidden;
   overflow-y: scroll;
-  overflow-x: auto;
 }
 
 img, embed{
@@ -381,8 +381,11 @@ button.feature_btn1:focus, button.feature_btn2:focus, button.feature_btn3:focus{
 }
 
 
-/*====== 行動版 RWD | 660px ~ 1080px ======*/
-@media screen and (min-width: 660px) and (max-width: 1079.98px){
+/*====== 行動版 RWD | 660px ~ 890px ======*/
+@media screen and (min-width: 660px) and (max-width: 889.98px){
+  br.-break{
+    display: none;
+  }
 
   div.personal_feature_block{
     margin: 0 auto 60px;
@@ -429,7 +432,7 @@ button.feature_btn1:focus, button.feature_btn2:focus, button.feature_btn3:focus{
   div.feature_title{
     transform: translateY(0);
     order: 2;
-    font-size: 28px;
+    font-size: 22px;
     width: 80%;
     min-width: 150px;
     text-align: left;
@@ -458,14 +461,89 @@ button.feature_btn1:focus, button.feature_btn2:focus, button.feature_btn3:focus{
   button.feature_btn1, button.feature_btn2, button.feature_btn3{
     margin-top: 30px;
   }
-  
 
 }
 
-@media screen and (min-width: 660px) and (max-width: 890px){
-  br.-break{
-    display: none;
+
+/*====== 行動版 RWD | 890px ~ 1080px ======*/
+@media screen and (min-width: 890px) and (max-width: 1079.98px){
+  
+  div.personal_feature_block{
+    margin: 0 auto 60px;
+    width: 100%;
   }
+
+  div.personal_feature_slogan{
+    width: 100%;
+  }
+
+  div.feature_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.feature_leftside, div.feature_center, div.feature_rightside{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  div.feature_align1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  div.feature_align2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  div.feature_title{
+    transform: translateY(0);
+    order: 2;
+    font-size: 24px;
+    width: 80%;
+    min-width: 150px;
+    text-align: left;
+  }
+
+  div.feature_subtitle{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  div.feature_content{
+    padding: 0;
+    transform: translateY(0);
+    width: 70%;
+    font-size: 15px;
+  }
+
+  div.feature_highlight{
+    font-size: 15px;
+  }
+
+  img.feature_img{
+    min-width: 180px;
+    order: 1;
+  }
+
+  button.feature_btn1, button.feature_btn2, button.feature_btn3{
+    margin-top: 30px;
+  }
+
 }
 
 
