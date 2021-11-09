@@ -351,7 +351,7 @@ button.feature_btn1:focus, button.feature_btn2:focus, button.feature_btn3:focus{
   }
 
   div.feature_leftside, div.feature_center, div.feature_rightside{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     width: 100%;
   }
 
@@ -434,6 +434,11 @@ button.feature_btn1:focus, button.feature_btn2:focus, button.feature_btn3:focus{
     padding: 0;
     transform: translateY(0);
     width: 70%;
+    font-size: 14px;
+  }
+
+  div.feature_highlight{
+    font-size: 14px;
   }
 
   img.feature_img{
