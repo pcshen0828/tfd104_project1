@@ -59,8 +59,8 @@ div.personal_interface_block{
 div.shift_btn{
   /* border: 1px solid black; */
   text-align: left;
-  width: 70%;
-  /* margin: 0 auto; */
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   z-index: 0;
@@ -109,6 +109,7 @@ button.btn1.-on, button.btn2.-on, button.btn3.-on{
 div.personal_slides_container{
   z-index: 1;
   position: relative;
+  width: 90%;
 }
 
 div.content1, div.content2, div.content3{
@@ -127,8 +128,8 @@ div.content1.-on, div.content2.-on, div.content3.-on{
 }
 
 embed.personal_slide{
-  width: 90%;
-  max-width: 920px;
+  width: 100%;
+  /* max-width: 920px; */
 }
 
 
@@ -160,9 +161,7 @@ embed.personal_slide{
     padding: 10px 10px 20px;
   }
 
-  embed.personal_slide{
-    width: 90%;
-  }
+  
 
 }
 
@@ -188,10 +187,7 @@ embed.personal_slide{
     /* width: 28%; */
   }
 
-  embed.personal_slide{
-    width: 90%;
-  }
-
+  
 }
 
 
@@ -207,7 +203,6 @@ embed.personal_slide{
     width: 80%;
     max-width: 996px;
     position: relative;
-    transform: translateX(40px);
   }
 
 }
