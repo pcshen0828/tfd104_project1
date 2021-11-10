@@ -173,27 +173,29 @@
     </div>
   </header>
 
-
-  <div class="left_dialog_container" data-aos="fade-up-right" data-aos-duration="1000">
-    <div class="left_dialog">
-      <div class="dialog_title">
-        噢，你也在這裡嗎？
+  <div class="dialog_container">
+    <div class="left_dialog_container" data-aos="fade-up-right" data-aos-duration="1000">
+      <div class="left_dialog">
+        <div class="dialog_title">
+          噢，你也在這裡嗎？
+        </div>
+        <div class="dialog_text">
+          超過 200,000 名使用者在 set up community 交流彼此的創意點子
+        </div>
       </div>
-      <div class="dialog_text">
-        超過 200,000 名使用者在 set up community 交流彼此的創意點子
+    </div>
+    
+    <div class="right_dialog_container" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
+      <div class="right_dialog">
+        <div class="dialog_title">
+          加入 set up community，<br>創造更多夢想的可能！</div>
+        <div class="dialog_text">
+          實現夢想，誰說一定得單打獨鬥
+        </div>
       </div>
     </div>
   </div>
   
-  <div class="right_dialog_container" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500">
-    <div class="right_dialog">
-      <div class="dialog_title">
-        加入 set up community，<br>創造更多夢想的可能！</div>
-      <div class="dialog_text">
-        實現夢想，誰說一定得單打獨鬥
-      </div>
-    </div>
-  </div>
 
   <div class="bridge_banner">
     <div class="bridge_title">社群 Community</div>
@@ -207,10 +209,9 @@
 
   <div class="intro_banner">
     <div class="intro_content">
-      <img src="./images/community/scroll.png" class="scroll_down">
       <div class="intro_title">瀏覽 > 建立 > 分享互動 > 創造連結</div>
       <div class="intro_text">
-        在 set up community 線上尋找靈感，遇見同行的旅伴。<br>夢想，別再一個人獨自奮戰！
+        在 set up community 線上尋找靈感，遇見同行的旅伴。<br class="-break">夢想，別再一個人獨自奮戰！
       </div>
     </div> 
   </div>
@@ -232,10 +233,10 @@
     </div>
 
     <div class="process_banner">
-      <div class="banner_img">
+      <div class="banner_img rwd_img">
         <embed src="./images/community/create.svg" class="commu" loading="lazy">
       </div>  
-      <div class="banner_text">
+      <div class="banner_text rwd_text">
         <div class="process_title">Create：建立你的夢想筆記</div>
         <div class="process_text">
           在實踐夢想的路上，記錄沿途走過的風景，抒發經驗、感想與心得，發布到社群與大家分享。
@@ -262,10 +263,10 @@
     </div>
 
     <div class="process_banner">
-      <div class="banner_img">
+      <div class="banner_img rwd_img">
         <embed src="./images/community/link.svg" class="commu" loading="lazy">
       </div>  
-      <div class="banner_text">
+      <div class="banner_text rwd_text">
         <div class="process_title">Link：加入聚落，創造連結</div>
         <div class="process_text">
           一個夢想，可以點亮另一個夢想。在 set up community 夢想家聚落，與志同道合的夥伴們一起交流學習，匯聚彼此的力量，邁開前進的步伐，創造無遠弗屆的連結。
@@ -286,7 +287,7 @@
 
     <div class="dreamers_circle">
       
-        <div class="circle_block">
+        <div class="circle_block rwd1">
         <a href="" class="mtn commu_link">  
           <div class="mtn">
             <div class="title_wh">登山</div>
@@ -311,7 +312,7 @@
         
       </div>  
 
-      <div class="circle_block">
+      <div class="circle_block rwd2">
         <a href="" class="code commu_link">  
           <div class="code">
             <div class="title_bl">程式</div>
@@ -348,7 +349,7 @@
       </div>  
 
        
-      <div class="circle_block">
+      <div class="circle_block rwd3">
         <a href="" class="shop commu_link">  
           <div class="shop">
             <div class="title_wh">開店創業</div>
@@ -373,7 +374,7 @@
         
       </div>
       
-      <div class="circle_block">
+      <div class="circle_block rwd4">
         <a href="" class="soc commu_link">  
           <div class="soc">
             <div class="title_bl">社會設計</div>
@@ -407,13 +408,7 @@
   <div class="last_banner">
     <div class="last_slogan">找不到你想要的？自行打造理想中的夢想聚落</div>
     <!-- 立即加入 -->
-    <div class="container mt-3 last">
-      <button type="button" class="btn btn-primary btn_act" data-toggle="modal" data-target="#myModal2">
-        立即加入
-      </button>
-    
-      
-    </div>
+    <button class="btn_modal_signup join">立即加入</button>
   </div>
   
 
@@ -512,8 +507,67 @@
         });
       });
 
-      //載入aos
+      // hamburger icon 的切換
+      
+      $(function(){
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+
+      $(function(){
+  
+        // 點擊漢堡按鈕，導覽列縮放
+        $("button.hamburger").on("click", function(){
+          $("nav.nav, div.login_signup_block").fadeToggle();
+        });
+      });  
+
+      $(function(){
+        // 開啟 登入 Modal彈跳視窗
+        $("button.btn_modal_login").on("click", function(){
+          $("div.login_overlay").fadeIn();
+        });
+        
+        // 關閉 登入 Modal彈跳視窗
+        $("button.btn_modal_login_close").on("click", function(){
+          $("div.login_overlay").fadeOut();
+        });
+
+        // 開啟 註冊 Modal彈跳視窗
+        $("button.btn_modal_signup").on("click", function(){
+          $("div.signup_overlay").fadeIn();
+        });
+        
+        // 關閉 註冊 Modal彈跳視窗
+        $("button.btn_modal_signup_close").on("click", function(){
+          $("div.signup_overlay").fadeOut();
+        });
+      });
+
+      
+      //bike-run
+
+      $(window).on("load", function(){
+        $(window).scroll(function(e){
+          e.preventDefault();
+          let scrollTop = $(window).scrollTop();
+          let anchor = $("div.right_dialog").offset().top;
+          //console.log(scrollTop);
+          console.log(anchor);
+          if(scrollTop > anchor){
+            $("img.bike").addClass("-ani");
+          };
+        });
+      });
+
+
+      //載入aos，對話框特效
       AOS.init();
+
+
+      
     </script>
   
 </body>

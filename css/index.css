@@ -62,7 +62,7 @@ div.index_first_banner_slogan{
 
 div.index_first_banner_introduction{
   line-height: 250%;
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 20px;
   padding-bottom: 36px;
 }
@@ -123,7 +123,7 @@ img.scroll_down{
     width: 100%;
     margin: 0 auto;
     padding: 20px 12px 36px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   br.-break{
@@ -165,7 +165,7 @@ img.scroll_down{
   div.index_first_banner_introduction{
     width: 100%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   br.-break{
@@ -173,7 +173,7 @@ img.scroll_down{
   }
 
   div.index_scroll_block{
-    margin-top: 90px;
+    margin-top: 20px;
   }
 
   img.start{
@@ -466,11 +466,11 @@ a.step_one_btn:hover{
   }  
 
   div.step_direction{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   div.steps_guide div.steps_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
   }
   img.bird_guide{
@@ -595,7 +595,7 @@ a.step_one_btn:hover{
   }  
 
   div.step_direction{
-    font-size: 14px;
+    font-size: 16px;
   }
   
   
@@ -787,7 +787,7 @@ button.slick-next.slick-arrow{
     }
 
     div.community_info_content{
-      font-size: 14px;
+      font-size: 16px;
     }
 
     br.-break1{
@@ -989,7 +989,7 @@ button.slick-next.slick-arrow{
     }
 
     div.hear_their_comments{
-      font-size: 14px;
+      font-size: 15px;
     }
 
     div.comments_container_top{
@@ -1007,7 +1007,7 @@ button.slick-next.slick-arrow{
     a.comment_link{
       /* width: 80%; */
       margin-bottom: 25px;
-      font-size: 14px;
+      font-size: 15px;
     }
 
   }  

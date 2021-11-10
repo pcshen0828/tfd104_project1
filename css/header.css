@@ -343,6 +343,19 @@ button.btn_modal_login{
 }
 
 
+/*====== 防止第三方套件（e.g. hamburger）在標籤上設定 display: none 優先權問題 ======*/
+@media screen and (min-width: 768px){
+
+  nav.nav{
+    display: block !important;
+  }
+
+  div.login_signup_block{
+    display: flex !important;
+  }
+}
+
+
 /*====== 行動版 RWD | 768px ~ 1200px ======*/
 @media screen and (min-width: 768px) and (max-width: 1199.98px){
 
@@ -371,6 +384,7 @@ button.btn_modal_login{
   nav.nav{
     width: 48%;
     /* min-width: 320px; */
+    display: block !important;
   }
 
   ul.nav_list li{
@@ -389,6 +403,7 @@ button.btn_modal_login{
     width: 23%;
     justify-content: center;
     padding-bottom: 10px;
+    display: flex !important;
   }
 
   button.btn_modal_login, button.btn_modal_signup{

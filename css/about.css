@@ -239,7 +239,7 @@ button.start{
   text-decoration: none;
   text-align:center;
   letter-spacing: 0.1em;
-  font-size: 15px;
+  font-size: 16px;
   width: 115px;
 }
 
@@ -264,7 +264,7 @@ button.start:hover{
   }
 
   div.mission_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 81%;
   }
 
@@ -291,10 +291,11 @@ button.start:hover{
   div.card_title{
     font-size: 26px;
     width: 100%;
+    margin-top: 20px;
   }
 
   div.card_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -327,7 +328,7 @@ button.start:hover{
   }
 
   div.mission_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 87%;
   }
 
@@ -357,13 +358,15 @@ button.start:hover{
   }
 
   div.card_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
   div.go_signup{
     width: 100%;
     margin-top: -20px;
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 
   div.go{
@@ -388,7 +391,7 @@ button.start:hover{
   }
 
   div.mission_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 87%;
   }
 
@@ -414,7 +417,7 @@ button.start:hover{
   }
 
   div.card_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -445,7 +448,7 @@ button.start:hover{
   }
 
   div.mission_intro{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   div.brand_feature_block{
@@ -470,7 +473,7 @@ button.start:hover{
   }
 
   div.card_text{
-    font-size: 15px;
+    font-size: 16px;
     width: 75%;
   }
 
@@ -578,7 +581,7 @@ a.hr_src{
   }
 
   div.team_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -612,7 +615,7 @@ a.hr_src{
   }
 
   div.team_card_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
     bottom: 40px;
   }
@@ -640,7 +643,7 @@ a.hr_src{
   }
 
   div.team_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -673,7 +676,7 @@ a.hr_src{
   }
 
   div.team_card_text{
-    font-size: 15px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -683,7 +686,7 @@ a.hr_src{
   }
 
   a.hr_src{
-    font-size: 14px;
+    font-size: 16px;
   }
 
 }
@@ -700,7 +703,7 @@ a.hr_src{
   }
 
   div.team_intro{
-    font-size: 14px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -729,7 +732,7 @@ a.hr_src{
   }
 
   div.team_card_text{
-    font-size: 15px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -755,7 +758,7 @@ a.hr_src{
   }
 
   div.team_intro{
-    font-size: 15px;
+    font-size: 16px;
   }
  
   div.team_feature_block{
@@ -788,7 +791,7 @@ a.hr_src{
   }
 
   div.team_card_text{
-    font-size: 15px;
+    font-size: 16px;
     width: 83%;
   }
 
@@ -836,6 +839,7 @@ input.follow{
   height: 40px;
   border-radius: 30px;
   border: none;
+  font-size: 16px;
 }
 
 input.follow::placeholder{
@@ -862,7 +866,7 @@ button.sub_btn{
   border-radius: 8px;
   text-align:center;
   letter-spacing: 0.1em;
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 30px;
 }
 

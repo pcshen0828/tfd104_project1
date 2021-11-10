@@ -10,11 +10,32 @@ body{
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
   letter-spacing: 0.04em;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+
+img, embed{
+  max-width: 100%;
 }
   
+
+/*====== 互動對話框 ======*/
+
+div.dialog_container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 120px auto 0px;
+  height: 450px;
+}
+
 div.left_dialog_container{
-  width: 1080px;
-  margin: 120px auto 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: flex-start;
   color: white;
@@ -38,10 +59,10 @@ div.left_dialog_container::after{
 }
 
 div.right_dialog_container{
-  width: 1080px;
-  margin: 0 auto;
-  position: relative;
-  top: -50px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 25%;
   display: flex;
   justify-content: flex-end;
   color: white;
@@ -65,7 +86,7 @@ div.right_dialog_container::after{
 
 div.left_dialog{
   background-color: #2869D1;
-  width: 530px;
+  width: 49%;
   height: 200px;
   border-radius: 20px 20px 20px 0;
   padding: 30px;
@@ -84,17 +105,110 @@ div.dialog_text{
 
 div.right_dialog{
   background-color: #F24D2E;
-  width: 530px;
+  width: 49%;
   height: 200px;
   border-radius: 20px 20px 0 20px;
   padding: 30px;
 }
 
+
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+
+  div.dialog_container{
+    margin-top: 60px;
+  }
+
+  div.left_dialog, div.right_dialog{
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+  }
+
+  div.left_dialog{
+    padding-top: 40px;
+  }
+
+  div.left_dialog_container, div.right_dialog_container{
+    align-items: center;
+  }
+
+  div.right_dialog_container{
+    top: 220px;
+  }
+
+  div.left_dialog_container::after{
+    margin-bottom: -20px;
+  }
+
+  div.right_dialog_container::after{
+    margin-bottom: -20px;
+  }
+
+  div.dialog_title{
+    font-size: 20px;
+  }
+
+  div.dialog_text{
+    font-size: 16px;
+  }
+    
+}
+
+@media screen and (min-width: 468px) and (max-width: 767.98px){
+
+  div.dialog_container{
+    margin-top: 80px;
+  }
+
+  div.left_dialog, div.right_dialog{
+    width: 80%;
+    height: 200px;
+    padding: 30px;
+  }
+
+
+   div.dialog_title{
+    font-size: 24px;
+  }
+
+  div.dialog_text{
+    font-size: 15px;
+  }
+    
+}
+
+/*====== 行動版 RWD | 768px ~ 960px ======*/
+@media screen and (min-width: 768px) and (max-width: 959.98px){
+
+  div.dialog_container{
+    flex-direction: column;
+  }
+
+  div.right_dialog_container{
+    top: 210px;
+  }
+
+  div.left_dialog, div.right_dialog{
+    width: 450px;
+  }
+
+  div.dialog_title{
+    font-size: 26px;
+  }
+
+
+}  
+
+
+
+
+
+/*====== 會動的腳踏車 ======*/
+
 div.bridge_banner{
-  width: 1080px;
-  margin: -16px auto 10px;
-  /* position: relative; */
-  /* left: 10%; */
+  width: 90%;
+  margin: -60px auto 40px;
 }
 
 div.bridge_title{
@@ -106,31 +220,86 @@ div.bridge_text{
   padding: 16px 0;
 }
 
-img.bike{
-  width: 350px;
-  position: relative;
-  top: -50px;
-}
 
 div.bike_run{
-  /* border: 1px solid red; */
-  height: 220px;
-  min-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  font-size: 0;
+  position: relative;
 }
+
+img.bike{
+  width: 150px;
+}
+
+/*=== bike run 動畫效果 ===*/
+img.bike.-ani{
+  animation-name: bike_run;
+  animation-duration: 3s;
+}
+
+@keyframes bike_run {
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: 100vw;
+  }
+}
+
 
 div.line{
   border-bottom: 1px solid black;
-  /* height: 400px; */
   width: 100%;
-  padding: 0;
-  position: relative;
-  top: -174.5px;
 }
 
+
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
+  div.bridge_banner{
+    margin-top: 0;
+  }
+
+  div.bridge_title{
+    font-size: 24px;
+  }
+
+  img.bike{
+    width: 80px;
+  }
+
+
+}  
+
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+
+  div.bridge_banner{
+    margin-top: 0;
+  }
+
+  div.bridge_title{
+    font-size: 24px;
+  }
+
+  img.bike{
+    width: 120px;
+  }
+
+
+}  
+
+
+
+
+
+/*====== 社群介紹 intro ======*/
+
 div.intro_banner{
-  width: 1080px;
-  margin: 20px auto 130px;
+  width: 90%;
+  margin: 60px auto 120px;
 }
 
 div.intro_content{
@@ -141,10 +310,6 @@ div.intro_content{
   align-items: center;
 }
 
-img.scroll_down{
-  width: 80px;
-}
-
 div.intro_title{
   font-size: 28px;
   font-weight: 700;
@@ -152,24 +317,29 @@ div.intro_title{
   margin-top: 40px;
 }
 
+
+
 div.intro_text{
   line-height: 200%;;
 }
 
+
 div.process_container{
-  width: 1080px;
+  width: 90%;
   margin: 0 auto;
 }
 
 div.process_banner{
-  width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 60px;
 }
 
 div.banner_text{
-  padding: 10px;
+  padding: 0 10px 10px;
+  width: 50%;
 }
 
 div.process_title{
@@ -183,13 +353,94 @@ div.process_text{
   margin-bottom: 16px;
 }
 
+div.banner_img{
+  width: 48%;
+}
+
 embed.commu{
-  width: 700px;
+  width: 100%;
 }
 
 
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+  div.intro_banner{
+    margin-bottom: 50px;
+  }
+  
+  div.intro_title{
+    font-size: 24px;
+  }  
+  div.intro_text{
+    font-size: 16px;
+  }
+  
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+  div.intro_banner{
+    margin-bottom: 70px;
+  }
+  
+  div.intro_title{
+    font-size: 24px;
+  }  
+  div.intro_text{
+    font-size: 16px;
+  }
+
+  br.-break{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+
+  div.process_banner{
+    flex-direction: column;
+  }
+  div.banner_text{
+    width: 100%;
+    text-align: center;
+  }
+
+  div.banner_img{
+    width: 100%;
+  }
+
+  div.rwd_text{
+    order: 1;
+  }
+
+  div.rwd_img{
+    order: 2;
+  }
+
+  div.process_title{
+    font-size: 20px;
+    position: relative;
+  }
+
+  div.process_title::after{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+
+}
+
+
+/*====== 夢想家聚落 ======*/
+
+
 div.dreamers_block{
-  width: 1080px;
+  width: 90%;
   margin: 100px auto 30px;
   text-align: center;
 }
@@ -205,12 +456,12 @@ div.block_text{
 }
 
 div.dreamers_circle{
-  width: 1080px;
+  width: 90%;
   margin: 0 auto 60px;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid black; */
+  border: 1px solid red;
 }
 
 div.circle_block{
@@ -527,78 +778,281 @@ div.travel_hover{
   transition: opacity .3s;
 }
 
+@media screen and (any-hover: hover){
 
-a.mtn:hover div.mtn_hover{
-  opacity: 1;
+  a.mtn:hover div.mtn_hover{
+    opacity: 1;
+  }
+  
+  a.mtn:hover div.mtn{
+    opacity: 0;
+  }
+  
+  a.edu:hover div.edu_hover{
+    opacity: 1;
+  }
+  
+  a.edu:hover div.edu{
+    opacity: 0;
+  }
+  
+  a.code:hover div.code_hover{
+    opacity: 1;
+  }
+  
+  a.code:hover div.code{
+    opacity: 0;
+  }
+  
+  a.music:hover div.music_hover{
+    opacity: 1;
+  }
+  
+  a.music:hover div.music{
+    opacity: 0;
+  }
+  
+  a.lan:hover div.lan_hover{
+    opacity: 1;
+  }
+  
+  a.lan:hover div.lan{
+    opacity: 0;
+  }
+  
+  a.shop:hover div.shop_hover{
+    opacity: 1;
+  }
+  
+  a.shop:hover div.shop{
+    opacity: 0;
+  }
+  
+  a.build:hover div.build_hover{
+    opacity: 1;
+  }
+  
+  a.build:hover div.build{
+    opacity: 0;
+  }
+  
+  a.soc:hover div.soc_hover{
+    opacity: 1;
+  }
+  
+  a.soc:hover div.soc{
+    opacity: 0;
+  }
+  
+  a.travel:hover div.travel_hover{
+    opacity: 1;
+  }
+  
+  a.travel:hover div.travel{
+    opacity: 0;
+  }
 }
 
-a.mtn:hover div.mtn{
-  opacity: 0;
+@media screen and (any-pointer: coarse){
+
+  a.mtn:hover div.mtn_hover{
+    opacity: 1;
+  }
+  
+  a.mtn:hover div.mtn{
+    opacity: 0;
+  }
+  
+  a.edu:hover div.edu_hover{
+    opacity: 1;
+  }
+  
+  a.edu:hover div.edu{
+    opacity: 0;
+  }
+  
+  a.code:hover div.code_hover{
+    opacity: 1;
+  }
+  
+  a.code:hover div.code{
+    opacity: 0;
+  }
+  
+  a.music:hover div.music_hover{
+    opacity: 1;
+  }
+  
+  a.music:hover div.music{
+    opacity: 0;
+  }
+  
+  a.lan:hover div.lan_hover{
+    opacity: 1;
+  }
+  
+  a.lan:hover div.lan{
+    opacity: 0;
+  }
+  
+  a.shop:hover div.shop_hover{
+    opacity: 1;
+  }
+  
+  a.shop:hover div.shop{
+    opacity: 0;
+  }
+  
+  a.build:hover div.build_hover{
+    opacity: 1;
+  }
+  
+  a.build:hover div.build{
+    opacity: 0;
+  }
+  
+  a.soc:hover div.soc_hover{
+    opacity: 1;
+  }
+  
+  a.soc:hover div.soc{
+    opacity: 0;
+  }
+  
+  a.travel:hover div.travel_hover{
+    opacity: 1;
+  }
+  
+  a.travel:hover div.travel{
+    opacity: 0;
+  }
 }
 
-a.edu:hover div.edu_hover{
-  opacity: 1;
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
+  div.dreamers_circle{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  div.circle_block{
+    width: 90%;
+  }
+
+  div.rwd1{
+    order: 4;
+  }
+
+  div.rwd2{
+    order: 1;
+  }
+
+  div.rwd3{
+    order: 2;
+  }
+
+  div.rwd4{
+    order: 1;
+  }
+
+  a.shop{
+    margin-top: 80px;
+    transform: translateX(0%);
+  }
+
 }
 
-a.edu:hover div.edu{
-  opacity: 0;
+@media screen and (min-width: 414px) and (max-width: 599.98px){
+
+  div.dreamers_circle{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  div.circle_block{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  div.rwd1{
+    order: 4;
+  }
+
+  div.rwd2{
+    order: 1;
+  }
+
+  div.rwd3{
+    order: 2;
+  }
+
+  div.rwd4{
+    order: 1;
+  }
+
+  a.shop{
+    margin-top: 80px;
+    transform: translateX(0%);
+  }
+
 }
 
-a.code:hover div.code_hover{
-  opacity: 1;
+@media screen and (min-width: 600px) and (max-width: 767.98px){
+
+  div.dreamers_circle{
+    flex-direction: column;
+    width: 90%;
+  }
+
+  div.circle_block{
+    flex-direction: row;
+    width: 90%;
+  }
+
+  div.rwd1{
+    order: 4;
+  }
+
+  div.rwd2{
+    order: 3;
+  }
+
+  div.rwd3{
+    order: 1;
+  }
+
+  div.rwd4{
+    order: 2;
+  }
+
+  a.shop{
+    margin-top: 80px;
+    transform: translateX(0%);
+  }
+
 }
 
-a.code:hover div.code{
-  opacity: 0;
+
+@media screen and (min-width: 768px) and (max-width: 1099.98px){
+
+  div.dreamers_circle{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  div.circle_block{
+    width: 50%;
+  }
 }
 
-a.music:hover div.music_hover{
-  opacity: 1;
-}
 
-a.music:hover div.music{
-  opacity: 0;
-}
-
-a.lan:hover div.lan_hover{
-  opacity: 1;
-}
-
-a.lan:hover div.lan{
-  opacity: 0;
-}
-
-a.shop:hover div.shop_hover{
-  opacity: 1;
-}
-
-a.shop:hover div.shop{
-  opacity: 0;
-}
-
-a.build:hover div.build_hover{
-  opacity: 1;
-}
-
-a.build:hover div.build{
-  opacity: 0;
-}
-
-a.soc:hover div.soc_hover{
-  opacity: 1;
-}
-
-a.soc:hover div.soc{
-  opacity: 0;
-}
-
-a.travel:hover div.travel_hover{
-  opacity: 1;
-}
-
-a.travel:hover div.travel{
-  opacity: 0;
-}
+/*====== 探索更多 ======*/
 
 div.more_info_block{
   margin: 0 auto 60px;
@@ -623,18 +1077,32 @@ div.last_banner{
 }
 
 div.last_slogan{
-  padding-left: 15px;
+  margin-bottom: 20px;
 }
 
-div.last{
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
+button.join{
+  width: 120px;
 }
 
-button.btn_act{
-  width: 110px;
-}
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+
+  div.more_info_block, div.last_banner{
+    width: 90%;
+  }
+
+
+}  
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+
+  div.more_info_block, div.last_banner{
+    width: 90%;
+  }
+
+
+}  
+
+
 
 
 
