@@ -79,7 +79,7 @@ a.btn_action{
   text-decoration: none;
   text-align:center;
   letter-spacing: 0.1em;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a.btn_action:hover{
@@ -320,7 +320,7 @@ button.step1{
   border: none;
   margin-top: -30px;
   width: 120px;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   font-family: 'Noto Sans TC', sans-serif;
 }
@@ -347,7 +347,7 @@ a.step_one_btn{
   text-decoration: none;
   text-align:center;
   letter-spacing: 0.1em;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a.step_one_btn:hover{
@@ -368,7 +368,7 @@ a.step_one_btn:hover{
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     /* min-width: 320px; */
     /* transform: translateX(-10%); */
@@ -467,6 +467,7 @@ a.step_one_btn:hover{
 
   div.step_direction{
     font-size: 16px;
+    padding: 10px;
   }
 
   div.steps_guide div.steps_intro{
@@ -495,14 +496,12 @@ a.step_one_btn:hover{
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     /* min-width: 320px; */
     /* transform: translateX(-10%); */
   }
  
-
-  
 
   /*步驟一*/
   div.step_one_block div.each_step_intro{
@@ -596,6 +595,7 @@ a.step_one_btn:hover{
 
   div.step_direction{
     font-size: 16px;
+    padding: 10px;
   }
   
   
@@ -640,7 +640,7 @@ div.steps_container{
   }
 
   div.step_direction{
-    font-size: 15px;
+    font-size: 16px;
   }
 
 }
@@ -1113,7 +1113,7 @@ button.slick-next.slick-arrow{
     text-decoration: none;
     text-align:center;
     letter-spacing: 0.1em;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: -20px;
     width: 120px;
     
@@ -1134,8 +1134,6 @@ button.slick-next.slick-arrow{
   
   img.standing_bird{
     width: 130px;
-    /* position: absolute; */
-    /* transform: translate(-270%, -15px); */
   }
   
 
