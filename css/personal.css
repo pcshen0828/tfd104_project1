@@ -114,7 +114,7 @@ div.personal_slides_container{
 div.content1, div.content2, div.content3{
   position: absolute;
   top: 0;
-  left: 80px;
+  /* left: 80px; */
   opacity: 0;
   z-index: -4;
   transition: opacity .5s;

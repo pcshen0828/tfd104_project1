@@ -12,7 +12,7 @@ body{
   overflow: hidden;
   overflow-y: scroll;
 } 
-
+  
 img, embed{
   max-width: 100%;
 }
