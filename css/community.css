@@ -677,6 +677,7 @@ div.travel_hover{
   transition: opacity .3s;
 }
 
+
 @media screen and (any-hover: hover){
 
   a.mtn:hover div.mtn_hover{
@@ -735,12 +736,13 @@ div.travel_hover{
   }
 }
 
+
 .-hide{
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .-appear{
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 

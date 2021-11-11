@@ -289,10 +289,10 @@
       
         <div class="circle_block rwd1">
         <a href="#" class="mtn commu_link">  
-          <div class="mtn">
+          <div class="mtn front">
             <div class="title_wh">登山</div>
           </div>
-          <div class="mtn_hover">
+          <div class="mtn_hover back">
             <div class="hover_text">
               我們是一群喜愛自然，尊重自然的登山者，一起探索山的奧秘！
             </div>
@@ -300,10 +300,10 @@
         </a> 
         
         <a href="#" class="edu commu_link">  
-          <div class="edu">
+          <div class="edu front">
             <div class="title_bl">偏鄉教育</div>
           </div>
-          <div class="edu_hover">
+          <div class="edu_hover back">
             <div class="hover_text">
               從台灣的偏鄉教育出發，我們致力於縮減教學資源的城鄉差距，打造專門為鄉村設計的永續教學系統，目標是讓更多學子能夠因教育而受惠。歡迎加入我們！
             </div>
@@ -314,10 +314,10 @@
 
       <div class="circle_block rwd2">
         <a href="#" class="code commu_link">  
-          <div class="code">
+          <div class="code front">
             <div class="title_bl">程式</div>
           </div> 
-          <div class="code_hover">
+          <div class="code_hover back">
             <div class="hover_text">
               用程式碼，做點不一樣的事！
             </div>
@@ -325,10 +325,10 @@
         </a>  
         
         <a href="#" class="music commu_link">  
-          <div class="music">
+          <div class="music front">
             <div class="title_wh">音樂創作</div>
           </div>  
-          <div class="music_hover">
+          <div class="music_hover back">
             <div class="hover_text">
               探索各種形式的創作，在這裡我們用音樂說話。
             </div>
@@ -336,10 +336,10 @@
         </a>  
         
         <a href="#" class="lan commu_link">    
-          <div class="lan">
+          <div class="lan front">
             <div class="title_wh">語言學習</div>
           </div>
-          <div class="lan_hover">
+          <div class="lan_hover back">
             <div class="hover_text">
               學習語言就從日常對話開始！在這裡，我們定期舉辦20+個國家的語言交換聚會，以及文化交流晚餐、週五電影夜等活動，come and join us!
             </div>
@@ -351,10 +351,10 @@
        
       <div class="circle_block rwd3">
         <a href="#" class="shop commu_link">  
-          <div class="shop">
+          <div class="shop front">
             <div class="title_wh">開店創業</div>
           </div> 
-          <div class="shop_hover">
+          <div class="shop_hover back">
             <div class="hover_text">
               如果你也夢想擁有一間自己的店舖，快來學習如何從撰寫創業計畫開始，到真正營運實體空間、打造自己的USP，永續經營顧客關係，開店再也不只是夢！
             </div>
@@ -362,10 +362,10 @@
         </a>  
         
         <a href="#" class="build commu_link">   
-          <div class="build">
+          <div class="build front">
             <div class="title_bl">社區營造</div>
           </div>
-          <div class="build_hover">
+          <div class="build_hover back">
             <div class="hover_text">
               團隊運用自身所學，從計畫開始，一步步建構社區營造藍圖
             </div>
@@ -376,10 +376,10 @@
       
       <div class="circle_block rwd4">
         <a href="#" class="soc commu_link">  
-          <div class="soc">
+          <div class="soc front">
             <div class="title_bl">社會設計</div>
           </div>   
-          <div class="soc_hover">
+          <div class="soc_hover back">
             <div class="hover_text">
               以解決問題的角度出發，用創新的設計方法讓社會更美好！
             </div>
@@ -387,10 +387,10 @@
         </a>  
         
         <a href="#" class="travel commu_link"> 
-          <div class="travel">
+          <div class="travel front">
             <div class="title_wh">旅行</div>
           </div>
-          <div class="travel_hover">
+          <div class="travel_hover back">
             <div class="hover_text">
               旅行，沒有邊界。視線所及的地方，都是可以抵達的目標。
             </div>
@@ -566,10 +566,21 @@
       //載入aos，對話框特效
       AOS.init();
 
-      
-      $('body').on('touchstart', function() {
-        
-      });
+    
+      //夢想聚落行動版互動規劃
+      if(window.innerWidth <= 768){
+        let commu_el = document.getElementsByClassName("commu_link");
+        for(let i = 0; i < commu_el.length; i++){
+          commu_el[i].addEventListener("click", function(e){
+            e.preventDefault();
+            //console.log(this); //點擊到的那個 a 標籤
+            let front_el = this.querySelector("div.front");
+            let back_el = this.querySelector("div.back");
+            front_el.classList.toggle("-hide");
+            back_el.classList.toggle("-appear");
+          })
+        }
+      };
 
       
     </script>
