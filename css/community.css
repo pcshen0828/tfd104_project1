@@ -739,12 +739,10 @@ div.travel_hover{
 
 .-hide{
   opacity: 0 !important;
-  transition: opacity 0s;
 }
 
 .-appear{
   opacity: 1 !important;
-  transition: opacity 0s;
 }
 
 
