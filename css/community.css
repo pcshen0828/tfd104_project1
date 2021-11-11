@@ -677,7 +677,7 @@ div.travel_hover{
   transition: opacity .3s;
 }
 
-div.front, div.back{
+div.front, div.back, a.commu_link{
   border-radius: 50%;
 }
 
