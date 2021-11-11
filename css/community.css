@@ -677,6 +677,10 @@ div.travel_hover{
   transition: opacity .3s;
 }
 
+div.front, div.back{
+  border-radius: 50%;
+}
+
 
 @media screen and (any-hover: hover){
 
