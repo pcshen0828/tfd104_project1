@@ -13,7 +13,6 @@ body{
   /* overflow: hidden; */
   overflow-y: scroll;
 }
-
 img, embed{
   max-width: 100%;
 }
@@ -30,7 +29,6 @@ div.dialog_container{
   margin: 120px auto 0px;
   height: 450px;
 }
-
 div.left_dialog_container{
   width: 100%;
   position: absolute;
@@ -42,8 +40,6 @@ div.left_dialog_container{
   position: relative;
   z-index: 1;
 }
-
-
 div.left_dialog_container::after{
   content: "";
 	position: absolute;
@@ -57,7 +53,6 @@ div.left_dialog_container::after{
 	border-left: 0;
 	margin-bottom: -30px;
 }
-
 div.right_dialog_container{
   width: 100%;
   position: absolute;
@@ -68,7 +63,6 @@ div.right_dialog_container{
   color: white;
   z-index: 0;
 }
-
 div.right_dialog_container::after{
   content: "";
 	position: absolute;
@@ -83,7 +77,6 @@ div.right_dialog_container::after{
 	border-left: 0;
 	margin-bottom: -30px;
 }
-
 div.left_dialog{
   background-color: #2869D1;
   width: 49%;
@@ -91,18 +84,14 @@ div.left_dialog{
   border-radius: 20px 20px 20px 0;
   padding: 30px;
 }
-
-
 div.dialog_title{
   font-size: 28px;
   font-weight: 700;
 }
-
 div.dialog_text{
   padding: 20px 0;
   font-size: 15px;
 }
-
 div.right_dialog{
   background-color: #F24D2E;
   width: 49%;
@@ -118,41 +107,32 @@ div.right_dialog{
   div.dialog_container{
     margin-top: 60px;
   }
-
   div.left_dialog, div.right_dialog{
     width: 100%;
     height: 180px;
     padding: 20px;
   }
-
   div.left_dialog{
     padding-top: 40px;
   }
-
   div.left_dialog_container, div.right_dialog_container{
     align-items: center;
   }
-
   div.right_dialog_container{
     top: 220px;
   }
-
   div.left_dialog_container::after{
     margin-bottom: -20px;
   }
-
   div.right_dialog_container::after{
     margin-bottom: -20px;
   }
-
   div.dialog_title{
     font-size: 20px;
   }
-
   div.dialog_text{
     font-size: 16px;
-  }
-    
+  } 
 }
 
 @media screen and (min-width: 468px) and (max-width: 767.98px){
@@ -160,18 +140,14 @@ div.right_dialog{
   div.dialog_container{
     margin-top: 80px;
   }
-
   div.left_dialog, div.right_dialog{
     width: 80%;
     height: 200px;
     padding: 30px;
   }
-
-
    div.dialog_title{
     font-size: 24px;
   }
-
   div.dialog_text{
     font-size: 15px;
   }
@@ -184,20 +160,15 @@ div.right_dialog{
   div.dialog_container{
     flex-direction: column;
   }
-
   div.right_dialog_container{
     top: 210px;
   }
-
   div.left_dialog, div.right_dialog{
     width: 450px;
   }
-
   div.dialog_title{
     font-size: 26px;
   }
-
-
 }  
 
 
@@ -210,24 +181,19 @@ div.bridge_banner{
   width: 90%;
   margin: -60px auto 40px;
 }
-
 div.bridge_title{
   font-size: 28px;
   font-weight: 700;
 }
-
 div.bridge_text{
   padding: 16px 0;
 }
-
-
 div.bike_run{
   width: 100%;
   margin: 0 auto;
   font-size: 0;
   position: relative;
 }
-
 img.bike{
   width: 150px;
 }
@@ -246,8 +212,6 @@ img.bike.-ani{
     margin-left: 100vw;
   }
 }
-
-
 div.line{
   border-bottom: 1px solid black;
   width: 100%;
@@ -260,16 +224,12 @@ div.line{
   div.bridge_banner{
     margin-top: 0;
   }
-
   div.bridge_title{
     font-size: 24px;
   }
-
   img.bike{
     width: 80px;
   }
-
-
 }  
 
 
@@ -277,22 +237,15 @@ div.line{
 @media screen and (min-width: 414px) and (max-width: 767.98px){
 
   div.bridge_banner{
-    margin-top: 0;
+    margin-top: 50px;
   }
-
   div.bridge_title{
     font-size: 24px;
   }
-
   img.bike{
     width: 120px;
   }
-
-
 }  
-
-
-
 
 
 /*====== 社群介紹 intro ======*/
@@ -301,7 +254,6 @@ div.intro_banner{
   width: 90%;
   margin: 60px auto 120px;
 }
-
 div.intro_content{
   display: flex;
   text-align: center;
@@ -309,26 +261,19 @@ div.intro_content{
   justify-content: center;
   align-items: center;
 }
-
 div.intro_title{
   font-size: 28px;
   font-weight: 700;
   padding: 20px 0;
   margin-top: 40px;
 }
-
-
-
 div.intro_text{
   line-height: 200%;;
 }
-
-
 div.process_container{
   width: 90%;
   margin: 0 auto;
 }
-
 div.process_banner{
   width: 100%;
   display: flex;
@@ -336,27 +281,22 @@ div.process_banner{
   align-items: flex-start;
   margin-bottom: 60px;
 }
-
 div.banner_text{
   padding: 0 10px 10px;
   width: 50%;
 }
-
 div.process_title{
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 20px;
 }
-
 div.process_text{
   line-height: 180%;
   margin-bottom: 16px;
 }
-
 div.banner_img{
   width: 48%;
 }
-
 embed.commu{
   width: 100%;
 }
@@ -367,29 +307,25 @@ embed.commu{
   div.intro_banner{
     margin-bottom: 50px;
   }
-  
   div.intro_title{
     font-size: 24px;
   }  
   div.intro_text{
-    font-size: 16px;
+    display: none;
   }
-  
-
 }
 
 @media screen and (min-width: 414px) and (max-width: 767.98px){
   div.intro_banner{
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
-  
   div.intro_title{
-    font-size: 24px;
+    font-size: 23px;
   }  
   div.intro_text{
     font-size: 16px;
+    width: 90%;
   }
-
   br.-break{
     display: none;
   }
@@ -405,24 +341,19 @@ embed.commu{
     width: 100%;
     text-align: center;
   }
-
   div.banner_img{
     width: 100%;
   }
-
   div.rwd_text{
     order: 1;
   }
-
   div.rwd_img{
     order: 2;
   }
-
   div.process_title{
     font-size: 20px;
     position: relative;
   }
-
   div.process_title::after{
     content: "";
     width: 100%;
@@ -432,7 +363,9 @@ embed.commu{
     transform: translateX(-50%);
     bottom: 10px;
   }
-
+  div.process_text{
+    text-align: left;
+  }
 }
 
 
@@ -444,7 +377,6 @@ div.dreamers_block{
   margin: 100px auto 30px;
   text-align: center;
 }
-
 div.block_title{
   font-size: 28px;
   font-weight: 700;
@@ -454,16 +386,13 @@ div.block_title{
 div.block_text{
   line-height: 200%;
 }
-
 div.dreamers_circle{
   width: 90%;
   margin: 0 auto 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
-
 div.circle_block{
   width: 25%;
   height: 100%;
@@ -472,25 +401,21 @@ div.circle_block{
   align-items: center;
   justify-content: center;
 }
-
 a.commu_link{
   text-decoration: none;
   color: black;
   /* border: 1px solid red; */
 }
-
 div.title_wh{
   color: white;
   font-size: 18px;
   letter-spacing: 0.1em;
 }
-
 div.title_bl{
   color: black;
   font-size: 18px;
   letter-spacing: 0.1em;
 }
-
 div.hover_text{
   font-size: 14px;
   width: 85%;
@@ -498,7 +423,6 @@ div.hover_text{
   padding: 10px;
   line-height: 180%;
 }
-
 div.mtn{
   width: 180px;
   height: 180px;
@@ -511,7 +435,6 @@ div.mtn{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 div.mtn_hover{
   position: absolute;
   width: 180px;
@@ -525,7 +448,6 @@ div.mtn_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.edu{
   width: 267px;
   height: 267px;
@@ -538,11 +460,9 @@ div.edu{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.edu{
   margin-top: 40px;
 }
-
 div.edu_hover{
   position: absolute;
   width: 267px;
@@ -556,7 +476,6 @@ div.edu_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.code{
   width: 145px;
   height: 145px;
@@ -569,11 +488,9 @@ div.code{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.code{
   transform: translateX(80%);
 }
-
 div.code_hover{
   position: absolute;
   width: 145px;
@@ -587,7 +504,6 @@ div.code_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.music{
   width: 160px;
   height: 160px;
@@ -600,11 +516,9 @@ div.music{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.music{
   margin-top: 40px;
 }
-
 div.music_hover{
   position: absolute;
   width: 160px;
@@ -618,7 +532,6 @@ div.music_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.lan{
   width: 267px;
   height: 267px;
@@ -631,12 +544,10 @@ div.lan{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.lan{
   margin-top: 80px;
   transform: translateX(10%);
 }
-
 div.lan_hover{
   position: absolute;
   width: 267px;
@@ -650,7 +561,6 @@ div.lan_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.shop{
   width: 267px;
   height: 267px;
@@ -663,12 +573,10 @@ div.shop{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.shop{
   margin-top: 80px;
   transform: translateX(20%);
 }
-
 div.shop_hover{
   position: absolute;
   width: 267px;
@@ -682,7 +590,6 @@ div.shop_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.build{
   width: 160px;
   height: 160px;
@@ -695,12 +602,10 @@ div.build{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.build{
   margin-top: 80px;
   transform: translateX(30%);
 }
-
 div.build_hover{
   position: absolute;
   width: 160px;
@@ -714,7 +619,6 @@ div.build_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.soc{
   width: 160px;
   height: 160px;
@@ -727,12 +631,10 @@ div.soc{
   cursor: pointer;
   transition: opacity .3s;
 } 
-
 a.soc{
   margin-top: 40px;
   transform: translateX(30%);
 }
-
 div.soc_hover{
   position: absolute;
   width: 160px;
@@ -746,7 +648,6 @@ div.soc_hover{
   opacity: 0;
   transition: opacity .3s;
 }
-
 div.travel{
   width: 160px;
   height: 160px;
@@ -759,11 +660,9 @@ div.travel{
   cursor: pointer;
   transition: opacity .3s;
 }
-
 a.travel{
   margin-top: 40px;
 }
-
 div.travel_hover{
   position: absolute;
   width: 160px;
@@ -783,226 +682,58 @@ div.travel_hover{
   a.mtn:hover div.mtn_hover{
     opacity: 1;
   }
-  
   a.mtn:hover div.mtn{
     opacity: 0;
   }
-  
   a.edu:hover div.edu_hover{
     opacity: 1;
   }
-  
   a.edu:hover div.edu{
     opacity: 0;
   }
-  
   a.code:hover div.code_hover{
     opacity: 1;
   }
-  
   a.code:hover div.code{
     opacity: 0;
   }
-  
   a.music:hover div.music_hover{
     opacity: 1;
   }
-  
   a.music:hover div.music{
     opacity: 0;
   }
-  
   a.lan:hover div.lan_hover{
     opacity: 1;
   }
-  
   a.lan:hover div.lan{
     opacity: 0;
   }
-  
   a.shop:hover div.shop_hover{
     opacity: 1;
   }
-  
   a.shop:hover div.shop{
     opacity: 0;
   }
-  
   a.build:hover div.build_hover{
     opacity: 1;
   }
-  
   a.build:hover div.build{
     opacity: 0;
   }
-  
   a.soc:hover div.soc_hover{
     opacity: 1;
   }
-  
   a.soc:hover div.soc{
     opacity: 0;
   }
-  
   a.travel:hover div.travel_hover{
     opacity: 1;
   }
-  
   a.travel:hover div.travel{
     opacity: 0;
   }
 }
-
-@media screen and (any-pointer: coarse){
-
-  a.mtn:hover div.mtn_hover{
-    opacity: 1;
-  }
-  
-  a.mtn:hover div.mtn{
-    opacity: 0;
-  }
-  
-  a.edu:hover div.edu_hover{
-    opacity: 1;
-  }
-  
-  a.edu:hover div.edu{
-    opacity: 0;
-  }
-  
-  a.code:hover div.code_hover{
-    opacity: 1;
-  }
-  
-  a.code:hover div.code{
-    opacity: 0;
-  }
-  
-  a.music:hover div.music_hover{
-    opacity: 1;
-  }
-  
-  a.music:hover div.music{
-    opacity: 0;
-  }
-  
-  a.lan:hover div.lan_hover{
-    opacity: 1;
-  }
-  
-  a.lan:hover div.lan{
-    opacity: 0;
-  }
-  
-  a.shop:hover div.shop_hover{
-    opacity: 1;
-  }
-  
-  a.shop:hover div.shop{
-    opacity: 0;
-  }
-  
-  a.build:hover div.build_hover{
-    opacity: 1;
-  }
-  
-  a.build:hover div.build{
-    opacity: 0;
-  }
-  
-  a.soc:hover div.soc_hover{
-    opacity: 1;
-  }
-  
-  a.soc:hover div.soc{
-    opacity: 0;
-  }
-  
-  a.travel:hover div.travel_hover{
-    opacity: 1;
-  }
-  
-  a.travel:hover div.travel{
-    opacity: 0;
-  }
-}
-
-
-a.mtn:active div.mtn_hover{
-  opacity: 1;
-}
-
-a.mtn:active div.mtn{
-  opacity: 0;
-}
-
-a.edu:active div.edu_hover{
-  opacity: 1;
-}
-
-a.edu:active div.edu{
-  opacity: 0;
-}
-
-a.code:active div.code_hover{
-  opacity: 1;
-}
-
-a.code:hover div.code{
-  opacity: 0;
-}
-
-a.music:active div.music_hover{
-  opacity: 1;
-}
-
-a.music:active div.music{
-  opacity: 0;
-}
-
-a.lan:active div.lan_hover{
-  opacity: 1;
-}
-
-a.lan:active div.lan{
-  opacity: 0;
-}
-
-a.shop:active div.shop_hover{
-  opacity: 1;
-}
-
-a.shop:active div.shop{
-  opacity: 0;
-}
-
-a.build:active div.build_hover{
-  opacity: 1;
-}
-
-a.build:active div.build{
-  opacity: 0;
-}
-
-a.soc:active div.soc_hover{
-  opacity: 1;
-}
-
-a.soc:active div.soc{
-  opacity: 0;
-}
-
-a.travel:active div.travel_hover{
-  opacity: 1;
-}
-
-a.travel:active div.travel{
-  opacity: 0;
-}
-
-
-
 
 
 @media screen and (min-width: 320px) and (max-width: 413.98px){
@@ -1011,31 +742,43 @@ a.travel:active div.travel{
     flex-direction: column;
     width: 90%;
   }
-
   div.circle_block{
     width: 90%;
   }
-
   div.rwd1{
     order: 4;
   }
-
   div.rwd2{
     order: 1;
+    align-items: center;
   }
-
   div.rwd3{
+    order: 3;
+  }
+  div.rwd4{
     order: 2;
   }
-
-  div.rwd4{
-    order: 1;
+  a.code{
+    transform: translateX(50px);
   }
-
+  a.music{
+    transform: translateX(-20px);
+  }
+  a.lan{
+    margin-top: 50px;
+    transform: translateX(0);
+  }
   a.shop{
-    margin-top: 80px;
-    transform: translateX(0%);
+    margin-top: 40px;
+    transform: translateX(-10px);
   }
+  a.build{
+    margin-top: 40px;
+  }
+  a.mtn{
+    margin-top: 40px;
+    transform: translateX(-20px);
+  }  
 
 }
 
@@ -1045,31 +788,48 @@ a.travel:active div.travel{
     flex-direction: column;
     width: 90%;
   }
-
   div.circle_block{
     flex-direction: column;
     width: 90%;
   }
-
   div.rwd1{
     order: 4;
   }
-
   div.rwd2{
     order: 1;
   }
-
   div.rwd3{
+    order: 3;
+  }
+  div.rwd4{
     order: 2;
   }
-
-  div.rwd4{
-    order: 1;
+  a.code{
+    transform: translateX(50%);
   }
-
+  a.music{
+    transform: translate(-40%, -50px);
+  }
+  a.lan{
+    margin-top: -20px;
+  }
+  a.soc{
+    transform: translateX(50px);
+  }
+  a.travel{
+    transform: translateX(-30%);
+    margin-top: 10px;
+  }
   a.shop{
-    margin-top: 80px;
-    transform: translateX(0%);
+    transform: translateX(10px);
+    margin-top: 20px;
+  }
+  a.build{
+    margin-top: 40px;
+  }
+  a.mtn{
+    margin-top: 30px;
+    transform: translateX(-20%);
   }
 
 }
@@ -1080,31 +840,59 @@ a.travel:active div.travel{
     flex-direction: column;
     width: 90%;
   }
-
   div.circle_block{
     flex-direction: row;
     width: 90%;
   }
-
   div.rwd1{
-    order: 4;
+    order: 2;
+    margin-top: 70px;
+    justify-content: space-between;
   }
-
   div.rwd2{
-    order: 3;
-  }
-
-  div.rwd3{
     order: 1;
+    margin-top: 20px;
   }
-
+  div.rwd3{
+    order: 4;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
   div.rwd4{
+    order: 3;
+    margin-top: 0px;
+    justify-content: space-around;
+  }
+  a.shop{
+    margin-top: 40px;
+    transform: translateX(-10%);
+  }
+  a.build{
+    margin-top: 0px;
+    transform: translateY(-20%);
+  }
+  a.soc{
+    transform: translate(0, -20%);
+  }
+  a.travel{
+    transform: translateY(20%);
+  }
+  a.code{
+    transform: translate(0, -20%);
     order: 2;
   }
-
-  a.shop{
-    margin-top: 80px;
-    transform: translateX(0%);
+  a.music{
+    transform: translate(0%, 100%);
+    order: 1;
+  }
+  a.lan{
+    transform: translate(0, -20%);
+  }
+  a.mtn{
+    transform: translate(0, -30%);
+  }
+  a.edu{
+    transform: translate(10%, 10%);
   }
 
 }
@@ -1116,12 +904,52 @@ a.travel:active div.travel{
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    
+  }
+  div.circle_block{
+    width: 100%;
+  }
+  div.rwd1, div.rwd2, div.rwd3, div.rwd4{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.rwd1{
+    order: 1;
+    justify-content: center;
+  } 
+  div.rwd3{
+    justify-content: space-around;
+  } 
+   a.code{
+    transform: translate(20%, -50%);
+  }
+  a.music{
+    transform: translate(-20%, 50%);
+  }
+  a.lan{
+    transform: translate(0, -10%);
+  }
+  a.shop{
+    transform: translate(-15%, -10%);
+  }
+  a.build{
+    transform: translate(0, -50%);
+  }
+  a.soc{
+    transform: translate(80%, 0%);
+  }
+  a.travel{
+    transform: translate(-80%, -70%);
+  }
+  a.mtn{
+    transform: translate(-40%, 0);
+  }
+  a.edu{
+    transform: translate(30%, -30%);
   }
 
-  div.circle_block{
-    width: 50%;
-  }
+  
+
+
 }
 
 
@@ -1157,10 +985,28 @@ button.join{
   width: 120px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767.98px){
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
+  div.more_info_block{
+    width: 90%;
+    margin-bottom: 0px;
+  }
+
+  div.last_banner{
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+}  
+
+@media screen and (min-width: 414px) and (max-width: 767.98px){
 
   div.more_info_block, div.last_banner{
     width: 90%;
+    align-items: center;
+
   }
 
 
