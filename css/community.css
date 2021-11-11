@@ -735,6 +735,14 @@ div.travel_hover{
   }
 }
 
+.-hide{
+  opacity: 0;
+}
+
+.-appear{
+  opacity: 1;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 413.98px){
 
