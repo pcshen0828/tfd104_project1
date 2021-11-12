@@ -4,35 +4,40 @@
 *{
   box-sizing: border-box;
 }
-
 body{
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
 }
+img, embed{
+  max-width: 100%;
+}
 
+br.-break{
+  display: none;
+}
  
 
+/*====== 夢想地圖進場使用者評價 banner ======*/
+
 div.comment_banner{
-  min-width: 1200px;
-  height: 570px;
-  margin: 0 auto;
+  min-width: 100%;
+  height: auto;
+  margin: 60px auto 0;
+  padding-bottom: 80px;
   background-image: linear-gradient(180deg, #FFFFFF 0%, #F7CCC5 100%);
   background-repeat: no-repeat;
   text-align: center;
   letter-spacing: 0.04em;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 div.intro_block{
-  width: 1080px;
-  margin-bottom: 20px;
+  width: 90%;
+  margin: 20px auto;
 }
-
 div.comment_banner_title{
   font-size: 28px;
   font-weight: 700;
@@ -40,28 +45,28 @@ div.comment_banner_title{
   margin-top: 20px;
   letter-spacing: 0.04em;
 }
-
 div.comment_banner_subtitle{
   padding: 10px 0 20px;
   letter-spacing: 0.04em;
 }
-
 img.bird_stand{
   width: 80px;
   position: absolute;
   transform: translate(330%, -90%);
 }
-
-
-div.comment_container{
-  width: 1080px;
+div.comments_area{
+  width: 90%;
 }
-
-div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
-  padding: 25px 0;
+div.comment_container{
   width: 100%;
 }
-
+div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 a.comment_link{
   padding: 10px 25px;
   text-decoration: none;
@@ -72,85 +77,133 @@ a.comment_link{
   margin: 0 5px;
   letter-spacing: 0.04em;
 }
-
 a.comment_link:hover{
   color: white;
   background-color: #2869D1;
 }
-
-
 div.cards_banner{
   margin-bottom: 60px;
 }
 
+
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+  
+  div.comment_banner{
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  div.comment_banner_title{
+    font-size: 24px;
+  }
+  img.bird_stand{
+    display: none;
+  }
+  div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+    flex-direction: column;
+    padding: 0;
+  }
+  a.comment_link{
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+}  
+
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+  div.comment_banner{
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  div.comment_banner_title{
+    font-size: 24px;
+  }
+  div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+    flex-direction: column;
+    padding: 0;
+  }
+  a.comment_link{
+    margin-bottom: 20px;
+  }
+  img.bird_stand{
+    display: none;
+  }
+}  
+
+/*====== 行動版 RWD | 768x ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+  
+  div.comments_container_top, div.comments_container_middle, div.comments_container_bottom{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  a.comment_link{
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+
+}  
+
+
+/*====== Grid 卡片區域 ======*/
+div.cards_banner{
+  width: 100%;
+}
 div.intro_block2{
-    /* border: 1px solid black; */
-    margin: 0 auto 20px;
-    width: 1080px;
+    margin: -1px auto 20px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 div.grid-container {
-  width: 1080px;
+  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto;
-
-  /* border: 1px solid black; */
   gap: 15px;
 }
-
 a.grid_link{
   color: black;
   text-decoration: none;
 }
-
 div.grid-item{
-  /* border: 1px solid red; */
   letter-spacing: 0.04em;
   text-align: center;
   width: 350px;
   height: 350px;
   cursor: pointer;
 }
-
 div.grid-item:hover div.grid_frame{
   box-shadow: 1px 1px 5px 0px #00000040;
 }
-
 div.grid-item:hover div.grid_top{
   color: white;
   background-image: linear-gradient(180deg, rgba(40, 105, 209, 0.5) 0%, rgba(40, 105, 209, 0.15) 100%);
 }
-
 div.grid-item:hover div.grid_bottom{
   background-color: #ffffff;
 }
-
 div.grid-item:hover div.author{
   color: black;
 }
-
 div.grid-item:hover span.number{
   color: black;
 }
-
 div.grid_frame{
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   overflow: hidden;
 }
-
 div.grid_top{
   height: 55%;
   font-size: 22px;
   background-color: rgba(255, 255, 255, 0.45);
 }
-
 div.grid_title{
   width: 70%;
   height: 100%;
@@ -158,29 +211,24 @@ div.grid_title{
   padding: 40px 15px;
   font-weight: 700;
 }
-
 div.grid_bottom{
   height: 45%;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 div.author{
   font-size: 16px;
   text-align: left;
   padding: 25px 15px;
   color: #94999F;
 }
-
 div.function_banner{
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
 }
-
-img.heart, img.bookmark{
+embed.heart, embed.bookmark{
   height: 20px;
 }
-
 span.number{
   height: 25px;
   margin-right: 16px;
@@ -188,7 +236,6 @@ span.number{
   font-size: 14px;
   padding-left: 4px;
 }
-
 button.btn_dream_story{
   border: none;
   cursor: pointer;
@@ -199,25 +246,88 @@ button.btn_dream_story{
   border-bottom: 1px solid black;
   margin-top: 20px;
 }
-
 button.btn_dream_story:hover{
   color: #2869D1;
   border-bottom: 1px solid #2869D1;
 }
-
 button.btn_dream_story:focus{
   outline: none;
 }
-
-
 div.cards_banner{
   background-image: linear-gradient(180deg, #F7CCC5 0%, rgba(60, 100, 177, 0.4) 100%);
-  min-width: 1200px;
-  /* height: 1600px; */
+  min-width: 100%;
 }
 
+
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+  div.intro_block2{
+    padding-top: 20px;
+  }
+  div.comment_banner_title{
+    font-size: 22px;
+  }
+  div.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a.grid_link{
+    margin-top: 10px;
+  }
+  div.grid-item{
+    width: 300px;
+    height: 300px;
+  }
+  div.function_banner{
+    margin-top: 20px;
+  }
+
+}  
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+
+  div.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.grid-item{
+    width: 320px;
+    height: 320px;
+  }
+  div.function_banner{
+    margin-top: 20px;
+  }
+}
+
+
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+
+  div.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  div.grid-item{
+    width: 300px;
+    height: 300px;
+  }
+  div.grid_title{
+    width: 85%;
+  }
+  div.function_banner{
+    margin-top: 20px;
+  }
+
+}  
+
+/*====== 探索更多 ======*/
+
 div.explore_link{
-  width: 1080px;
+  width: 90%;
   text-align: center;
   padding: 75px 0 90px;
   margin: 0 auto;
@@ -237,75 +347,94 @@ a.btn_action:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
 }
 
+
+
+/*====== 夢想家專欄 ======*/
+
 div.dream_story_block{
   margin: 0 auto;
   text-align: center;
   padding-top: 90px;
-  width: 1080px;
+  width: 90%;
 }
-
 div.story_block_intro{
-  text-align: left;
-  display: inline-block;
-  vertical-align: middle;
-  width: 1080px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
   margin: 40px auto;
-  height: 80px;
+}
+div.column_intro{
+  width: 60%;
+  position: relative;
+  text-align: left;
 }
 
 img.bird_flying, div.intro_text{
   display: inline-block;
   vertical-align: middle;
 }
-
 img.bird_flying{
   height: 80px;
   z-index: 5;
-  position: relative;
+  position: absolute;
+  left: -40px;
+  top: -10px;
 }
-
 div.intro_text{
   font-weight: 600;
   font-size: 18px;
   text-align: center;
   letter-spacing: 0.365em;
-  width: 360px;
+  width: 60%;
   height: 60px;
   line-height: 60px;
   border-radius: 25px 0;
   background-color: #eeeeee;
-  transform: translateX(-10%);
   z-index: 1;
 }
-
 div.article_container{
-  width: 1080px;
+  width: 95%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 div.article_block{
   display: inline-flex;
   margin-bottom: 50px;
 }
-
-img.article_img{
+div.article_img{
   width: 360px;
   height: 306px;
   border-radius: 20px;
   box-shadow: 1px 2px 2px 0px #00000040;
 }
-
+div.article1{
+  background-image: url("../images/dream_map/bake.png");
+  background-size: cover;
+}
+div.article2{
+  background-image: url("../images/dream_map/teamwork\ 1.png");
+  background-size: cover;
+}
+div.article3{
+  background-image: url("../images/dream_map/commu.png");
+  background-size: cover;
+}
+a.act{
+  flex-shrink: 0;
+  position: relative;
+}
 a.act:hover div.hover_block{
   opacity: 1;
 } 
-
 div.hover_block{
-  width: 360px;
-  height: 308px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  transform: translateY(-100%);
+  top: 0;
+  left: 0;
   border-radius: 20px;
-  /* border: 1px solid red; */
   background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Lato', sans-serif;
   color: #363B3F;
@@ -347,6 +476,7 @@ div.article_intro{
   line-height: 150%;
   padding: 16px 0 28px;
   font-size: 15px;
+  width: 95%;
 }
 
 div.article_bottom{
@@ -365,7 +495,7 @@ div.read_time{
 }
 
 div.bottom_link{
-  width: 1080px;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 60px;
@@ -383,3 +513,177 @@ a.more_story:hover{
   color: #2869D1;
   border-bottom: 1px solid #2869D1;
 }
+
+
+/*====== 行動版 RWD | 320px ~ 414px ======*/
+@media screen and (min-width: 320px) and (max-width: 413.98px){
+
+  div.dream_story_block{
+    margin-top: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.story_block_intro{
+    margin: 0px auto 10px;
+    width: 100%;
+  }
+  div.column_intro{
+    width: 100%;
+  }
+  img.bird_flying{
+    display: none;
+  }
+  div.intro_text{
+    width: 100%;
+    font-size: 16px;
+  }
+  div.article_block{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  div.article_rightside{
+    padding: 8px 0 0;
+    width: 100%;
+    max-width: 296px;
+  }
+  div.article_img{
+    width: 296px;
+    height: 268px;
+  }
+  div.article_title{
+    font-size: 22px;
+    padding: 10px 0 5px;
+    width: 100%;
+  }
+  div.article_intro{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+  }
+  div.hover_block{
+    opacity: 1;
+  }
+  div.article_bottom{
+    padding-top: 20px;
+  }
+  br.-hide{
+    display: none;
+  }
+  div.bottom_link{
+    justify-content: center;
+    width: 100%;
+  }
+
+}  
+
+
+/*====== 行動版 RWD | 414px ~ 768px ======*/
+@media screen and (min-width: 414px) and (max-width: 767.98px){
+
+  div.dream_story_block{
+    margin-top: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  div.column_intro{
+    position: relative;
+    width: 90%;
+  }
+  div.story_block_intro{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 480px;
+    justify-content: center;
+  }
+  img.bird_flying{
+    position: absolute;
+    height: 60px;
+    left: -20px;
+    top: 0;
+  }
+  div.intro_text{
+    width: 100%;
+    max-width: 450px;
+    font-size: 16px;
+  }
+  div.article_block{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  div.article_rightside{
+    padding: 8px 0 0;
+    width: 95%;
+    max-width: 360px;
+  }
+  div.article_img{
+    width: 360px;
+    height: 300px;
+  }
+  div.article_title{
+    font-size: 22px;
+    padding: 10px 0 5px;
+    width: 90%;
+  }
+  div.article_intro{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+  }
+  div.hover_block{
+    opacity: 1;
+  }
+  div.article_bottom{
+    padding-top: 20px;
+  }
+  br.-hide{
+    display: none;
+  }
+  div.bottom_link{
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+
+  div.intro_text{
+    width: 100%;
+    max-width: 450px;
+  }
+  div.article_title{
+    font-size: 26px;
+  }
+  div.article_intro{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    height: 58px;
+    margin: 5px 0 20px;
+  }
+  br.-hide{
+    display: none;
+  }
+}  
