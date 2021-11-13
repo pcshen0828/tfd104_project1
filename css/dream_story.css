@@ -18,7 +18,33 @@ body{
 img, embed{
   max-width: 100%;
 }
- 
+
+
+/*======= 麵包屑 =======*/
+div.bread{
+  width: 90%;
+  margin: 70px auto 0;
+  font-size: 14px;
+}
+a.index, a.previous{
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+a.index:hover, a.previous:hover{
+  border-bottom: 1px solid black;
+}  
+span.next{
+  margin-right: 5px;
+}
+span.page_now{
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+
+
 
 /*====== 部落格二欄式排版 ======*/
 div.parent_container{
@@ -26,17 +52,19 @@ div.parent_container{
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
-  margin: 90px auto;
+  margin: 30px auto;
 
 }
 
 /*====== 行動版 RWD | 320px ~ 768px ======*/
 @media screen and (min-width: 320px) and (max-width: 767.98px){
-
+  div.bread{
+    margin-top: 40px;
+  }
   div.parent_container{
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
+    margin: 30px auto;
   
   }
 } 
