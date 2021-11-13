@@ -247,18 +247,23 @@ input[type="search"]{
   border: 1px solid #C4C4C4;
   outline: none;
   font-size: 16px;
+  background: none;
 }
-input[type=search]::-webkit-input-placeholder{
+input::-webkit-input-placeholder{
 color: #363B3F;
 }
 input[type="search"]::-webkit-search-cancel-button{
 -webkit-appearance: none;
 }
-input[type="search"]:focus, input[type="search"]:active{
+input:focus, input:active{
   outline: none;
-  background-color: #ECEDEF;
-  border: none;
+  background: none;
+  border: 2px solid #2869D1;
   color: #363B3F;
+} 
+
+input:focus input::-webkit-input-placeholder{
+  display: none;
 } 
 button.search_btn{
   border: none;
@@ -271,7 +276,7 @@ button.search_btn{
 button.search:active{
   outline: none;
 }
-embed.search{
+img.search{
   width: 16px;
 }
 div.tags_area{
