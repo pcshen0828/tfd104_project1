@@ -750,9 +750,13 @@ embed.img_slide{
 button.slick-prev.slick-arrow{
   left: 0px;
   z-index: 1;
+  width: 30px;
+  height: 30px;
 }
 button.slick-next.slick-arrow{
   right: 10px;
+  width: 30px;
+  height: 30px;
 }
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
   color: #616870;
