@@ -47,3 +47,12 @@ textarea::placeholder{
   color: gray;
 }
 
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+
+  textarea.test_q2{
+    width: 100%;
+    height: 100px;
+  }  
+
+}  
