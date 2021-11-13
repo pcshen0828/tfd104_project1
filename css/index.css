@@ -7,7 +7,7 @@
 
 body{
   margin: 0;
-  padding: 0;
+  padding: 0; 
   font-family: 'Noto Sans TC', sans-serif;
   overflow: hidden;
   overflow-y: scroll;
@@ -716,7 +716,6 @@ div.community_info_title{
   font-weight: 700;
   letter-spacing: 0.1em;
 }
-
 div.community_info_content{
   margin: 0 auto;
   padding: 20px 0;
@@ -724,7 +723,6 @@ div.community_info_content{
   letter-spacing: 0.1em;
   line-height: 200%;
 }
-
 br.-break1{
   display: none;
 }
@@ -745,29 +743,22 @@ embed.img_slide{
   width: 1080px;
   margin: 20px auto 60px;
 }
-
 .slcik-list.draggable{
   width: 100%;
   margin: 0 auto;
 }
-
 button.slick-prev.slick-arrow{
-  left: 0;
+  left: 0px;
   z-index: 1;
 }
-
 button.slick-next.slick-arrow{
-  right: 0;
+  right: 10px;
 }
-
-
-
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
   color: #616870;
   display: block;
-  font-size: 20px;
-  } 
-
+  font-size: 30px;
+} 
 
   /*====== 行動版 RWD | 320px ~ 414px ======*/
   @media screen and (min-width: 320px) and (max-width: 413.98px){
