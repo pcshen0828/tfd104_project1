@@ -2,7 +2,7 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <title>set up | 夢想家專欄 - 從愛吃甜點的女孩到成立第一間烘焙工作室：Canelé Studio 創辦人 Linda Wang</title>
     <link rel="icon" href="./images/logo/logo.ico" type="image/x-icon">
@@ -14,10 +14,104 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
     </style>
-
+ 
   
   </head> 
   <body>
+
+    <!--登入介面彈窗-->
+    <div class="login_overlay">
+      <div class="modal-article">
+        <div class="modal-header">
+          <img src="./images/logo/logo.svg" class="logo_modal">
+          <h4 class="modal-title">登入 set up</h4>
+          <button type="button" class="btn_modal_login_close close">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <input type="email" placeholder="輸入電子郵件" class="modal_email">
+            <input type="password" placeholder="輸入密碼" class="password">
+            <button type="submit" class="btn_signup">登入</button>
+          </form>
+          <div class="other_login">
+            <div class="or">或是</div>
+            <button type="button" class="btn_other">
+              <img src="./images/logo/google.svg" class="other_logo">
+              <a href="" class="other_link">使用 Google 帳號註冊</a>
+            </button>
+
+            <button type="button" class="btn_other">
+              <img src="./images/logo/apple.svg" class="other_logo">
+              <a href="" class="other_link">使用 Apple 帳號註冊</a>
+            </button>
+
+            <button type="button" class="btn_other">
+              <img src="./images/logo/facebook-square.svg" class="other_logo">
+              <a href="" class="other_link">使用 Facebook 帳號註冊</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <div><a href="" class="login_help">無法登入？</a></div>
+          <button type="button" class="btn_open_signup inter_modal">
+            註冊
+          </button>
+        </div>
+      </div>  
+    </div>
+
+    <!--註冊介面彈窗-->
+    <div class="signup_overlay">
+      <div class="modal-article">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <img src="./images/logo/logo.svg" class="logo_modal">
+          <h4 class="modal-title">註冊帳號</h4>
+          <button type="button" class="btn_modal_signup_close close">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <input type="email" placeholder="輸入電子郵件" class="modal_email">
+            <div class="private_policies">
+              註冊即表示您已確認閱讀並接受我們的服務條款和隱私政策。
+            </div>
+            <button type="submit" class="btn_signup">註冊</button>
+          </form>
+          <div class="other_login">
+            <div class="or">或是</div>
+            <button type="button" class="btn_other">
+              <img src="./images/logo/google.svg" class="other_logo">
+              <a href="#" class="other_link">使用 Google 繼續登入</a>
+            </button>
+
+            <button type="button" class="btn_other">
+              <img src="./images/logo/apple.svg" class="other_logo">
+              <a href="#" class="other_link">使用 Apple 繼續登入</a>
+            </button>
+
+            <button type="button" class="btn_other">
+              <img src="./images/logo/facebook-square.svg" class="other_logo">
+              <a href="#" class="other_link">使用 Facebook 繼續登入</a>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <div>已經有 set up 帳戶了？</div>
+          <button type="button" class="btn_open_login inter_modal">
+            登入
+          </button>
+        </div>
+      </div>
+    </div>
 
     <header class="header dropdowns">
       <div class="nav_parent"> 
@@ -64,129 +158,22 @@
           </nav>
 
           <div class="login_signup_block">
-
-            <!-- 登入 -->
-            <div class="container mt-3">
-              <button type="button" class="btn btn-primary btn_login" data-toggle="modal" data-target="#myModal1">
-                登入
-              </button>
-            
-              <!-- The Modal -->
-              <div class="modal fade" id="myModal1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-            
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <img src="./images/logo/logo.svg" class="logo_modal">
-                      <h4 class="modal-title">登入 set up</h4>
-                      <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-            
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                      <form>
-                        <input type="email" placeholder="輸入電子郵件" class="modal_email">
-                        <input type="password" placeholder="輸入密碼" class="password">
-                        <button type="submit" class="btn_signup">登入</button>
-                      </form>
-                      <div class="other_login">
-                        <div class="or">或是</div>
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/google.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Google 帳號註冊</a>
-                        </button>
-            
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/apple.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Apple 帳號註冊</a>
-                        </button>
-            
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/facebook-square.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Facebook 帳號註冊</a>
-                        </button>
-                      </div>
-            
-                    </div>
-            
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <div><a href="#" class="login_help">無法登入？</a></div>
-                      <button type="button" class="btn_modal_close" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">
-                        註冊
-                      </button>
-                    </div>
-                    <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 註冊 -->
-            <div class="container mt-3">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-                註冊
-              </button>
-            
-              <!-- The Modal -->
-              <div class="modal fade" id="myModal2">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-            
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <img src="./images/logo/logo.svg" class="logo_modal">
-                      <h4 class="modal-title">註冊帳號</h4>
-                      <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-            
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                      <form>
-                        <input type="email" placeholder="輸入電子郵件" class="modal_email">
-                        <div class="private_policies">
-                          註冊即表示您已確認閱讀並接受我們的服務條款和隱私政策。
-                        </div>
-                        <button type="submit" class="btn_signup">註冊</button>
-                      </form>
-                      <div class="other_login">
-                        <div class="or">或是</div>
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/google.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Google 繼續登入</a>
-                        </button>
-            
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/apple.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Apple 繼續登入</a>
-                        </button>
-            
-                        <button type="button" class="btn_other">
-                          <img src="./images/logo/facebook-square.svg" class="other_logo">
-                          <a href="#" class="other_link">使用 Facebook 繼續登入</a>
-                        </button>
-                      </div>
-            
-                    </div>
-            
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <div>已經有 set up 帳戶了？</div>
-                      <button type="button" class="btn_modal_close" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">
-                        登入
-                      </button>
-                    </div>
-                    <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-            
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!--登入-->
+            <button class="btn_modal_login">登入</button>
+            <!--註冊-->
+            <button class="btn_modal_signup">註冊</button>
           </div>
         </div>
        </div> 
+
+       <!--漢堡按鈕-->
+      <div class="hamburger">
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     </header>
 
 
@@ -301,7 +288,7 @@
         <div class="search_bar">
           <input type="search" id="site-search" name="q"
             aria-label="Search through site content" placeholder="搜尋靈感">
-          <button class="search_btn"><img src="./images/dream_story/search.svg" class="search"></button>
+          <button class="search_btn"><embed src="./images/dream_story/search.svg" class="search"></button>
         </div>
 
         <div class="tags_area">
@@ -322,36 +309,39 @@
           <a href="#" class="tag">開店</a>
         </div>
 
-        <a href="#" class="all_cate">
-          <div class="all_cate">進入全部分類</div>
-        </a>
+        <div class="cate_align">
+          <a href="#" class="all_cate">
+            <div class="all_cate">進入全部分類</div>
+          </a>
+        </div>  
 
         
           <div class="block_title">夢想家聚落</div>
-
-          <div class="ad1">
-            <div class="bottom">
-              <div class="ttl">開店</div>
-              <div class="num">20,000+位夢想家已加入</div>
-              <a href="" class="enter">進去逛逛</a>
+          <div class="ad-container">
+            <div class="ad1">
+              <div class="bottom">
+                <div class="ttl">開店</div>
+                <div class="num">20,000+位夢想家已加入</div>
+                <a href="" class="enter">進去逛逛</a>
+              </div>
             </div>
+           
+            <div class="ad2">
+              <div class="bottom">
+                <div class="ttl">旅行</div>
+                <div class="num">30,000+ 位夢想家已加入</div>
+                <a href="" class="enter">進去逛逛</a>
+              </div>  
+            </div>
+  
+            <div class="ad3">
+              <div class="bottom">
+                <div class="ttl">留學</div>
+                <div class="num">10,000+ 位夢想家已加入</div>
+                <a href="" class="enter">進去逛逛</a>
+              </div>  
+            </div> 
           </div>
-         
-          <div class="ad2">
-            <div class="bottom">
-              <div class="ttl">旅行</div>
-              <div class="num">30,000+ 位夢想家已加入</div>
-              <a href="" class="enter">進去逛逛</a>
-            </div>  
-          </div>
-
-          <div class="ad3">
-            <div class="bottom">
-              <div class="ttl">留學</div>
-              <div class="num">10,000+ 位夢想家已加入</div>
-              <a href="" class="enter">進去逛逛</a>
-            </div>  
-          </div> 
 
           <div class="more">
             <a href="#" class="more">探索更多>> </a> 
@@ -418,9 +408,6 @@
 
         </div>
       </div>  
-			
-
-
     </div>
 
 
@@ -478,127 +465,12 @@
 
             <div class="sitemap_parent"><a href="./community.html" class="footer_page_link">社群</a></div>
             <div class="sitemap_parent"><a href="./dream_map.html" class="footer_page_link">夢想地圖</a></div>
+            
             <div class="footer_login_signup_block">
-
-              <!-- footer 登入 -->
-              <div class="container mt-3 footer-modal">
-                <button type="button" class="btn btn-footer-modal" data-toggle="modal" data-target="#myModal1">
-                  登入
-                </button>
-              
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal1">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-              
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <img src="./images/logo/logo.svg" class="logo_modal">
-                        <h4 class="modal-title">登入 set up</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                      </div>
-              
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                        <form>
-                          <input type="email" placeholder="輸入電子郵件" class="modal_email">
-                          <input type="password" placeholder="輸入密碼" class="password">
-                          <button type="submit" class="btn_signup">登入</button>
-                        </form>
-                        <div class="other_login">
-                          <div class="or">或是</div>
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/google.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Google 帳號註冊</a>
-                          </button>
-              
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/apple.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Apple 帳號註冊</a>
-                          </button>
-              
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/facebook-square.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Facebook 帳號註冊</a>
-                          </button>
-                        </div>
-              
-                      </div>
-              
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <div><a href="#" class="login_help">無法登入？</a></div>
-                        <button type="button" class="btn_modal_close" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">
-                          註冊
-                        </button>
-                      </div>
-                      <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-              
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <!-- footer 註冊 -->
-              <div class="container mt-3 footer-modal">
-                <button type="button" class="btn btn-footer-modal" data-toggle="modal" data-target="#myModal2">
-                  註冊
-                </button>
-              
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal2">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-              
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <img src="./images/logo/logo.svg" class="logo_modal">
-                        <h4 class="modal-title">註冊帳號</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                      </div>
-              
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                        <form>
-                          <input type="email" placeholder="輸入電子郵件" class="modal_email">
-                          <div class="private_policies">
-                            註冊即表示您已確認閱讀並接受我們的服務條款和隱私政策。
-                          </div>
-                          <button type="submit" class="btn_signup">註冊</button>
-                        </form>
-                        <div class="other_login">
-                          <div class="or">或是</div>
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/google.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Google 繼續登入</a>
-                          </button>
-              
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/apple.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Apple 繼續登入</a>
-                          </button>
-              
-                          <button type="button" class="btn_other">
-                            <img src="./images/logo/facebook-square.svg" class="other_logo">
-                            <a href="#" class="other_link">使用 Facebook 繼續登入</a>
-                          </button>
-                        </div>
-              
-                      </div>
-              
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <div>已經有 set up 帳戶了？</div>
-                        <button type="button" class="btn_modal_close" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">
-                          登入
-                        </button>
-                      </div>
-                      <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
-              
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!--登入-->
+              <button class="btn_modal_login btn_footer">登入</button>
+              <!--註冊-->
+              <button class="btn_modal_signup btn_footer">註冊</button>
             </div>
           </div>
         </div>
@@ -606,12 +478,7 @@
       </div>
     </footer>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -648,12 +515,55 @@
           dots: true,
           autoplay: true,
           autoplaySpeed: 2500,
-          // centerMode: true,
-          centerPadding: "0px",
           respondTo: "slider",
-          mobileFirst: true
+          responsive:[
+            {breakpoint:1080, settings:{
+              slidesToShow:2,
+            }},
+            {breakpoint:680, settings:{
+              slidesToShow:1,
+            }},
+          ], 
         });
       });
+
+      // hamburger icon 的切換
+      $(function(){
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+      });
+
+      $(function(){
+        // 點擊漢堡按鈕，導覽列縮放
+        $("button.hamburger").on("click", function(){
+          $("nav.nav, div.login_signup_block").fadeToggle();
+        });
+      });  
+
+      $(function(){
+        // 開啟 登入 Modal彈跳視窗
+        $("button.btn_modal_login").on("click", function(){
+          $("div.login_overlay").fadeIn();
+        });
+        
+        // 關閉 登入 Modal彈跳視窗
+        $("button.btn_modal_login_close").on("click", function(){
+          $("div.login_overlay").fadeOut();
+        });
+
+        // 開啟 註冊 Modal彈跳視窗
+        $("button.btn_modal_signup").on("click", function(){
+          $("div.signup_overlay").fadeIn();
+        });
+        
+        // 關閉 註冊 Modal彈跳視窗
+        $("button.btn_modal_signup_close").on("click", function(){
+          $("div.signup_overlay").fadeOut();
+        });
+      });
+
+
     </script>
   </body>
 </html>
