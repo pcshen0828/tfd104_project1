@@ -11,8 +11,9 @@ div.leftside{
   /* border: 1px solid red; */
 }
 
-form{
+form.wish{
   align-items: flex-start;
+  width: 100% !important;
 }
 #user_name{
   font-weight: 700;
@@ -56,5 +57,6 @@ textarea::placeholder{
     width: 100%;
     height: 100px;
   }  
+  
 
 }  

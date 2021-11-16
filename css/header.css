@@ -9,6 +9,7 @@
 body { 
   margin: 0;
   overflow-y: scroll; 
+  overflow-x: hidden;
 } 
 
 /*回到最上方的按鈕*/

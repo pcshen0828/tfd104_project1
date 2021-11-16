@@ -11,8 +11,9 @@ div.leftside{
   /* border: 1px solid red; */
 }
 
-form{
+form.goal{
   align-items: flex-start;
+  width: 100% !important;
 } 
 
 input[type=text] {

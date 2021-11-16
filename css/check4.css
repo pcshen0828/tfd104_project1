@@ -11,8 +11,9 @@ div.leftside{
   /* border: 1px solid red; */
 }
 
-form{
+form.keywords{
   align-items: flex-start;
+  width: 100% !important;
 } 
 #user_name{
   font-weight: 700;
