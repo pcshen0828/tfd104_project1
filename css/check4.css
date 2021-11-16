@@ -14,7 +14,9 @@ div.leftside{
 form{
   align-items: flex-start;
 } 
-
+#user_name{
+  font-weight: 700;
+}
 textarea.test_q2{
   width: 90%;
   height: 80px;

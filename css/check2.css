@@ -14,7 +14,9 @@ div.leftside{
 form{
   align-items: flex-start;
 }
-
+#user_name{
+  font-weight: 700;
+}
 input[type=text] {
   width: 70%;
   height: 50px;
