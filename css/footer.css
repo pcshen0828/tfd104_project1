@@ -5,7 +5,6 @@ footer.footer{
   margin: 0 auto;
   width: 1080px;
 }
- 
 div.footer_container{
   width: 100%;
   display: inline-flex;
@@ -13,44 +12,36 @@ div.footer_container{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 img.logo_footer{
   width: 80px; 
 }
-
 div.footer_leftside{
   padding-left: 12px;
 }
-
 div.footer_leftside > div.copyrights{
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   padding-top: 10px;
 }
-
 div.social_media_block{
   padding: 20px 0 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 a.social_media_link{
   width: 25px;
   height: 22px;
   margin-right: 10px;
   border-bottom: 1px solid transparent;
 }
-
 a.social_media_link:hover{
   border-bottom: 1px solid black;
 }
-
 embed.social_media_logo{
   height: 22px;
   padding: 3px;
 }
-
 div.copyrights_statement{
   font-size: 12px;
   padding: 20px 0;
@@ -58,42 +49,34 @@ div.copyrights_statement{
   line-height: 150%;
   letter-spacing: 0.04em;
 }
-
 a.tibame_link{
   color: #2869D1;
   font-weight: 700;
   text-decoration: none;
 }
-
 a.tibame_link:hover{
   text-decoration: underline;
 }
-
 a.reference{
   color: #2869D1;
   text-decoration: none;
 }
-
 a.reference:hover{
   text-decoration: underline;
 }
-
 div.footer_rightside{
   width: 90%;
 }
-
 div.sitemap{
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-
 div.sitemap_parent{
   font-weight: 700;
   text-align: center;
   width: 18%;
 }
-
 div.sitemap_child{
   font-weight: 400;
   display: flex;
@@ -102,36 +85,28 @@ div.sitemap_child{
   width: 100%;
   font-size: 15px;
 }
-
-
-
 div.footer_solutions_list{
   list-style: none;
 }
-
 a.footer_page_link, a.footer_page_link_child{
   color: black;
   text-decoration: none;
   text-align: left;
 }
-
 a.footer_page_link{
   padding: 0 4px 3px 4px;
   font-weight: 700;
   border: 1px solid transparent;
 }
-
 a.footer_page_link_child{
   padding-bottom: 3px;
   border: 1px solid transparent;
   margin-bottom: 3px;
   margin-left: 6px;
 }
-
 a.footer_page_link:hover, a.footer_page_link_child:hover{
   border-bottom: 1px solid black;
 }
-
 div.footer_login_signup_block{
   margin: 0;
   display: flex;
@@ -140,8 +115,6 @@ div.footer_login_signup_block{
   text-align: center;
   margin-top: -6.28px;
 }
-
-
 button.btn_footer{
   font-size: 16px;
   border: none;
@@ -155,7 +128,6 @@ button.btn_footer{
   height: 35px;
   border-bottom: 1px solid transparent;
 }
-
 button.btn_footer:hover{
   background: none;
   box-shadow: none;
@@ -178,7 +150,6 @@ button.btn_footer:hover{
     height: auto;
     width: 100%;
   }
-
   div.footer_leftside{
     width: 95%;
     margin: 0 auto;
@@ -189,11 +160,9 @@ button.btn_footer:hover{
     align-items: flex-start;
     padding: 0;
   }
-
   img.logo_footer{
     transform: translateX(-12px);
   }
-
   div.social_media_block{
     padding: 0;
     position: absolute;
@@ -201,7 +170,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   }
-
   div.copyrights{
     width: 100%;
     position: absolute;
@@ -209,7 +177,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   } 
-
   div.copyrights_statement{
     position: absolute;
     bottom: -210px;
@@ -219,7 +186,6 @@ button.btn_footer:hover{
     border-top: 1px solid black;
     font-size: 11px;
   }
- 
   div.footer_rightside{
     width: 100%;
     margin: 40px auto 60px;
@@ -233,9 +199,8 @@ button.btn_footer:hover{
     padding: 0;
     text-align: center;
     font-size: 12px;
-    min-width: 58px;
+    min-width: 60px;
   }
-
   div.sitemap_child{
     display: flex;
     justify-content: center;
@@ -243,15 +208,12 @@ button.btn_footer:hover{
     font-size: 12px;
 
   }
-
   div.footer_solution_list{
     width: 80px;
   }
- 
   div.sitemap_child a.footer_page_link_child{
     margin-left: 0;
   }
-
   div.footer_login_signup_block{
     width: 20%;
     margin: 0;
@@ -261,8 +223,6 @@ button.btn_footer:hover{
     text-align: center;
     margin-top: -9.4px;
   }
-
- 
   button.btn_footer{
     font-size: 12px;
     border: none;
@@ -272,8 +232,9 @@ button.btn_footer:hover{
     font-weight: 700;
     margin-bottom: 10px;
     width: 40px;
-  }
+    border-bottom: 1px solid transparent;
 
+  }
   button.btn_footer:hover{
     background: none;
     box-shadow: none;
@@ -297,7 +258,6 @@ button.btn_footer:hover{
     height: auto;
     width: 100%;
   }
-
   div.footer_leftside{
     width: 95%;
     margin: 0 auto;
@@ -308,11 +268,9 @@ button.btn_footer:hover{
     align-items: flex-start;
     padding: 0;
   }
-
   img.logo_footer{
     transform: translateX(-12px);
   }
-
   div.social_media_block{
     padding: 0;
     position: absolute;
@@ -320,7 +278,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   }
-
   div.copyrights{
     width: 100%;
     position: absolute;
@@ -328,7 +285,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   } 
-
   div.copyrights_statement{
     position: absolute;
     bottom: -210px;
@@ -338,7 +294,6 @@ button.btn_footer:hover{
     border-top: 1px solid black;
     font-size: 11px;
   }
- 
   div.footer_rightside{
     width: 100%;
     margin: 40px auto 60px;
@@ -352,9 +307,7 @@ button.btn_footer:hover{
     padding: 0;
     text-align: center;
     font-size: 12px;
-
   }
-
   div.sitemap_child{
     display: flex;
     justify-content: center;
@@ -362,15 +315,12 @@ button.btn_footer:hover{
     font-size: 12px;
 
   }
-
   div.footer_solution_list{
     width: 80px;
   }
- 
   div.sitemap_child a.footer_page_link_child{
     margin-left: 0;
   }
-
   div.footer_login_signup_block{
     width: 20%;
     margin: 0;
@@ -380,8 +330,6 @@ button.btn_footer:hover{
     text-align: center;
     margin-top: -9.1px;
   }
-
- 
   button.btn_footer{
     font-size: 12px;
     border: none;
@@ -391,8 +339,9 @@ button.btn_footer:hover{
     font-weight: 700;
     margin-bottom: 10px;
     width: 40px;
-  }
+    border-bottom: 1px solid transparent;
 
+  }
   button.btn_footer:hover{
     background: none;
     box-shadow: none;
@@ -416,7 +365,6 @@ button.btn_footer:hover{
     height: auto;
     width: 100%;
   }
-
   div.footer_leftside{
     width: 95%;
     margin: 0 auto;
@@ -427,11 +375,9 @@ button.btn_footer:hover{
     align-items: flex-start;
     padding: 0;
   }
-
   img.logo_footer{
     transform: translateX(-12px);
   }
-
   div.social_media_block{
     padding: 0;
     position: absolute;
@@ -439,7 +385,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   }
-
   div.copyrights{
     width: 100%;
     position: absolute;
@@ -447,7 +392,6 @@ button.btn_footer:hover{
     left: 0;
     right: 0;
   } 
-
   div.copyrights_statement{
     position: absolute;
     bottom: -180px;
@@ -457,7 +401,6 @@ button.btn_footer:hover{
     border-top: 1px solid black;
     font-size: 11px;
   }
- 
   div.footer_rightside{
     width: 100%;
     margin: 40px auto 60px;
@@ -471,9 +414,9 @@ button.btn_footer:hover{
     padding: 0;
     text-align: center;
     font-size: 14px;
+    min-width: 70px;
 
   }
-
   div.sitemap_child{
     display: flex;
     justify-content: center;
@@ -481,15 +424,12 @@ button.btn_footer:hover{
     font-size: 14px;
 
   }
-
   div.footer_solution_list{
     width: 80px;
   }
- 
   div.sitemap_child a.footer_page_link_child{
     margin-left: 0;
   }
-
   div.footer_login_signup_block{
     width: 20%;
     margin: 0;
@@ -497,10 +437,8 @@ button.btn_footer:hover{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin-top: -9.1px;
+    margin-top: -7.5px;
   }
-
- 
   button.btn_footer{
     font-size: 14px;
     border: none;
@@ -510,8 +448,9 @@ button.btn_footer:hover{
     font-weight: 700;
     margin-bottom: 10px;
     width: 40px;
-  }
+    border-bottom: 1px solid transparent;
 
+  }
   button.btn_footer:hover{
     background: none;
     box-shadow: none;
@@ -527,16 +466,12 @@ button.btn_footer:hover{
   footer.footer, div.footer_container{
     width: 100%;
   }
-
   footer.footer{
     padding: 0 20px;
   }
-
   div.sitemap_parent{
     font-size: 15px;
   }
-  
-
   div.footer_login_signup_block{
     width: 20%;
     margin: 0;
@@ -546,8 +481,6 @@ button.btn_footer:hover{
     text-align: center;
     margin-top: -5.3px;
   }
-
- 
   button.btn_footer{
     border: none;
     background: none;
@@ -557,8 +490,9 @@ button.btn_footer:hover{
     margin-bottom: 10px;
     width: 40px;
     font-size: 15px;
-  }
+    border-bottom: 1px solid transparent;
 
+  }
   button.btn_footer:hover{
     background: none;
     box-shadow: none;
@@ -566,6 +500,5 @@ button.btn_footer:hover{
     border-bottom: 1px solid black;
 
   }
-
 
 }

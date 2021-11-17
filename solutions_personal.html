@@ -409,6 +409,7 @@
     
     <script>
       $(function(){
+
         // 點擊按鈕1
         $("button.btn1").on("click", function(){
           // div.content1 、 div.content2 和 div.content3 都移除 -on 樣式
@@ -439,10 +440,8 @@
           $("button.btn3").addClass("-on");
         });
 
-      });
-    
-      //分類點擊圓點更換圖片及文字
-      $(function(){
+
+        //分類點擊圓點更換圖片及文字
         $("button.btn_left").on("click", function(){
           $("div.layer1, div.layer2").removeClass("-on");
           $("div.layer1").addClass("-on");
@@ -450,7 +449,7 @@
           $("button.btn_left, button.btn_right").removeClass("-on");
           $("button.btn_left").addClass("-on");
         });
-
+  
         $("button.btn_right").on("click", function(){
           $("div.layer1, div.layer2").removeClass("-on");
           $("div.layer2").addClass("-on");
@@ -460,93 +459,29 @@
         });
 
 
-      });
-
-    //回到頂部
-      $(function(){
-        $("#go_top").on("click", function(e){
-          e.preventDefault();
-          $('html, body').animate({
-            scrollTop: 0
-          }, 750);
-        });
-      });
-    
-      $(function() {
-        $(window).scroll(function() {
-          if ($(this).scrollTop() > 720)  {          /* 要滑動到選單的距離 */
-             $('.dropdowns').addClass('navFixed');   /* 幫選單加上固定效果 */
-          } else {
-            $('.dropdowns').removeClass('navFixed'); /* 移除選單固定效果 */
-          }
-        });
-      });
-    
-    
-    
-      //點擊了解更多按鈕，頁面直接跳到 feature highlight banner
-      $(function(){
+        //點擊了解更多按鈕，頁面直接跳到 feature highlight banner
         $("#feature1").click(function(e){
           e.preventDefault();
           $('html,body').animate({
             scrollTop:$("#feature_banner1").offset().top
           }, 750);
         });
-
+  
         $("#feature2").click(function(e){
           e.preventDefault();
           $('html,body').animate({
             scrollTop:$("#feature_banner2").offset().top
           }, 750);
         });
-
+  
         $("#feature3").click(function(e){
           e.preventDefault();
           $('html,body').animate({
             scrollTop:$("#feature_banner3").offset().top
           }, 750);
         }); 
-      });
-
-      // hamburger icon 的切換
-      
-      $(function(){
-        $("button.hamburger").on("click", function(){
-          $(this).toggleClass("is-active");
-        });
 
       });
-
-      $(function(){
-  
-      // 點擊漢堡按鈕，導覽列縮放
-      $("button.hamburger").on("click", function(){
-        $("nav.nav, div.login_signup_block").fadeToggle();
-      });
-
-      $(function(){
-        // 開啟 登入 Modal彈跳視窗
-        $("button.btn_modal_login").on("click", function(){
-          $("div.login_overlay").fadeIn();
-        });
-        
-        // 關閉 登入 Modal彈跳視窗
-        $("button.btn_modal_login_close").on("click", function(){
-          $("div.login_overlay").fadeOut();
-        });
-
-        // 開啟 註冊 Modal彈跳視窗
-        $("button.btn_modal_signup").on("click", function(){
-          $("div.signup_overlay").fadeIn();
-        });
-        
-        // 關閉 註冊 Modal彈跳視窗
-        $("button.btn_modal_signup_close").on("click", function(){
-          $("div.signup_overlay").fadeOut();
-        });
-      });
-
-      });  
 
     </script>
 
