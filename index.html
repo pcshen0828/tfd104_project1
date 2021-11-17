@@ -184,7 +184,7 @@
         <div class="banner_leftside">
           <div class="index_first_banner_slogan"></div>
           <div class="index_first_banner_introduction">在一天 24 小時不夠用的時代，<br>需要智慧的工具為你創造更好的效率。<br>set up 讓科技成為人類心智的好朋友，<br class="-break">啟發新點子，<br>將夢想化為日常的累積，<br class="-break">加速夢想實現的路徑！</div>
-          <a href="./solutions_personal.html" class="btn_action">立即體驗</a>
+          <button class="btn_action" id="go">立即體驗</button>
         </div>
         <img src="./images/index/start.png" class="start" loading="lazy">
       </div>
@@ -197,7 +197,7 @@
 
 
     <div class="steps_container">
-      <div class="steps_guide">
+      <div class="steps_guide" id="go_to">
         <img src="./images/index/bird_flying.png" class="bird_guide" loading="lazy">
         <div class="steps_intro">set up! 5步驟輕鬆上手</div>
       </div>
@@ -212,8 +212,8 @@
           </div> 
           <!-- 免費註冊 -->
           <button class="btn_modal_signup step1">
-              免費註冊
-            </button>
+            免費註冊
+          </button>
         </div>
       </div>
  
@@ -420,6 +420,13 @@
     <script src="./js/modal_toggle.js"></script>
     
     <script>
+
+      $("#go").click(function(e){
+        e.preventDefault();
+        $('html,body').animate({
+          scrollTop:$("#go_to").offset().top
+        }, 750);
+      });
       
       //輪播圖
       $(document).ready(function(){

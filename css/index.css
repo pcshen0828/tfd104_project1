@@ -71,10 +71,11 @@ br.-break{
   display: none;
 }
 
-a.btn_action{
+button.btn_action{
   background-color: #2869D1;
   padding: 6px 18px 8px;
   border-radius: 8px;
+  border: none;
   color: white;
   text-decoration: none;
   text-align:center;
@@ -82,7 +83,7 @@ a.btn_action{
   font-size: 16px;
 }
 
-a.btn_action:hover{
+button.btn_action:hover{
   box-shadow: 1px 2px 2px 0px #00000040;
 }
 

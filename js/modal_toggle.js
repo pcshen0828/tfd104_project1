@@ -76,3 +76,9 @@ $(function(){
 
 });
 
+let btn_solution = document.getElementsByClassName("triangle")[0];
+btn_solution.addEventListener("click", function(){
+  let solution = document.getElementsByClassName("solution_list")[0];
+  solution.classList.toggle("-open");
+})
+
