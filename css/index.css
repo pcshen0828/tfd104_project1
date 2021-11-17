@@ -455,7 +455,7 @@ a.step_one_btn:hover{
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 5%;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -499,8 +499,6 @@ a.step_one_btn:hover{
   div.steps_guide div.steps_intro{
     font-size: 16px;
     width: 100%;
-    /* min-width: 320px; */
-    /* transform: translateX(-10%); */
   }
  
 
@@ -583,7 +581,7 @@ a.step_one_btn:hover{
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 5%;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -732,6 +730,15 @@ embed.img_slide{
   width: 320px;
   min-width: 300px;
 }
+embed.img_slide::after{
+  content: '';
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .carousel{
   width: 100%;
   margin: 0 auto;
@@ -739,6 +746,8 @@ embed.img_slide{
 .carousel_box{
   margin: 0;
   text-align: center;
+  position: relative;
+
 }
 .carousel_container{
   width: 1080px;
