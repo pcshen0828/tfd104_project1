@@ -91,7 +91,7 @@ div.index_scroll_block{
   /* border: 1px solid red; */
   position: relative;
   text-align: center;
-  transform: translateY(-55%);
+  transform: translateY(-50px);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -132,7 +132,7 @@ img.scroll_down{
   }
 
   div.index_scroll_block{
-    margin-top: 0px;
+    margin-top: 30px;
   }
 
   img.scroll_down{
@@ -157,7 +157,6 @@ img.scroll_down{
   div.index_first_banner{
     min-width: 100%;
     flex-direction: column;
-    /* height: auto; */
     height: 70vh;
   }
   div.index_first_banner_slogan{
@@ -225,9 +224,7 @@ img.scroll_down{
 /*========= 步驟說明 =========*/
 
 div.steps_container{
-  /* display: block; */
   position: relative;
-  /* text-align: center; */
   margin: 0 auto;
   width: 1080px;
   /* border: 1px solid red; */
@@ -235,7 +232,6 @@ div.steps_container{
 
 
 div.steps_guide{
-  /* text-align: left; */
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
@@ -280,7 +276,6 @@ div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_bloc
 
 embed.step_img{
   width: 660px;
-  /* height: 450px; */
 }
 
 div.each_step_intro{
@@ -365,7 +360,7 @@ a.step_one_btn:hover{
  
   div.steps_guide{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 0px;
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
