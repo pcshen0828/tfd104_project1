@@ -7,11 +7,11 @@
     <title>set up | 夢想，從建立開始</title>
 
     <link rel="icon" href="./images/logo/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
-
- 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
     </style> 
@@ -202,7 +202,7 @@
         <div class="steps_intro">set up! 5步驟輕鬆上手</div>
       </div>
 
-      <div class="step_one_block">
+      <div class="step_one_block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <embed src="./images/index/step_one.svg" class="step_img">
         <div class="each_step_intro">
           <div class="step_title_eng">STEP. 1</div>
@@ -217,7 +217,7 @@
         </div>
       </div>
  
-      <div class="step_two_block">
+      <div class="step_two_block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="each_step_intro">
           <div class="step_title_eng">STEP. 2</div>
           <div class="step_title_zh">選擇適合你的方案</div>
@@ -229,7 +229,7 @@
         <embed src="./images/index/step_two.svg" class="step_img">
       </div>
 
-      <div class="step_three_block">
+      <div class="step_three_block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <embed src="./images/index/step_three.svg" class="step_img">
         <div class="each_step_intro">
           <div class="step_title_eng">STEP. 3</div>
@@ -240,7 +240,7 @@
         </div>
       </div>
 
-      <div class="step_four_block">
+      <div class="step_four_block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="each_step_intro">
           <div class="step_title_eng">STEP. 4</div>
           <div class="step_title_zh">聚焦並建立執行步驟</div>
@@ -251,7 +251,7 @@
         <embed src="./images/index/step_four.svg" class="step_img">
       </div>
 
-      <div class="step_five_block">
+      <div class="step_five_block" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <embed src="./images/index/step_five.svg" class="step_img">
         <div class="each_step_intro">
           <div class="step_title_eng">STEP. 5</div>
@@ -409,14 +409,15 @@
 
   
     <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/type.js"></script>
-    <script src="./js/modal_toggle.js"></script>
-  
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
-
+    
+    <script src="./js/type.js"></script>
+    <script src="./js/modal_toggle.js"></script>
     
     <script>
       
@@ -443,6 +444,7 @@
         });
       });
 
+      AOS.init();
           
     </script>
 
