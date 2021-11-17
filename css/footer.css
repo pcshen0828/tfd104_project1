@@ -39,6 +39,7 @@ a.social_media_link{
   width: 25px;
   height: 22px;
   margin-right: 10px;
+  border-bottom: 1px solid transparent;
 }
 
 a.social_media_link:hover{
@@ -117,11 +118,12 @@ a.footer_page_link, a.footer_page_link_child{
 a.footer_page_link{
   padding: 0 4px 3px 4px;
   font-weight: 700;
+  border: 1px solid transparent;
 }
 
 a.footer_page_link_child{
   padding-bottom: 3px;
-  /* border: 1px solid red; */
+  border: 1px solid transparent;
   margin-bottom: 3px;
   margin-left: 6px;
 }
@@ -151,6 +153,7 @@ button.btn_footer{
   padding: 0 3px;
   width: 46px;
   height: 35px;
+  border-bottom: 1px solid transparent;
 }
 
 button.btn_footer:hover{
