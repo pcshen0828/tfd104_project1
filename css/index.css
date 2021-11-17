@@ -365,7 +365,7 @@ a.step_one_btn:hover{
  
   div.steps_guide{
     width: 100%;
-    margin-top: 5%;
+    margin-top: 15px;
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
@@ -382,9 +382,7 @@ a.step_one_btn:hover{
     width: 90%;
     height: auto;
   }
-  div.step_one_block div.step_direction{
-    padding-bottom: 5%;
-  }
+ 
   div.step_one_block embed{
     order: 2;
   }
@@ -394,19 +392,13 @@ a.step_one_btn:hover{
     justify-content: center;
   }
   button.step1{
-
-    margin-top: 0;
+    margin: 0;
   }
 
   /*步驟二*/
   div.step_two_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 5%;
-    
-  }
-  div.step_two_block div.step_direction{
-    padding-bottom: 5%;
   }
 
   /*步驟三*/
@@ -418,21 +410,14 @@ a.step_one_btn:hover{
   div.step_three_block embed{
     order: 2;
   }
-  div.step_three_block div.step_direction{
-    padding-bottom: 1%;
-  }
 
   /*步驟四*/
   div.step_four_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 5%;
     
   }
-  div.step_four_block div.step_direction{
-    padding-bottom: 1%;
-  }
-
+  
   /*步驟五*/
   div.step_five_block div.each_step_intro{
     order: 1;
@@ -442,33 +427,31 @@ a.step_one_btn:hover{
   div.step_five_block embed{
     order: 2;
   }
-  div.step_five_block div.step_direction{
-    padding-bottom: 1%;
-  }
 
   div.each_step_intro{
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 36px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   div.step_title_eng, div.step_title_zh{
-    padding-bottom: 3%;
+    padding-bottom: 8px;
     font-size: 24px;
   }  
 
   div.step_direction{
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   div.steps_guide div.steps_intro{
@@ -493,7 +476,7 @@ a.step_one_btn:hover{
  
   div.steps_guide{
     width: 100%;
-    margin-top: 5%;
+    margin-top: 20px;
     justify-content: space-between;
   }
   div.steps_guide div.steps_intro{
@@ -507,9 +490,7 @@ a.step_one_btn:hover{
     order: 1;
     width: 90%;
     height: auto;
-  }
-  div.step_one_block div.step_direction{
-    padding-bottom: 5%;
+    margin-bottom: -2px;
   }
   div.step_one_block embed{
     order: 2;
@@ -528,11 +509,6 @@ a.step_one_btn:hover{
   div.step_two_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 5%;
-    
-  }
-  div.step_two_block div.step_direction{
-    padding-bottom: 5%;
   }
 
   /*步驟三*/
@@ -544,19 +520,11 @@ a.step_one_btn:hover{
   div.step_three_block embed{
     order: 2;
   }
-  div.step_three_block div.step_direction{
-    padding-bottom: 1%;
-  }
 
   /*步驟四*/
   div.step_four_block div.each_step_intro{
     width: 90%;
     height: auto;
-    margin-bottom: 5%;
-    
-  }
-  div.step_four_block div.step_direction{
-    padding-bottom: 1%;
   }
 
   /*步驟五*/
@@ -568,33 +536,30 @@ a.step_one_btn:hover{
   div.step_five_block embed{
     order: 2;
   }
-  div.step_five_block div.step_direction{
-    padding-bottom: 1%;
-  }
 
   div.each_step_intro{
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   div.step_title_eng, div.step_title_zh{
-    padding-bottom: 3%;
+    padding-bottom: 12px;
     font-size: 24px;
   }  
 
   div.step_direction{
     font-size: 16px;
-    padding: 10px;
+    padding: 6px 0 16px;
   }
   
   
@@ -605,26 +570,31 @@ a.step_one_btn:hover{
 
 div.steps_container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  
   div.steps_guide{
     width: 100%;
-    margin-top: 5%;
+    margin-top: 20px;
     justify-content: center;
-    padding-left: 10%;
+    position: relative;
   }
   div.steps_guide div.steps_intro{
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     min-width: 320px;
-    transform: translateX(-10%);
+    transform: translateX(0%) !important;
   }
   img.bird_guide{
     height: 60px; 
+    position: absolute !important;
+    left: 0;
   }  
 
   div.step_one_block, div.step_two_block, div.step_three_block, div.step_four_block, div.step_five_block{
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
   embed.step_img{
@@ -668,7 +638,7 @@ div.steps_explore_block > div.steps_explore_info{
   div.steps_explore_block{
     width: 100%;
     text-align: center;
-    margin: 0 auto 15%;
+    margin: 0 auto 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -681,7 +651,7 @@ div.steps_explore_block > div.steps_explore_info{
   div.steps_explore_block{
     width: 100%;
     text-align: center;
-    margin: 0 auto 15%;
+    margin: 0 auto 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -764,7 +734,7 @@ button.slick-prev.slick-arrow{
   height: 30px;
 }
 button.slick-next.slick-arrow{
-  right: 10px;
+  right: 0px;
   width: 30px;
   height: 30px;
 }
