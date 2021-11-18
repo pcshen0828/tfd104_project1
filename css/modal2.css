@@ -42,7 +42,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);       
+    transform: translate(-50%, -50%);  
+    z-index: 999 !important;    
   }
 
   /*=== 內容部分 ===*/
@@ -252,5 +253,8 @@
   @media screen and (min-width: 320px) and (max-width: 768px){
     form, div.other_login{
       width: 80% !important;
+    }
+    div.modal-article{
+      z-index: 999 !important;
     }
   }
