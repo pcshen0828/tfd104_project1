@@ -9,14 +9,14 @@ div.footer_container{
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 25px 0 10px;
 }
 img.logo_footer{
   width: 80px; 
 }
 div.footer_leftside{
   padding-left: 12px;
+  width: 30%;
 }
 div.footer_leftside > div.copyrights{
   font-size: 12px;
@@ -42,9 +42,92 @@ embed.social_media_logo{
   height: 22px;
   padding: 3px;
 }
+
+
+div.footer_rightside{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+div.sitemap{
+  width: 60%;
+}
+div.footer_login_signup_block{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.footer_page_link{
+  text-decoration: none;
+  color: black;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+
+}
+a.footer_page_link:hover{
+  border-bottom: 1px solid black;
+}
+div.sitemap{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+div.sitemap_parent{
+  position: relative;
+  margin-bottom: 16px;
+  height: auto;
+  font-weight: 700;
+}
+
+div.footer_solutions_list{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 80%;
+  justify-content: flex-start;
+  margin-top: 2px;
+}
+a.footer_page_link_child{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin-right: 20px;
+  padding: 0 5px 3px;
+  display: block;
+}
+a.footer_page_link_child:hover{
+  border-bottom: 1px solid black;
+}
+
+button.btn_footer{
+  color: black;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 0 0 3px;
+  height: auto;
+  width: auto;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+button.btn_footer:hover{
+  box-shadow: none;
+  border-bottom: 1px solid black;
+}
+
+
 div.copyrights_statement{
+  /* border-top: 1px solid black; */
+  width: 100%;
   font-size: 12px;
-  padding: 20px 0;
+  padding: 10px 0 30px;
   line-height: 150%;
   line-height: 150%;
   letter-spacing: 0.04em;
@@ -64,441 +147,101 @@ a.reference{
 a.reference:hover{
   text-decoration: underline;
 }
-div.footer_rightside{
-  width: 90%;
-}
-div.sitemap{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-div.sitemap_parent{
-  font-weight: 700;
-  text-align: center;
-  width: 18%;
-}
-div.sitemap_child{
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  font-size: 15px;
-}
-div.footer_solutions_list{
-  list-style: none;
-}
-a.footer_page_link, a.footer_page_link_child{
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-a.footer_page_link{
-  padding: 0 4px 3px 4px;
-  font-weight: 700;
-  border: 1px solid transparent;
-}
-a.footer_page_link_child{
-  padding-bottom: 3px;
-  border: 1px solid transparent;
-  margin-bottom: 3px;
-  margin-left: 6px;
-}
-a.footer_page_link:hover, a.footer_page_link_child:hover{
-  border-bottom: 1px solid black;
-}
-div.footer_login_signup_block{
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-  margin-top: -6.28px;
-}
-button.btn_footer{
-  font-size: 16px;
-  border: none;
-  background: none;
-  color: black;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight: 700;
-  margin-bottom: 18px;
-  padding: 0 3px;
-  width: 46px;
-  height: 35px;
-  border-bottom: 1px solid transparent;
-}
-button.btn_footer:hover{
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  border-bottom: 1px solid black;
 
+/*====== 行動版 RWD | 320px ~ 600px ======*/
+@media screen and (min-width: 320px) and (max-width: 599.98px){
+  footer.footer{
+    width: 90%;
+  }
+  a.social_media_link{
+    flex-shrink: 0;
+  }
+  div.footer_container{
+    flex-direction: column;
+  }
+  div.footer_leftside, div.footer_rightside, div.sitemap{
+    width: 100%;
+  }
+  div.footer_leftside{
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  div.footer_solutions_list{
+    left: 50px;
+    
+  }
+  a.footer_page_link_child{
+    margin-right: 10px;
+  }
+
+  div.footer_login_signup_block{
+    display: none;
+  }
+  
+  a.footer_page_link, div.sitemap, button.btn_footer{
+    font-size: 15px;
+  }
+  
 }
 
 
- 
-/*====== 行動版 RWD | 320px ~ 360px ======*/
-@media screen and (min-width: 320px) and (max-width: 359.98px){
+/*====== 行動版 RWD | 600px ~ 768px ======*/
+@media screen and (min-width: 600px) and (max-width: 767.98px){
 
   footer.footer{
     width: 90%;
   }
-  div.footer_container{
-    flex-direction: column;
-    position: relative;
-    height: auto;
-    width: 100%;
-  }
   div.footer_leftside{
-    width: 95%;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0;
-  }
-  img.logo_footer{
-    transform: translateX(-12px);
-  }
-  div.social_media_block{
-    padding: 0;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-  }
-  div.copyrights{
-    width: 100%;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    right: 0;
-  } 
-  div.copyrights_statement{
-    position: absolute;
-    bottom: -210px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-top: 1px solid black;
-    font-size: 11px;
-  }
-  div.footer_rightside{
-    width: 100%;
-    margin: 40px auto 60px;
-    height: auto;
+    min-width: 175px;
   }
   div.sitemap{
-    justify-content: space-between;
-    width: 100%;
-  }
-  div.sitemap_parent{
-    padding: 0;
-    text-align: center;
-    font-size: 12px;
-    min-width: 60px;
-  }
-  div.sitemap_child{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0 0;
-    font-size: 12px;
-
-  }
-  div.footer_solution_list{
-    width: 80px;
-  }
-  div.sitemap_child a.footer_page_link_child{
-    margin-left: 0;
+    width: 75%;
   }
   div.footer_login_signup_block{
-    width: 20%;
-    margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: -9.4px;
+    display: none;
   }
-  button.btn_footer{
-    font-size: 12px;
-    border: none;
-    background: none;
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-    width: 40px;
-    border-bottom: 1px solid transparent;
-
+  a.footer_page_link, div.sitemap, button.btn_footer{
+    font-size: 15px;
   }
-  button.btn_footer:hover{
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid black;
-
+  div.footer_solutions_list{
+    right: 0;
+    width: 90%;
+    justify-content: center;
   }
+  a.footer_page_link_child{
+    margin-right: 10px;
+  }
+  
+  
+}  
 
-}
-
-
-/*====== 行動版 RWD | 360px ~ 414px ======*/
-@media screen and (min-width: 360px) and (max-width: 414px){
+/*====== 行動版 RWD | 768px ~ 960px ======*/
+@media screen and (min-width: 768px) and (max-width: 959.98px){
 
   footer.footer{
     width: 90%;
   }
-  div.footer_container{
-    flex-direction: column;
-    position: relative;
-    height: auto;
-    width: 100%;
-  }
-  div.footer_leftside{
-    width: 95%;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0;
-  }
-  img.logo_footer{
-    transform: translateX(-12px);
-  }
-  div.social_media_block{
-    padding: 0;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-  }
-  div.copyrights{
-    width: 100%;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    right: 0;
-  } 
-  div.copyrights_statement{
-    position: absolute;
-    bottom: -210px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-top: 1px solid black;
-    font-size: 11px;
-  }
-  div.footer_rightside{
-    width: 100%;
-    margin: 40px auto 60px;
-    height: auto;
-  }
   div.sitemap{
-    justify-content: space-between;
-    width: 100%;
-  }
-  div.sitemap_parent{
-    padding: 0;
-    text-align: center;
-    font-size: 12px;
-  }
-  div.sitemap_child{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0 0;
-    font-size: 12px;
-
-  }
-  div.footer_solution_list{
-    width: 80px;
-  }
-  div.sitemap_child a.footer_page_link_child{
-    margin-left: 0;
+    width: 80%;
   }
   div.footer_login_signup_block{
     width: 20%;
-    margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: -9.1px;
   }
-  button.btn_footer{
-    font-size: 12px;
-    border: none;
-    background: none;
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-    width: 40px;
-    border-bottom: 1px solid transparent;
-
-  }
-  button.btn_footer:hover{
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid black;
-
+  a.footer_page_link, div.sitemap, button.btn_footer{
+    font-size: 15px;
   }
   
 }  
 
 
 
-/*====== 行動版 RWD | 414px ~ 768px ======*/
-@media screen and (min-width: 414px) and (max-width: 767.98px){
+/*====== 行動版 RWD | 960px ~ 1200px ======*/
+@media screen and (min-width: 960px) and (max-width: 1199.98px){
+
   footer.footer{
     width: 90%;
   }
-  div.footer_container{
-    flex-direction: column;
-    position: relative;
-    height: auto;
-    width: 100%;
-  }
-  div.footer_leftside{
-    width: 95%;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0;
-  }
-  img.logo_footer{
-    transform: translateX(-12px);
-  }
-  div.social_media_block{
-    padding: 0;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-  }
-  div.copyrights{
-    width: 100%;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    right: 0;
-  } 
-  div.copyrights_statement{
-    position: absolute;
-    bottom: -180px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-top: 1px solid black;
-    font-size: 11px;
-  }
-  div.footer_rightside{
-    width: 100%;
-    margin: 40px auto 60px;
-    height: auto;
-  }
-  div.sitemap{
-    justify-content: space-between;
-    width: 100%;
-  }
-  div.sitemap_parent{
-    padding: 0;
-    text-align: center;
-    font-size: 14px;
-    min-width: 70px;
-
-  }
-  div.sitemap_child{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0 0;
-    font-size: 14px;
-
-  }
-  div.footer_solution_list{
-    width: 80px;
-  }
-  div.sitemap_child a.footer_page_link_child{
-    margin-left: 0;
-  }
-  div.footer_login_signup_block{
-    width: 20%;
-    margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: -7.5px;
-  }
-  button.btn_footer{
-    font-size: 14px;
-    border: none;
-    background: none;
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-    width: 40px;
-    border-bottom: 1px solid transparent;
-
-  }
-  button.btn_footer:hover{
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid black;
-
-  }
-} 
-
-
-/*====== 行動版 RWD | 768px ~ 1200px ======*/
-@media screen and (min-width: 768px) and (max-width: 1199.98px){
-  footer.footer, div.footer_container{
-    width: 100%;
-  }
-  footer.footer{
-    padding: 0 20px;
-  }
-  div.sitemap_parent{
-    font-size: 15px;
-  }
-  div.footer_login_signup_block{
-    width: 20%;
-    margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: -5.3px;
-  }
-  button.btn_footer{
-    border: none;
-    background: none;
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-    width: 40px;
-    font-size: 15px;
-    border-bottom: 1px solid transparent;
-
-  }
-  button.btn_footer:hover{
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid black;
-
-  }
-
-}
+ 
+  
+  }  
+  

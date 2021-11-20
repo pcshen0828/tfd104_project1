@@ -302,7 +302,7 @@ div.intro_text{
   line-height: 200%;;
 }
 div.process_container{
-  width: 90%;
+  width: 1080px;
   margin: 0 auto;
 }
 div.process_banner{
@@ -344,6 +344,9 @@ embed.commu{
   div.intro_text{
     display: none;
   }
+  div.process_container{
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 414px) and (max-width: 767.98px){
@@ -359,6 +362,9 @@ embed.commu{
   }
   br.-break{
     display: none;
+  }
+  div.process_container{
+    width: 90%;
   }
 
 }
@@ -397,7 +403,18 @@ embed.commu{
   div.process_text{
     text-align: left;
   }
+  div.process_container{
+    width: 90%;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+
+  div.process_container{
+    width: 90%;
+  }
+
+}  
 
 
 /*====== 夢想家聚落 ======*/
